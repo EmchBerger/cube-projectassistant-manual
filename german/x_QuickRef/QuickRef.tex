@@ -1,0 +1,171 @@
+% \documentclass{article}
+
+\documentclass[twocolumn]{article}
+
+
+\usepackage{tcolorbox}
+
+%%% \usepackage{tikz}
+%%% % \pagecolor{olive!50!yellow!50!white}
+
+\usepackage{xcolor}
+\definecolor{chamois}{rgb}{1,.984314,.956863}  % RGB 255 247 231
+\pagecolor{chamois}
+
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=10mm,bmargin=10mm,lmargin=10mm,rmargin=10mm}
+
+
+\tcbuselibrary{skins}
+
+\colorlet{xlightblue}{blue!5}
+
+\newtcolorbox{beamerlikethm}[1]{
+  title=#1,
+  beamer,
+  colback=xlightblue,
+  colframe=blue!30,
+  fonttitle=\bfseries,
+  left=1mm,
+  right=1mm,
+  top=1mm,
+  bottom=1mm,
+  middle=1mm
+}
+
+
+
+\begin{document}
+
+
+%%% \begin{tikzpicture}[remember picture, overlay]
+%%% \shade[left color=red!50,
+%%% right color=green!50
+%%% ] (current page.north west) rectangle (current page.south east);
+%%% \end{tikzpicture}
+
+
+
+\twocolumn[
+% \small % kleinere Schriftgröße
+% \itshape % alles kursiv
+%\blindtext % Blindtext
+Das Sitzungswesen im CUBE PA ermöglicht Ihnen folgende Tätigkeiten: A: Eine Sitzungseinladung zusammenstellen und versenden B: Das Protokoll der Sitzung führen und versenden C: Pendenzen erstellen und nachführen D: Entscheide dokumentieren E: Sitzungseinladungen, Sitzungsprotokolle, Pendenzen und Entscheide suchen und lesen und bearbeiten
+\vspace*{1.5cm} % manuell gesetzter, vertikaler Abstand
+]
+
+\noindent  % Zurücksetzen auf zwei Spalten
+
+
+
+%%%%%%
+
+
+\begin{beamerlikethm}{Sitzungswesen}
+\begin{itemize}
+  \item[$\Longrightarrow$] Wählen Sie aus dem Menü links 'Sitzungswesen' und 'Sitzungen'.
+  \item[$\Longrightarrow$] Klicken Sie auf das 'Plussymbol' oben.
+  \item[$\Longrightarrow$] Wählen Sie einen Sitzungstyp aus und geben Sie die Eckdaten zur Sitzung ein.
+	\item[$\Longrightarrow$] Wählen Sie Teilnehmende aus, entweder einzeln oder mittels vordefinierter Teilnehmerliste.
+  \item[$\Longrightarrow$] Speicher Sie diese Daten mit 'Übernehmen' ab. Nun erscheinen neue Eingabefelder.
+  \item[$\Longrightarrow$] Sie können nun Traktanden erfassen (einzeln oder mittels Auswählen einer vordefinierten Liste).
+  \item[$\Longrightarrow$] Fügen Sie bei Bedarf Beilagen / Dokumenten hinzu.
+  \item[$\Longrightarrow$] Schliessend Sie den Vorgang erneut mit Klick auf 'Übernahme' ab.
+  \item[$\Longrightarrow$] Kehren Sie zurück auf die Übersicht.
+\end{itemize}
+\end{beamerlikethm}
+
+
+
+\begin{beamerlikethm}{Eine Sitzungseinladung bearbeiten}
+\begin{itemize}
+  \item[$\Longrightarrow$] Wählen Sie die gewünschte Sitzung aus. Klicken Sie auf den Titel. Die Optionen öffnen sich.
+  \item[$\Longrightarrow$] Klicken Sie auf das Bearbeitungssymbol. Nun können Sie die gewünschten Änderungen vornehmen.
+  \item[$\Longrightarrow$] Schliessend Sie den Vorgang erneut mit Klick auf 'Übernahme' ab.
+\end{itemize}
+\end{beamerlikethm}
+
+
+
+%%%% andere Form
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Einladung versenden]
+\begin{itemize}
+  \item[$\Longrightarrow$] Kehren Sie zur Übersicht zurück
+  \item[$\Longrightarrow$] Wählen Sie die gewünschte Sitzung aus und klicken Sie auf den blauen Titel. Die Optionen öffnen sich
+  \item[$\Longrightarrow$] Klicken Sie auf das Briefsymbol (PDF Einladung versenden). Nun wird die Einladung erstellt.
+  \item[$\Longrightarrow$] Sie können das erstellte PDF per Email oder auch per Post versenden.
+\end{itemize}
+\end{tcolorbox}
+
+
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Protokoll bearbeiten]
+\begin{itemize}
+  \item[$\Longrightarrow$] Kehren Sie zur Übersicht zurück
+  \item[$\Longrightarrow$] Wählen Sie die gewünschte Sitzung aus und klicken Sie auf den blauen Titel. Die Optionen öffnen sich
+  \item[$\Longrightarrow$] Klicken Sie auf das Protokollsymbol. Das Sitzungsprotokoll wird geöffnet.
+  \item[$\Longrightarrow$] Sie können das erstellte PDF per Email oder auch per Post versenden.
+\end{itemize}
+\end{tcolorbox}
+
+
+
+  %%%%%%
+	% Spalte 2
+	%%%%%%
+	
+	\begin{beamerlikethm}{Sitzungswesen}
+\begin{itemize}
+  \item[$\Longrightarrow$] Wählen Sie aus dem Menü links 'Sitzungswesen' und 'Sitzungen'.
+  \item[$\Longrightarrow$] Klicken Sie auf das 'Plussymbol' oben.
+  \item[$\Longrightarrow$] Wählen Sie einen Sitzungstyp aus und geben Sie die Eckdaten zur Sitzung ein.
+	\item[$\Longrightarrow$] Wählen Sie Teilnehmende aus, entweder einzeln oder mittels vordefinierter Teilnehmerliste.
+  \item[$\Longrightarrow$] Speicher Sie diese Daten mit 'Übernehmen' ab. Nun erscheinen neue Eingabefelder.
+  \item[$\Longrightarrow$] Sie können nun Traktanden erfassen (einzeln oder mittels Auswählen einer vordefinierten Liste).
+  \item[$\Longrightarrow$] Fügen Sie bei Bedarf Beilagen / Dokumenten hinzu.
+  \item[$\Longrightarrow$] Schliessend Sie den Vorgang erneut mit Klick auf 'Übernahme' ab.
+  \item[$\Longrightarrow$] Kehren Sie zurück auf die Übersicht.
+\end{itemize}
+\end{beamerlikethm}
+
+
+
+\begin{beamerlikethm}{Eine Sitzungseinladung bearbeiten}
+\begin{itemize}
+  \item[$\Longrightarrow$] Wählen Sie die gewünschte Sitzung aus. Klicken Sie auf den Titel. Die Optionen öffnen sich.
+  \item[$\Longrightarrow$] Klicken Sie auf das Bearbeitungssymbol. Nun können Sie die gewünschten Änderungen vornehmen.
+  \item[$\Longrightarrow$] Schliessend Sie den Vorgang erneut mit Klick auf 'Übernahme' ab.
+\end{itemize}
+\end{beamerlikethm}
+
+
+
+%%%% andere Form
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Einladung versenden]
+\begin{itemize}
+  \item[$\Longrightarrow$] Kehren Sie zur Übersicht zurück
+  \item[$\Longrightarrow$] Wählen Sie die gewünschte Sitzung aus und klicken Sie auf den blauen Titel. Die Optionen öffnen sich
+  \item[$\Longrightarrow$] Klicken Sie auf das Briefsymbol (PDF Einladung versenden). Nun wird die Einladung erstellt.
+  \item[$\Longrightarrow$] Sie können das erstellte PDF per Email oder auch per Post versenden.
+\end{itemize}
+\end{tcolorbox}
+
+
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Protokoll bearbeiten]
+\begin{itemize}
+  \item[$\Longrightarrow$] Kehren Sie zur Übersicht zurück
+  \item[$\Longrightarrow$] Wählen Sie die gewünschte Sitzung aus und klicken Sie auf den blauen Titel. Die Optionen öffnen sich
+  \item[$\Longrightarrow$] Klicken Sie auf das Protokollsymbol. Das Sitzungsprotokoll wird geöffnet.
+  \item[$\Longrightarrow$] Sie können das erstellte PDF per Email oder auch per Post versenden.
+\end{itemize}
+\end{tcolorbox}
+
+
+
+
+
+
+\end{document}

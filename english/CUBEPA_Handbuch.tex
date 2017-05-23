@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\renewcommand{\familydefault}{\sfdefault} % Standardfont ändern auf Sans Serif (bny)
+
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=3cm]{geometry} % Required to change the page size to A4
+% manuelle Seitenränder eingesetzt durch bny einfach alles inkl. [] wieder löschen, 09.04.2016
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel} % Sprache umschalten /hat funktioniert bis auf Authors, bny 13.04.2016
+\usepackage{graphicx} % Required for including pictures
+\usepackage{graphics} % Möglichkeit Bilder im Textfluss einzubinden - bny / 09.04.2016
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage[dvipsnames]{xcolor} % von bny hinzugefügt
+%\usepackage {picins} % Bilder mit Text umfliessen - funktioniert - bny
+\usepackage{paralist} % Aufzählung mit weniger Abstand - bny
+\usepackage[bookmarksopen=true,colorlinks,linkcolor = black]{hyperref} % Hinzugefügt am 21.04.2016 - bny
+\usepackage{adjustbox} % Bild/Text ausrichten; hinzugefügt am 21.04.2016, bny
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+% \usepackage[colorlinks=true,urlcolor=red]{hyperref} % Da Fehler bei Links, ersetzt 1.6.2016, bny
+% \usepackage{subfigure} % Zwei Bilder nebeneinander; hinzugefügt am 5.5.2016, bny >> mit Tabelle gelöst (Kap 3)
+
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\setlength{\parindent}{0pt} % Neue Absätze nicht einrücken - bny 09.04.2016
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+
+\newcommand{\col}[1]{\textbf{\textcolor[rgb]{0.4392157,0.1882353,0.627451}{#1}}}
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+% \textsc{\LARGE Emch & Berger }\\[1.5cm] % Name of your university/college
+
+\begin{figure}[t] % Example image
+\flushright  % rechtsbuendig
+\includegraphics[width=0.2\linewidth]{0_EmBeLogo}
+% \caption{Das Menü in CUBE PA}
+% \label{fig:speciation}
+\end{figure}
+
+\vspace*{6cm}
+
+\center % Center everything on the page
+
+\HRule \\[0.4cm]
+{ \huge \bfseries CUBE ProjectAssistant}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\textsf{\Large User Manual}\\[0.5cm] % Major heading such as course name
+\textsf{\large Version 2.3 / 18.04.2017}\\[0.5cm] % Minor heading such as course title
+
+\pagebreak
+\vspace*{15cm}
+
+\flushleft\textbf{ Document information}
+\rule{\textwidth}{1pt}
+
+\begin{tabular}{ll}
+Project number & BE.N.\\
+Client & .\\
+Date & 18.04.2017\\
+Version & 2.3\\
+Authors & Dieter Schopfer, Benjamin Nyffenegger, Adrian Johner, Markus Schafroth, Rayane Zahreddine\\
+Approval & Markus Schafroth\\
+Distribution & .\\
+File & .\\
+Number of pages & 122\\
+Copyright & \copyright{ Emch+Berger AG Bern}\\
+\end{tabular}
+
+% \begin{minipage}{0.4\textwidth}
+% \begin{flushleft} \large
+% \emph{Autoren:}\\
+% Dieter Schopfer
+% \linebreak Benjamin Nyffenegger
+% \linebreak Adrian Johner
+% \linebreak Markus Schafroth % \textsc{Smith} % Your name
+% \end{flushleft}
+% \end{minipage}
+
+% {\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	Eingebundene Kapitel
+%----------------------------------------------------------------------------------------
+% Aktueller Kunde: TBA
+%----------------------------------------------------------------------------------------
+
+% Achtung, werden Kapitel ein-/ausgeblendet -> in Titelseite Seiteanzahl anpassen
+% Achtung, neu ab Sept16: 
+% --- 1 Version komplett für WBZU
+% --- 1 Version ohne 07_Beschaffung für alle andere Kunden
+
+\include{chapters/01_Einfuehrung/01_Einfuehrung}
+\include{chapters/02_GettingStarted/02_GettingStarted}
+\include{chapters/03_Adressliste/03_Adressliste}
+\include{chapters/04_Terminplanung/04_Terminplanung}
+\include{chapters/05_Sitzungswesen/05_Sitzungswesen}
+\include{chapters/06_Geschaefte/06_Geschaefte} 					% aktuell nur WBZU
+% \include{chapters/07_Beschaffungswesen/07_Beschaffungswesen}		% aktuell nur WBZU
+\include{chapters/08_Anforderungen/08_Anforderungen}				% aktuell nur WBZU
+\include{chapters/09_Qualitaetsmanagement/09_Qualitaetsmanagement} % --> Bezieht sich aufs Handbuch aktuell nur WBZU resp. ist dieses Thema im Qualitätsmanagement enthalten?
+\include{chapters/11_Dokumentenablage/11_Dokumentenablage}
+\include{chapters/12_Importieren/12_Importieren}
+\include{chapters/13_Konfigurationen/13_Konfigurationen}
+\include{chapters/14_Benutzerverwaltung/14_Benutzerverwaltung}
+\include{chapters/15_HilfeSupport/15_HilfeSupport}
+\include{chapters/16_ReleaseNotes/16_ReleaseNotes}
+
+
+\end{document}
