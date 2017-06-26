@@ -2,22 +2,32 @@
 \clearpage
 \section{Das Beschaffungswesen benutzen}
 
-\textbf{\textcolor{red}{Hinweis}}\textcolor{red}{: Der Inhalt dieses Kapitels ist nicht mehr gültig (Umstellung auf neue Prozesse mit BLT läuft).}
-
-\vspace{\baselineskip}
-
-Der Teil 'Beschaffungswesen' des CUBE PA unterstützt einen für das Projekt 'Zukunft Waldenburgerbahn' massgeschneiderten Workflow. Dieser unterscheidet zwei Fälle:
+Das Beschaffungswesen unterstützt den Benutzer in den Belangen von kleinen oder grossen Ausschreibungen. Das Beschaffungswesen beinhaltet beispielsweise
 
 \begin{itemize}
-\item
-Beschaffungen mit nur einem Anbieter (freihändige Vergabe)
-\item
-Beschaffungen mit mehreren Anbietern (Einladungsverfahren oder offenes Verfahren), derzeit noch nicht verwendbar.
+\item die Offertenerstellung,
+\item die Offertenprüfung,
+\item Vergabanträge,
+\item Genehmigung der Vergaben und
+\item die Verträge.
 \end{itemize}
 
-Zweistufige Verfahren mit Präqualifikation sowie Verhandlungsverfahren sind derzeit nicht abgedeckt.
+\vspace{\baselineskip}
+
+Zudem ist es möglich, verschiedene Workflows abzubilden:
+
+\begin{itemize}
+\item Beschaffungen mit freihändiger Vergabe (mit einem Anbieter oder mehreren Anbietern).
+\item Beschaffungen mit Einladungsverfahren oder offenem Verfahren.
+\end{itemize}
 
 \vspace{\baselineskip}
+
+Da die Workflows einer Beschaffung von Firma zu Firma oder selbst in verschiedenen Projekten ganz unterschiedlich sind, wird dieses Modul (Beschaffungswesen) jeweils auf die Prozesse eines Kunden massgeschneidert erstellt und dokumentiert. Im Folgenden werden beispielhaft Beschaffungsprozesse anhand eines möglichen Ablaufs dokumentiert und ausgeführt.
+
+\vspace{\baselineskip}
+
+\textbf{Einleitung:}
 
 Um die Orientierung zu erleichtern, sind die Beschaffungen (Ausschreibungen / Offertanfragen), die Offerten und die Verträge nummeriert. Beim Erfassen dieser Elemente werden Sie jeweils aufgefordert, den Zusammenhang herzustellen (welche Offerte gehört zu welcher Beschaffung, welcher Vertrag gehört zu welcher Offerte). Die Nummerierung setzt sich dann entsprechend zusammen:
 
@@ -25,27 +35,19 @@ Um die Orientierung zu erleichtern, sind die Beschaffungen (Ausschreibungen / Of
 
 Beschaffung Nr. 28 mit der zugehörigen Offerte Nr. 45 ergibt in der Liste der Offerten die Nummer 28.45. Wird dazu der Vertrag Nr. 31 ausgestellt, ergibt dies in der Liste der Verträge die Nummer 28.45.31. Die Nummern setzt der CUBE PA automatisch.
 
-\subsection{Workflow für Beschaffungen mit einem Anbieter}
+\subsection{Workflow für Beschaffungen mit freihändiger Vergabe}
 
+Dieser Workflow kann für die Vergabe mit einem oder mehreren Anbietern verwendet werden. \\
 Der Workflow besteht aus den folgenden Schritten:
 
 \begin{enumerate}
-\item
-Unterlagen für die Offertanfrage erstellen
-\item
-Beschaffung initialisieren
-\item
-Unterlagen für die Offertanfrage hochladen
-\item
-Offertanfrage versenden
-\item
-Offerte entgegennehmen und hochladen
-\item
-Offertprüfungsprotokoll erstellen und an TBA BL versenden
-\item
-Allenfalls: Genehmigen der Vergabe durch eine höhere Instanz \textcolor{red}{(wird zukünftig nicht mehr verwendet)}
-\item
-Vertrag erfassen.
+\item Unterlagen für die Offertanfrage erstellen
+\item Beschaffung initialisieren
+\item Unterlagen für die Offertanfrage hochladen
+\item Offertanfrage versenden
+\item Offerte entgegennehmen und hochladen
+\item Offertprüfungsprotokoll erstellen und an Entscheidungsinstanz versenden
+\item Vertrag erfassen.
 \end{enumerate}
 
 Für die Fortschrittskontrolle beim Bearbeiten der Beschaffungen werden Stati verwendet. Die Stati in der folgenden Tabelle beschreiben den normalen Projektfortschritt.
@@ -58,29 +60,22 @@ Für die Fortschrittskontrolle beim Bearbeiten der Beschaffungen werden Stati ve
 \hline
 Erstellung Ausschreibung & Dieser Status ist automatisch gesetzt, wenn eine Beschaffung initialisiert wird. \\
 \hline
-Freigabe ZBS & SSie setzen den Status, sobald die ZBS die Ausschreibung geprüft hat. Wird nur bei hohen Auftragswerten
-verwendet, siehe Projekthandbuch. \\
+Freigabe Stelle X & Sie setzen den Status, sobald die Stelle X die Ausschreibung geprüft hat. \\
 \hline
 Versand Ausschreibung an Eingeladene & Sie setzen den Status, sobald Sie die Ausschreibung an die Anbieter versandt haben (für freihändiges
 Verfahren und Einladungsverfahren). \\
 \hline
 Offertprüfung & Sie setzten den Status, sobald Sie eine Offerte erfasst haben. \\
 \hline
-Offerte an TBA & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an das TBA versandt
-haben. \\
+Offerte an Stelle X & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an die Stelle X versandt haben. \\
 \hline
-ntscheid höher instanzliche Stelle & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an das TBA versandt
-haben und im Offertprüfungsprotokoll festgehalten ist, dass ein Entscheid der BUD oder des Regierungsrats erforderlich
-ist. \\
+Entscheid höher instanzliche Stelle & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an die Stelle X versandt haben und im Offertprüfungsprotokoll festgehalten ist, dass beispielsweise ein Entscheid durch ein politisches Organ erforderlich ist. \\
 \hline
-Vergabe erfolgt & Das TBA setzt den Status sobald der zuständige Projektleiter oder eine höhere Instanz der Vergabe zustimmen
-\textit{(bis jetzt nicht verwendet).} \\
+Vergabe erfolgt & Die Stelle X setzt den Status sobald der zuständige Projektleiter oder eine höhere Instanz der Vergabe zustimmen \\
 \hline
-Vertrag ausgestellt & Das TBA setzt den Status sobald es den Vertrag ohne Unterschrift an den Anbieter versandt hat \textit{(bis
-jetzt nicht verwendet).} \\
+Vertrag ausgestellt & Die STelle X setzt den Status sobald es den Vertrag ohne Unterschrift an den Anbieter versandt hat \\
 \hline
-Unterschrift TBA/Versand & Das TBA setzt den Status sobald es den vom Anbieter unterschriebenen Vertrag unterschrieben hat und an den
-Auftragnehmer und den Gesamtleiter versandt hat \textit{(bis jetzt nicht verwendet).} \\
+Unterschrift Stelle X/Versand & Die Stelle X setzt den Status sobald es den vom Anbieter unterschriebenen Vertrag unterschrieben hat und an den Auftragnehmer und den Gesamtleiter versandt hat \\
 \hline
 Beschaffung abgeschlossen & Sie setzen den Status, sobald Sie den Vertrag erfasst haben. \\
 \hline
@@ -96,12 +91,9 @@ Die Stati in der folgenden Tabelle beschreiben einen Abbruch oder einen Halt im 
 \hline
 \textbf{Status} & \textbf{Wer setzt den Status unter welchen Bedingungen} \\
 \hline
-Offerte(n) abgelehnt / archiviert & Sie setzen den Status, nachdem Sie von der Projektleitung oder vom TBA erfahren haben, dass diese Offerte
-überhaupt nicht mehr weiter verfolgt wird. Das TBA kann den Status auch selbst setzen. \\
+Offerte(n) abgelehnt / archiviert & Sie setzen den Status, nachdem Sie von der Projektleitung erfahren haben, dass diese Offerte überhaupt nicht mehr weiter verfolgt wird. Die Projektleitung kann den Status auch selbst setzen. \\
 \hline
-Offerte zur Überarbeitung zurückgewiesen & Sie setzen den Status, nachdem Sie von der Projektleitung oder vom TBA erfahren haben, dass diese Offerte zur
-Überarbeitung zurückgewiesen wurde. Das TBA kann den Status auch selbst setzen \textit{(bis jetzt nicht
-verwendet).} \\
+Offerte zur Überarbeitung zurückgewiesen & Sie setzen den Status, nachdem Sie von der Projektleitung erfahren haben, dass diese Offerte zur Überarbeitung zurückgewiesen wurde. Die Projektleitung kann den Status auch selbst setzen \\
 \hline
 \end{tabular}
 
@@ -142,7 +134,7 @@ Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Plussymbol.
 
 \vspace{\baselineskip}
 
-Mussfelder sind mit einem Stern * markiert.
+Pflichtfelder sind mit einem Stern * markiert.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{712_BeschaffungErfassen.jpg}}
@@ -346,7 +338,7 @@ Gehen Sie in die Liste der Beschaffungen über das Menüband, Punkt 'Beschaffung
 \vspace{\baselineskip}
 
 \pagebreak
-\subsubsection{Schritt 6: Offertprüfungsprotokoll erstellen und an TBA BL versenden}
+\subsubsection{Schritt 6: Offertprüfungsprotokoll erstellen und an erforderliche Stelle versenden}
 
 \begin{wrapfigure}[7]{r}{6cm}
   \vspace{-30pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
@@ -412,7 +404,7 @@ Falls es mehrere Beilagen braucht, klicken Sie wieder auf das Pluszeichen \inclu
 \end{wrapfigure}
 Klicken Sie auf 'Übernehmen' \col{(9)}, um die Daten zu sichern. Nun können Sie oben links auf das
 Blatt mit der gefalteten Ecke \includegraphics[height=12pt]{/Icons/BLattsymbol.jpg} klicken, um ein Offertprüfungsprotokoll als PDF-Datei zu generieren. Drucken Sie es aus und lassen Sie es unterschreiben. Das unterschriebene Dokument wird anschliessend eingescannt und bei diesem Offertprüfungsprotokoll als
-Beilage wieder angehängt. Das Offertprüfungsprotokoll (Original) wird dann zusammen mit dem Papieroriginal der Offerte an das TBA BL gesendet.
+Beilage wieder angehängt. Das Offertprüfungsprotokoll (Original) wird dann zusammen mit dem Papieroriginal der Offerte an die erforderliche Stelle gesendet.
 
 \vspace{\baselineskip}
 
@@ -422,15 +414,15 @@ Beilage wieder angehängt. Das Offertprüfungsprotokoll (Original) wird dann zus
 % \caption{Status ändern}
 \end{wrapfigure}
 Gehen Sie in die Liste der Beschaffungen 'Menüband', Punkt 'Beschaffungswesen', Unterpunkt 'Beschaffungen'. Suchen Sie die zur Offerte gehörende
-Beschaffung und setzen Sie den Status auf 'Offerte an TBA', in dem Sie rechts von der Zeile auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} klicken und im Feld 'Status' diesen Status anwählen. Anschliessend klicken Sie auf die Schaltfläche 'Übernehmen'.
+Beschaffung und setzen Sie den Status auf 'Offerte Stelle X', in dem Sie rechts von der Zeile auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} klicken und im Feld 'Status' diesen Status anwählen. Anschliessend klicken Sie auf die Schaltfläche 'Übernehmen'.
 
 \vspace{\baselineskip}
 
-Nun kommen Sie erst wieder zum Zug, wenn das TBA den Vertrag ausgestellt hat und dieser von beiden Parteien unterschrieben wurde. Der Gesamtleiter erhält eine Kopie des Vertrags und erfasst diesen im CUBE PA, damit der Vertragsinhalt zugänglich ist.
+Nun kommen Sie erst wieder zum Zug, wenn die entsprechende Stelle den Vertrag ausgestellt hat und dieser von beiden Parteien unterschrieben wurde. Der Gesamtleiter erhält eine Kopie des Vertrags und erfasst diesen im CUBE PA, damit der Vertragsinhalt zugänglich ist.
 
 \subsubsection{Schritt 7: Genehmigung der Vergabe durch eine höhere Instanz}
 
-Falls Sie im Offertprüfungsprotokoll angekreuzt haben, dass die Vergabe durch eine höhere Instanz (Bau- und Umweltschutzdirektion oder Regierungsrat) genehmigt werden soll, setzen Sie den Status der Beschaffung auf 'Entscheid höher instanzliche Stelle'.
+Falls Sie im Offertprüfungsprotokoll angekreuzt haben, dass die Vergabe durch eine höhere Instanz (zum Beispiel Bau- und Umweltschutzdirektion oder Regierungsrat) genehmigt werden soll, setzen Sie den Status der Beschaffung auf 'Entscheid höher instanzliche Stelle'.
 
 \subsubsection{Schritt 8: Vertrag erfassen}
 
@@ -519,7 +511,7 @@ Gehen Sie in die Liste der Beschaffungen 'Menüband', Punkt 'Beschaffungswesen',
 
 \textbf{Weiteren Vertrag zu einer bestimmten Offerte erfassen.}
 
-Wenn Sie zu einer Offerte, zu der schon einmal ein Vertrag erfasst worden ist, einen weiteren Vertrag erfassen müssen, z.B. weil eine weitere Teilleistung erbracht werden soll, suchen Sie zuerst in der Liste der Beschaffungen nach der passenden Beschaffung und falls der Status auf 'Beschaffung abgeschlossen' steht, ändern den Sie Status von 'Beschaffung abgeschlossen' auf 'Unterschrift TBA / Versand'. Damit stellen Sie sicher, dass Ihnen beim Erfassen des Vertrags die Offerte auch wirklich angezeigt wird. Wenn Sie den neuen Vertrag erfasst haben, setzen Sie den Status wieder auf 'Beschaffung abgeschlossen'.
+Wenn Sie zu einer Offerte, zu der schon einmal ein Vertrag erfasst worden ist, einen weiteren Vertrag erfassen müssen, z.B. weil eine weitere Teilleistung erbracht werden soll, suchen Sie zuerst in der Liste der Beschaffungen nach der passenden Beschaffung und falls der Status auf 'Beschaffung abgeschlossen' steht, ändern den Sie Status von 'Beschaffung abgeschlossen' auf 'Unterschrift Stelle X / Versand'. Damit stellen Sie sicher, dass Ihnen beim Erfassen des Vertrags die Offerte auch wirklich angezeigt wird. Wenn Sie den neuen Vertrag erfasst haben, setzen Sie den Status wieder auf 'Beschaffung abgeschlossen'.
 
 \subsubsection{Eine Offerte behandeln, für die keine Offertanfrage vorhanden ist}
 
@@ -535,7 +527,7 @@ Initialisieren Sie eine Beschaffung so, wie unter Schritt 2 beschrieben, wobei S
 Erfassen sie die Offerte so, wie unter Schritt 5 beschrieben. Dieser und die folgenden Schritte funktionieren genau gleich wie bei einer Offerte, die aufgrund einer Offertanfrage eingegangen ist.
 \end{itemize}
 
-\subsection{Workflow für Beschaffungen mit mehreren Anbietern}
+\subsection{Workflow für Beschaffungen mit Einladungsverfahren oder offenem Verfahren}
 
-Folgt später
+Ein Beispiels-Workflow für Beschaffungen mit Einladungsverfahren oder offenem Verfahren folgt später.
 
