@@ -55,8 +55,20 @@ Die Sitzungsübersicht gibt einen guten Überblick über die laufenden oder verg
 Mit dem Filter haben Sie die Möglichkeit nach Sitzungen zu suchen. Geben Sie Schlagwörter ein oder wählen Sie bei einem Dropdown-Menü (z.B. Projekt) einen gewünschten Eintrag aus. Nach der Filtereingabe klicken Sie auf das Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe_s.jpg} \col{(4)}. Alle gefundenen Einträge werden angezeigt. Mit dem Kreuzchen \includegraphics[height=12pt]{/Icons/FilterLoeschen.jpg} \col{(5)} können Sie alle Filtereingaben löschen. \\
 Mit Klick auf die Spaltenbezeichnung können Sie die Ansicht sortieren (auf- oder absteigend).
 
-Wenn Sie auf einen Sitzungstitel (blau) klicken, öffnen sich unterhalb weitere Optionen \col{(6)}: Sie können auf diese Weise eine Sitzungseinladung bearbeiten \includegraphics[height=12pt]{/Icons/bearbeiten.jpg} \col{(7)}, das Protokoll bearbeiten \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(8)}, die Sitzungseinladung per PDF öffnen oder speichern \includegraphics[height=12pt]{/Icons/Briefsymbol.jpg} \col{(9)} oder falls der Sitzungseinladung ein Dokument angehängt wurde, können Sie dieses mittels Büroklammer-Symbol \includegraphics[height=12pt]{/Icons/Bueroklammer.jpg} \col{(10)} downloaden. \\
-Die Status-Spalte \col{(11)} zeigt an, ob ein Protokoll archiviert wurde und somit 'Definitiv' ist. Trägt eine Sitzung diesen Status sind obige Optionen nicht mehr möglich. Mittels dem Blattsymbol \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg} kann das definitive Protokoll als PDF geöffnet oder gespeichert werden.
+Wenn Sie auf einen Sitzungstitel (blau) klicken, öffnen sich unterhalb weitere Optionen \col{(6)}: Sie können auf diese Weise
+
+\begin{compactitem}
+	\item eine Sitzungseinladung bearbeiten \includegraphics[height=12pt]{/Icons/bearbeiten.jpg} \col{(7)},
+	\item die Termineinladung direkt als .ics-Datei z.B. in den Outlook-Kalender importieren \includegraphics[height=12pt]{/Icons/Kalenderimport.jpg} \col{(8)},
+	\item das Protokoll bearbeiten \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(9)},
+	\item die Sitzungseinladung mit den dazugehörigen Beilagen per Email versenden \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg} \col{(10)},
+	\item die Sitzungseinladung per PDF öffnen oder speichern \includegraphics[height=12pt]{/Icons/Briefsymbol.jpg} \col{(11)} oder
+	\item falls der Sitzungseinladung ein Dokument angehängt wurde, können Sie dieses mittels Büroklammer-Symbol \includegraphics[height=12pt]{/Icons/Bueroklammer.jpg} \col{(12)} downloaden.
+	\end{compactitem}
+
+\vspace{\baselineskip}
+
+Die Status-Spalte \col{(13)} zeigt an, ob ein Protokoll archiviert wurde und somit 'Definitiv' ist. Trägt eine Sitzung diesen Status sind obige Optionen nicht mehr möglich. Mittels dem Blattsymbol \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg} kann das definitive Protokoll als PDF geöffnet oder gespeichert werden.
 
 \subsection{Zu einer neuen Sitzung einladen}
 \label{bkm:Ref434828480}
@@ -236,7 +248,7 @@ Alle Einträge, welche mit den Such-Begriffen übereinstimmen, werden angezeigt.
 
 \vspace{\baselineskip}
 
-\textbf{Legende für die Bearbeitung von Sitzungseinträgen}
+\textbf{Legende für die Bearbeitung von Sitzungseinträgen:}
 
 \vspace{\baselineskip}
 
@@ -246,9 +258,13 @@ Alle Einträge, welche mit den Such-Begriffen übereinstimmen, werden angezeigt.
 \hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Bearbeiten.jpg}} & Bearbeiten der Sitzungseinladung, siehe Kapitel \ref{bkm:Ref434828480} \\
 \hline
-\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Listensymbol.jpg}} & Protokoll bearbeiten \\
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Kalenderimport.jpg}} & Die Kalendereinladung direkt als .ics-Datei z.B. in den Outlook-Kalender importieren \\
 \hline
-\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Briefsymbol.jpg}} & Sitzungseinladung als PDF öffnen (Zum Versand per Email oder Post) \\
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Listensymbol.jpg}} & Das Protokoll bearbeiten \\
+\hline
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}} & Die Sitzungseinladung mit den dazugehörigen Beilagen per Email versenden \\
+\hline
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Briefsymbol.jpg}} & Die Sitzungseinladung als PDF öffnen (Zum Versand per Email oder Post) \\
 \hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Bueroklammer.jpg}} & Bei dieser Sitzungseinladung wurden Beilagen angehängt \\
 \hline
@@ -259,15 +275,15 @@ Alle Einträge, welche mit den Such-Begriffen übereinstimmen, werden angezeigt.
 Suchen Sie in der Liste die betreffende Sitzung und klicken Sie auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} rechts. Es erscheint die Ansicht 'Protokoll bearbeiten' mit der Maske für das Erfassen des Protokolls.
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.4\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_Uebernehmen_top.jpg}}
-% \caption{Das Menü in CUBE PA}
+\vspace{-20pt}  
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_ProtokollBearbeiten.jpg}}
+\caption{Protokoll bearbeiten}
 % \label{fig:speciation}
 \end{figure}
 
 \begin{figure}[H]
-\vspace{-20pt}  
-\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_ProtokollBearbeiten.jpg}}
-\caption{Protokoll bearbeiten}
+\center{\includegraphics[width=0.4\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_Uebernehmen_top.jpg}}
+% \caption{Das Menü in CUBE PA}
 % \label{fig:speciation}
 \end{figure}
 
