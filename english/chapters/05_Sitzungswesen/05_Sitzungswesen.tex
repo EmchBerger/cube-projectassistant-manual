@@ -55,8 +55,20 @@ The meeting overview gives a summary of the ongoing or past meetings. Using the 
 You can search through the meetings with the filter. Enter keywords or choose a desired entry from one of the drop-down menus (e.g. Project). Then click on the magnifying glass (search) symbol \includegraphics[height=12pt]{/Icons/Lupe_s.jpg} \col{(4)}. All found entries are shown. Click on the cross (reset search) \includegraphics[height=12pt]{/Icons/FilterLoeschen.jpg} \col{(5)} to delete all filter settings. \\
 Click on the column heading to sort the list (by ascending or descending order).
 
-When you click on a meeting title (blue), further options are opened under it \col{(6)}: You can edit a meeting invitation \includegraphics[height=12pt]{/Icons/bearbeiten.jpg} \col{(7)}, edit the meeting minutes \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(8)}, open or save the meeting invitation as a PDF file \includegraphics[height=12pt]{/Icons/Briefsymbol.jpg} \col{(9)} or if you have attached a document to the meeting invitation, you can click on the paper-clip symbol \includegraphics[height=12pt]{/Icons/Bueroklammer.jpg} \col{(10)} to download the document. \\
-The status column \col{(11)} shows if meeting minutes have been archived and are thus 'Final'. If a meeting has this status, the above described options are no longer available. Using the sheet symbol \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg}, finalized meeting minutes can be opened or saved as a PDF file.
+When you click on a meeting title (blue), further options are opened under it \col{(6)}: You can
+
+\begin{compactitem}
+\item edit a meeting invitation \includegraphics[height=12pt]{/Icons/bearbeiten.jpg} \col{(7)},
+\item import the meeting invitation as a .ics-Datei to your Outlook calendar \includegraphics[height=12pt]{/Icons/Kalenderimport.jpg} \col{(8)},
+\item edit the meeting minutes \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(9)},
+\item send the meeting invitation with its attachments per e-mail \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg} \col{(10)},
+\item open or save the meeting invitation as a PDF file \includegraphics[height=12pt]{/Icons/Briefsymbol.jpg} \col{(11)} or 
+\item if you have attached a document to the meeting invitation, you can click on the paper-clip symbol \includegraphics[height=12pt]{/Icons/Bueroklammer.jpg} \col{(10)} to download the document.
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+The status column \col{(13)} shows if meeting minutes have been archived and are thus 'Final'. If a meeting has this status, the above described options are no longer available. Using the sheet symbol \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg}, finalized meeting minutes can be opened or saved as a PDF file.
 
 \subsection{Invitation to a meeting}
 \label{bkm:Ref434828480}
@@ -82,7 +94,7 @@ The form for entering a new meeting appears:
 \end{figure}
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{51_Neue_Sitzung_Teilnehmende.jpg}}
++\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_Neue_Sitzung_Teilnehmende.jpg}}
 \caption{Selecting meeting participants}
 % \label{fig:speciation}
 \end{figure}
@@ -93,17 +105,17 @@ Fill in the form; mandatory fields are marked with an asterisk (*). The followin
 \item 
 When you select a meeting type, CUBE PA automatically sets the corresponding number \col{(1)}.
 \item 
-When you click in the fields 'Start' and 'End', a calendar appears, in which the date and time can be selected \col{(2)}.
+When you click in the fields 'Start' and 'End', a calendar appears, in which the date and time can be selected \col{(2)}. \textit{When you set the start time for a meeting, the end time is automatically set to 30 minutes after the start.}
 \item 
 In the field 'Meeting Participants' you can can select a ready-made participant list \col{(3)} that contains all usual participants. Then click immediately on 'apply' \col{(4)} and the list of all participants appears below \col{(5)}.
 \item 
 If an additional participant not on the list is to take part in the meeting, or if the participants are to be put together on an ad hoc basis, click on the plus (add) sign \col{(6)} underneath the 'Meeting Participants' field and select the appropriate information in the 'Person' and 'Company' fields. 
 \item
-Check the check-box \col{(7)} under 'Distribution' if the participant should appear in the distribution list.
+For each meeting participant, you can choose whether the participant is invited to the meeting or is only on the distribution list. Check the check-box \col{(7)} under 'Invited', and later in the meeting minutes, you can specify if the participant attended the meeting or not. Check the check-box under 'Distribution' if the participant should only appear in the distribution list \col{(8)}.
 \item 
-If the order of the participants needs to be changed, drag the symbol with two opposing vertical arrows \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} next to the participant and drop it in the correct position.
+If the order of the participants needs to be changed, drag the symbol with two opposing vertical arrows \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(9)} next to the participant and drop it in the correct position.
 \item 
-By clicking on the garbage bin (remove) symbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} you can remove a participant. Confirm the warning message 'Remove?' with 'OK'.
+By clicking on the garbage bin (remove) symbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(10)} you can remove a participant. Confirm the warning message 'Remove?' with 'OK'.
 \item 
 If the meeting has a guest, e.g. for a special agenda item, you can add the guest in the section 'Guests' by clicking on the plus (add) sign and choosing the appropriate information in the 'Person' and 'Company' fields. The symbols in this section have the same functions as in the 'Meeting Participants' section.
 \item 
@@ -127,19 +139,26 @@ In the 'Agenda Items' field you can choose a ready-made agenda items list \col{(
 In the 'Preparation' field, you can enter preparations with free text \col{(8)}. Preparations are to be understood as activities to be carried out in preparation for a meeting, e.g. preparing a presentation.
 \end{itemize}
 
+\textbf{Uploading or linking attachments:}
+You can upload documents as attachments to meeting minutes. In addition, it is possible to directly link link a document already in uploaded in CUBE PA to the meeting minutes.  
+
+\vspace{\baselineskip}
+
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{51_Vorbereitung.jpg}}
-\caption{Uploading attachments}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_BeilagenHochladenVerknuepfen.jpg}}
+\caption{Uploading or linking attachments}
 % \label{fig:speciation}
 \end{figure}
 
+\vspace{\baselineskip}
+
 \begin{itemize}
 \item 
-If you want to attach documents to the meeting invitation, click on the plus (add) sign under 'Attachments' \col{(9)}. You can then enter the title, version and description of the attachment. Click on 'Browse' under 'Upload new file' \col{(10)}. Choose the desired attachment and click 'Open'. The attachment will appear in the personal overview of every participant who uses CUBE PA. Use the symbol with opposing vertical arrows to change the order of the attached files. Click on the garbage bin symbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} to remove an attachment. After the upload, the file and the file name become visible:
+If you want to attach documents to the meeting invitation, click on the plus (add) sign under 'Attachments' \col{(14)}. You can then enter the title, version and description of the attachment. Click on 'Browse' under 'Upload new file' \col{(10)}. Choose the desired attachment and click 'Open'. The attachment will appear in the personal overview of every participant who uses CUBE PA. The download symbol \includegraphics[height=12pt]{/Icons/download.jpg} \col{(11)} allows you to download and save an attachment. Use the symbol with opposing vertical arrows \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} to change the order of the attached files. Click on the garbage bin symbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(12)} to remove an attachment. After the upload, the file and the file name become visible:
 \end{itemize}
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.5\linewidth]{51_NeueDateiHochladen.jpg}}
+\center{\includegraphics[width=0.5\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_NeueDateiHochladen.jpg}}
 \caption{The uploaded file is visible}
 % \label{fig:speciation}
 \end{figure}
@@ -149,8 +168,13 @@ If you want to attach documents to the meeting invitation, click on the plus (ad
 \vspace{\baselineskip}
 
 \begin{itemize}
-\item 
-Additional Attachments \col{(11)}: In this section, additional attachments which haven't been uploaded to CUBE PA and are therefore not available (e.g. plans in paper format) can be mentioned.
+\item
+In addition to uploading an attachment, you can link a document already uploaded in CUBE PA to the meeting invitation or minutes. To do so, click on the link symbol \includegraphics[height=12pt]{/Icons/Link.jpg} \col{(15)}. Select the desired attachment under 'File' \col{(13)}. You can optionally enter a title, a version and a description. Use the symbol with opposing vertical arrows \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} to change the order of the attached files.
+\end{itemize}
+
+\begin{itemize}
+\item
+Additional Attachments \col{(16)}: In this section, additional attachments which haven't been uploaded to CUBE PA and are therefore not available (e.g. plans in paper format) can be mentioned.
 \item 
 In the 'Follow up Meeting' field you can simply select the next meeting and it will appear in the invitation with its place and time. This presupposes however that the next meeting is already recorded in an invitation.
 \end{itemize}
@@ -246,7 +270,11 @@ All entries which match the search terms are displayed. In the meeting goal fiel
 \hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Bearbeiten.jpg}} & Editing the meeting invitation, see chapter \ref{bkm:Ref434828480} \\
 \hline
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Kalenderimport.jpg}} & Importing the meeting invitation directly as an .ics-file in an Outlook calendar \\
+\hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Listensymbol.jpg}} & Editing the meeting minutes\\
+\hline
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}} & Sending the meeting invitation with its corresponding attachments \\
 \hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Briefsymbol.jpg}} & Opening the meeting invitation as a PDF file (for sending by e-mail or post) \\
 \hline
@@ -259,15 +287,15 @@ All entries which match the search terms are displayed. In the meeting goal fiel
 Locate the meeting in question in the list and click on the list symbol \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} on the right. The input form for entering the meeting minutes appears.
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.4\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_Uebernehmen_top.jpg}}
-% \caption{Das Menü in CUBE PA}
+\vspace{-20pt}  
++\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_ProtokollBearbeiten.jpg}}
++\caption{Editing minutes}
 % \label{fig:speciation}
 \end{figure}
 
 \begin{figure}[H]
-\vspace{-20pt}  
-\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_ProtokollBearbeiten.jpg}}
-\caption{Editing meeting minutes}
+\center{\includegraphics[width=0.4\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_Uebernehmen_top.jpg}}
+% \caption{Das Menü in CUBE PA}
 % \label{fig:speciation}
 \end{figure}
 
