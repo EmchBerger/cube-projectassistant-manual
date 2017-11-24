@@ -1,107 +1,107 @@
 
 \clearpage
-\section{Das Beschaffungswesen benutzen}
+\section{Procurement Function}
 
-Das Beschaffungswesen unterstützt den Benutzer in den Belangen von kleinen oder grossen Ausschreibungen. Das Beschaffungswesen beinhaltet beispielsweise
+The procurement function supports the user when it comes to managing small or big tendering procedures. The procurements module is comprised of
 
 \begin{itemize}
-\item die Offertenerstellung,
-\item die Offertenprüfung,
-\item Vergabanträge,
-\item Genehmigung der Vergaben und
-\item die Verträge.
+\item the procurement creation,
+\item the tender inspection,
+\item the award procedure,
+\item the award approval and
+\item the contracts.
 \end{itemize}
 
 \vspace{\baselineskip}
 
-Zudem ist es möglich, verschiedene Workflows abzubilden:
+In addition, it is possible to illustrate different work-flows:
 
 \begin{itemize}
-\item Beschaffungen mit freihändiger Vergabe (mit einem Anbieter oder mehreren Anbietern).
-\item Beschaffungen mit Einladungsverfahren oder offenem Verfahren.
+\item Procurements with direct award (with one or more bidders).
+\item Procurements with invitation process or open procedure.
 \end{itemize}
 
 \vspace{\baselineskip}
 
-Da die Workflows einer Beschaffung von Firma zu Firma oder selbst in verschiedenen Projekten ganz unterschiedlich sind, wird dieses Modul (Beschaffungswesen) jeweils auf die Prozesse eines Kunden massgeschneidert erstellt und dokumentiert. Im Folgenden werden beispielhaft Beschaffungsprozesse anhand eines möglichen Ablaufs dokumentiert und ausgeführt.
+Since the work-flows of a procurement vary from company to company or even from project to project, this module (Procurement function) is custom made and documented for the procedures of a client. In this chapter, possible procurement processes are carried out and documented by way of example.
 
 \vspace{\baselineskip}
 
-\textbf{Einleitung:}
+\textbf{Introduction :}
 
-Um die Orientierung zu erleichtern, sind die Beschaffungen (Ausschreibungen / Offertanfragen), die Offerten und die Verträge nummeriert. Beim Erfassen dieser Elemente werden Sie jeweils aufgefordert, den Zusammenhang herzustellen (welche Offerte gehört zu welcher Beschaffung, welcher Vertrag gehört zu welcher Offerte). Die Nummerierung setzt sich dann entsprechend zusammen:
+In order to facilitate the navigation, procurements (invitations / calls for tender), tenders, and contracts are numbered. When creating these elements, you will be required to establish the connection (which tender concerns which procurement, which contract concerns which tender). The numbering is accordingly composed:
 
 \vspace{\baselineskip}
 
-Beschaffung Nr. 28 mit der zugehörigen Offerte Nr. 45 ergibt in der Liste der Offerten die Nummer 28.45. Wird dazu der Vertrag Nr. 31 ausgestellt, ergibt dies in der Liste der Verträge die Nummer 28.45.31. Die Nummern setzt der CUBE PA automatisch.
+Procurement n. 28 with corresponding tender n. 45 will appear in the list of tenders with the number 28.45. If contract n. 31 is added in connection to these documents, it will appear in the list of contracts with the number 28.45.31. The numbers are automatically set by CUBE PA.
 
-\subsection{Workflow für Beschaffungen mit freihändiger Vergabe}
+\subsection{Work-flow for procurement with direct award}
 
-Dieser Workflow kann für die Vergabe mit einem oder mehreren Anbietern verwendet werden. \\
-Der Workflow besteht aus den folgenden Schritten:
+This work-flow can be used for procedures with one or more bidders. \\
+The work-flow is comprised of the following steps:
 
 \begin{enumerate}
-\item Unterlagen für die Offertanfrage erstellen
-\item Beschaffung initialisieren
-\item Unterlagen für die Offertanfrage hochladen
-\item Offertanfrage versenden
-\item Offerte entgegennehmen und hochladen
-\item Offertprüfungsprotokoll erstellen und an Entscheidungsinstanz versenden
-\item Vertrag erfassen.
+\item Creating documents for the call for tender
+\item Initializing the procurement
+\item Uploading documents for the call for tender
+\item Sending the call for tender
+\item Receiving and uploading tenders
+\item Establishing tender inspection logs and sending them to the decision-making body
+\item Establishing a contract.
 \end{enumerate}
 
-Für die Fortschrittskontrolle beim Bearbeiten der Beschaffungen werden Stati verwendet. Die Stati in der folgenden Tabelle beschreiben den normalen Projektfortschritt.
+Statuses are used for progress monitoring when working with procurements. The statuses in the following table describe a typical project progress.
 
 \vspace{\baselineskip}
 
 \begin{tabular}{|p{5cm}|p{9.5cm}|}    % p{9.5cm} l} %{cl}  % {|m{5.316cm}|m{9.586cm}|}
 \hline
-\textbf{Status} & \textbf{Wer setzt den Status unter welchen Bedingungen} \\
+\textbf{Status} & \textbf{Who sets the status under which conditions} \\
 \hline
-Erstellung Ausschreibung & Dieser Status ist automatisch gesetzt, wenn eine Beschaffung initialisiert wird. \\
+Call for tender creation & This status is set automatically when a procurement is initialized. \\
 \hline
-Freigabe Stelle X & Sie setzen den Status, sobald die Stelle X die Ausschreibung geprüft hat. \\
+Approved by X & You set this status once X has reviewed the call for tender. \\
 \hline
-Versand Ausschreibung an Eingeladene & Sie setzen den Status, sobald Sie die Ausschreibung an die Anbieter versandt haben (für freihändiges
-Verfahren und Einladungsverfahren). \\
+Call for tender sent to invitees & You set this status when you have sent the call for tender to the tenderers (for direct award
+and invitation procedures). \\
 \hline
-Offertprüfung & Sie setzten den Status, sobald Sie eine Offerte erfasst haben. \\
+Tender inspection & You set this status once you've entered a tender. \\
 \hline
-Offerte an Stelle X & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an die Stelle X versandt haben. \\
+Tender with X & You set this status once you've sent this tender along with its tender inspection log to X. \\
 \hline
-Entscheid höher instanzliche Stelle & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an die Stelle X versandt haben und im Offertprüfungsprotokoll festgehalten ist, dass beispielsweise ein Entscheid durch ein politisches Organ erforderlich ist. \\
+Decision position of higher order & You set this status once you've sent this tender along with its tender inspection log to X, and that it's stated in the tender inspection log, that for example a decision from a political authority is required. \\
 \hline
-Vergabe erfolgt & Die Stelle X setzt den Status sobald der zuständige Projektleiter oder eine höhere Instanz der Vergabe zustimmen \\
+Award made & X sets this status once the responsible project manager or a higher authority have approved the award. \\
 \hline
-Vertrag ausgestellt & Die STelle X setzt den Status sobald es den Vertrag ohne Unterschrift an den Anbieter versandt hat \\
+Contract issued & X sets this status once they have sent the unsigned contract to the tenderer. \\
 \hline
-Unterschrift Stelle X/Versand & Die Stelle X setzt den Status sobald es den vom Anbieter unterschriebenen Vertrag unterschrieben hat und an den Auftragnehmer und den Gesamtleiter versandt hat \\
+Signature X / Dispatch & X sets this status once they have sent the contract, signed by the tenderer, to the awarded tenderer and the general manager. \\
 \hline
-Beschaffung abgeschlossen & Sie setzen den Status, sobald Sie den Vertrag erfasst haben. \\
+Procurement completed & You set this status once you've uploaded the contract. \\
 \hline
 \end{tabular}
 
 \vspace{\baselineskip}
 
-Die Stati in der folgenden Tabelle beschreiben einen Abbruch oder einen Halt im Projektfortschritt:
+The statuses in the following table describe a discontinuation or a halt in project progress :
 
 \vspace{\baselineskip}
 
 \begin{tabular}{|p{5cm}|p{9.5cm}|}    % p{9.5cm} l} %{cl}  % {|m{5.316cm}|m{9.586cm}|}
 \hline
-\textbf{Status} & \textbf{Wer setzt den Status unter welchen Bedingungen} \\
+\textbf{Status} & \textbf{Who sets the status under which conditions} \\
 \hline
-Offerte(n) abgelehnt / archiviert & Sie setzen den Status, nachdem Sie von der Projektleitung erfahren haben, dass diese Offerte überhaupt nicht mehr weiter verfolgt wird. Die Projektleitung kann den Status auch selbst setzen. \\
+Tender(s) refused / archived & You set this status when project management decides that this tender will no longer be followed. Project management can also set this status. \\
 \hline
-Offerte zur Überarbeitung zurückgewiesen & Sie setzen den Status, nachdem Sie von der Projektleitung erfahren haben, dass diese Offerte zur Überarbeitung zurückgewiesen wurde. Die Projektleitung kann den Status auch selbst setzen \\
+Tender sent back for revision & You set this status when project management decided that this tender should be sent back for revision. Project management can also set this status. \\
 \hline
 \end{tabular}
 
-\subsubsection{Schritt 1: Unterlagen für die Offertanfrage erstellen}
+\subsubsection{Step 1: Establishing documents for the call for tender}
 
-Die Unterlagen für die Offertanfrage erstellen Sie vorab mit Excel und Word, oder anderen geeigneten Programmen.
+You can create the documents for the call for tender using Excel and Word, or other suitable programs.
 
-\subsubsection{Schritt 2: Beschaffung initialisieren}
+\subsubsection{Step 2: Initializing the procurement}
 
 \begin{wrapfigure}[3]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
@@ -109,110 +109,110 @@ Die Unterlagen für die Offertanfrage erstellen Sie vorab mit Excel und Word, od
     \includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-2_Menu_Beschaffungswesen.jpg}
   \end{center}
   \vspace{-20pt}
-  \caption{Das Beschaffungswesen verwenden}
+  \caption{Using the procurement function}
   \vspace{-10pt}
 \end{wrapfigure}
 
-Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Beschaffungen'. 
+In the menu on the left, select the menu item 'Procurement Function' and the sub-item 'Procurements'. 
 
 \vspace{5cm}
 
-Es erscheint die Liste der Beschaffungen.
+The list of procurements is shown.
 
 \vspace{2cm}
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-2_Beschaffung_Uebersicht.jpg}}
-\caption{Beschaffungen Übersicht}
+\caption{Procurements overview}
 % \label{fig:speciation}
 \end{figure}
 
 % Problem
 
 % \pagebreak
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} oben links. Es erscheint die Maske für das Erfassen neuer Beschaffungen:
+Click on the plus symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} at the top left. The form for creating a new procurement appears:
 
 \vspace{\baselineskip}
 
-Pflichtfelder sind mit einem Stern * markiert.
+Mandatory fields are marked with an asterisk *.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{712_BeschaffungErfassen.jpg}}
-\caption{Neue Beschaffung erfassen}
+\caption{Creating a new procurement}
 % \label{fig:speciation}
 \end{figure}
 
-Als erstes prüfen Sie, ob die Auswahlliste des Feldes 'Eingeladene' \col{(3)} die Firma enthält, an die Sie die Offertanfrage richten wollen. Falls dies nicht der Fall ist, wechseln Sie im Menü links zum Punkt 'Konfiguration' (siehe Kapitel \ref{bkm:Ref434830029}) und erfassen die Firma dort (Für diesen Schritt sind administrative Rechte notwendig. Wenden Sie sich an Ihre CUBE PA-Ansprechperson). Ist die Firma in der Auswahl vorhanden, wählen Sie sie aus. Dann können Sie die restlichen Felder ausfüllen:
+First check if the drop-down menu of the 'Invitees' field \col{(3)} contains the company to which you want to send a call for tender. If this is not the case, switch to the 'Configuration' module in the menu on the left (see Chapter \ref{bkm:Ref434830029}) and enter the company there (Administrative rights are required for this step. Contact your CUBE PA spokesperson). If the company is in the list, select it. You can then fill out the rest of the fields:
 
 \vspace{\baselineskip}
 
 \begin{compactitem}
 \item
-Titel: Freier Text, kurz und bündig.
+Subject: Free text, short and concise.
 \item
-Status: Ist automatisch auf 'Erstellung Ausschreibung' gesetzt und soll so bleiben.
+Status: Is automatically set to 'Call for tender creation' and should remain so.
 \item
-Projekt/Teilprojekt: wählen Sie ein oder mehrere zugehörige Projekt(e)/Teilprojekt(e).
+Project / Subproject: Select one or more corresponding project(s) / Subproject(s).
 \item
-Externe Referenz: Dieses Feld wird nur für das nachträgliche Erfassen von Beschaffungen benötigt, die in der alten Beschaffungsliste vermerkt waren > nicht benutzen.
+External Reference: This field is only needed for retroactive logging of procurements that were in another list > not to be used.
 \item
-Auftragsart: Wählen Sie zwischen Bauauftrag und Dienstleistungsauftrag.
+Type of order: Choose between construction contract and services contract.
 \item
-Ausschreibungsverfahren: Wählen Sie 'Freihändiges Verfahren'.
+Tendering Procedure: Select 'Direct award'.
 \item
-Datum der Offertanfrage: Wählen Sie im Kalender das Datum, an dem Sie die Offertanfrage versenden.
+Date of Publication: Choose the date of the tender invitation from the calendar.
 \item
-Frist zur Offerteinreichung: Wählen Sie im Kalender das Datum, an dem Sie die Offerte spätestens erhalten wollen.
+Deadline of Submission: Choose the deadline for receiving the tender form the calendar.
 \item
-Kostenvoranschlag: Falls ein Kostenvoranschlag vorliegt, können Sie die Summe erfassen. Als Zeichen sind nur Zahlen und ein Punkt zugelassen. Dann haben Sie später einen direkten Vergleich zum Betrag in der Offerte.
+Cost estimate: If there's a cost estimate, you can enter it here. You can only use numbers and one point. You will later have a direct comparison between the estimate and the tender offer.
 \item
-Nachtrag zur Beschaffung: Falls die jetzt bearbeitete Beschaffung einen Nachtrag zu einer anderen Beschaffung darstellen soll (das kann ein Grund sein, warum nur ein Anbieter angeschrieben wird), können Sie hier diese andere Beschaffung aus der Liste auswählen.
+Supplementary Budget for Procurement: In case this procurement is a supplementary one for another procurement (this can be a reason why only one tenderer is written down), you can select the other procurement from the list.
 \item
-Inhalt/Leistung: kurzer Beschrieb in freiem Text der erwarteten Leistungen des Auftragnehmers, nicht mehr als 2 bis 3 Zeilen.
+Content: Short description in free text of the expected services from the awarded tender, not more than 2 to 3 lines.
 \item
-Bemerkungen: Hier können Sie in freiem Text besondere Umstände rund um die Beschaffung festhalten, auch in späteren Schritten.
+Remarks: You can enter specific conditions for this procurement here, in later steps as well.
 \item
-Text für die Einladungsmail / den Einladungsbrief: Erfassen Sie hier den gesamten Text der Einladungsmail oder des Einladungsbriefs, mit Ausnahme von Ort, Datum, Adresse. Mit diesem Inhalt können Sie später eine vollständige Einladungsmail oder einen Einladungsbrief generieren.
+Text for invitation mail / letter: Type the whole text of the tender invitation e-mail / letter here, with the exception of the place, time, and address. With this content, you can later generate a complete e-mail or letter invitation.
 \item
-Falls Sie den Einladungsbrief auf Papier versenden wollen, füllen Sie auch die Felder 'Ort, Datum des Briefs' (freier Text), 'Absender' (Listenauswahl der Firma, die den Brief verschickt), 'Unterzeichnender 1' (Listenauswahl) und 'Unterzeichnender 2' (Listenauswahl). Der 'Unterzeichnende 1' ist der hierarchisch höher gestellte, falls es zwei Unterzeichner braucht.
+If you want to send the tender invitation as a hard copy, fill out the fields 'Date, Place of Issue' (free text), 'Sender' (Drop-down selection list for the company sending the letter), 'Signature 1' (Selection list) and 'Signature 2' (Selection list). 'Signature 1' is higher in the hierarchy in case two signatures are needed.
 \end{compactitem}
 
 \vspace{\baselineskip}
 
-Nun klicken Sie auf die Schaltfläche 'Erstellen' \col{(4)}, darunter erscheint nun die Möglichkeit, Beilagen zu
-erfassen:
+Now click on the 'Create' \col{(4)}, and you can now add
+attachments:
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-2_Beschaffung_Beilagen_hochladen.jpg}}
-\caption{Beilagen bei Beschaffungen hochladen}
+\caption{Uploading attachments to procurements}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie dazu auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(5)}. Sie können nun die Felder bearbeiten \col{(6)} und mittels 'Durchsuchen' \col{(7)} eine Datei hochladen. Mit den Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} können Sie bei mehreren Beilagen die Reihenfolge ändern (Pfeile mit der linken Maustaste packen und Zeile verschieben) oder mittels dem Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} eine Beilage wieder löschen.
-Sollen die hochgeladenen Dateien für die Offertanfrage heruntergeladen werden können (beim Versand), setzen Sie das Häkchen bei 'Ausschreibungsdokument' \col{(10)}. Weitere Dokumente können Sie mit dem \includegraphics[height=12pt]{/Icons/pluszeichen.jpg}-Symbol \col{(5)} hinzufügen. Schliessen Sie diesen Vorgang mit 'Übernehmen' ab.
+To add an attachment, click on the plus sign \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(5)}. You can now fill out the fields \col{(6)} and click 'Browse' \col{(7)} to upload a file. The arrows \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} allow you to change the order of an entry when you have multiple attachments (Drag and drop the arrows to place the attachment at the desired position). The garbage bin symbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} allows you to delete an attachment.
+If you need to download the uploaded documents with the call for tender (to send the tender invitation for example), check the 'Tender Document' check-box \col{(10)}. You can add more documents using the plus symbol \includegraphics[height=12pt]{/Icons/pluszeichen.jpg} \col{(5)}. Close the process by clicking on 'Update'.
 
 \vspace{\baselineskip}
 
-Sie haben nun die Möglichkeit, direkt mit dem Schritt 3 weiterzufahren oder dies zu einem späteren Zeitpunkt zu tun.
+You can now proceed immediately with step 3 or continue at a later time.
 
 \vspace{\baselineskip}
 
-\textbf{Zwischenschritt: Eine Beschaffung nachträglich bearbeiten oder mit der Beschaffung nach einem
-Unterbruch weiterfahren}
+\textbf{Intermediate step: Retroactively modifying a procurement or continuing with a procurement after an
+an interruption}
 
 \vspace{\baselineskip}
 
-Es ist keineswegs erforderlich, die Schritte 2 bis 4 unmittelbar hintereinander durchzuführen. Ebenso ist es möglich, nach Abschluss eines Schritts die erfassten Daten nachträglich zu ändern. Der Einstieg finden Sie immer über die Liste der Beschaffungen. Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Beschaffungen'. Nun erscheint die Beschaffungsliste.
+It is not necessary to proceed from step 2 to step 4 directly immediately one after the other. It is also possible to retroactively modify data after finishing a step. You can always access these steps from the procurements list. In the menu on the left, choose the 'Procurement Function' item and the 'Procurements' sub-item. The procurements list appears.
 
 \vspace{\baselineskip}
 
-Sie können nun optisch innerhalb der gesamten Liste suchen oder die Liste filtern. Zum Blättern in der Liste scrollen Sie einfach nach unten, zuunterst sehen Sie Schaltflächen zum Blättern auf die nächste Seite, oder zum Weiter- oder Zurückblättern.
+You can visually search for a procurement within the list or filter the list to find it. To browse through the pages of the list, scroll down then use the pagination buttons to go to the next or previous page or a specific page number.
 
 \begin{center}
 \includegraphics[height=12pt]{/Icons/SeitenBlaettern.jpg}
 \end{center}
 
-Zum Filtern der Liste stehen ihnen die Suchfelder in der ersten Zeile zur Verfügung. Im Feld 'ID / ext. Ref.' Können Sie eine Zahl eingeben. Die ID ist die vom CUBE PA vergebene Laufnummer. Im Feld 'Titel' können Sie freien Text eingeben. Das Feld 'Projekt/Teilprojekt' verfügt über eine Auswahlliste. Das Feld 'Frist zur Offerteinreichung' verfügt über eine Kalenderauswahl. Haben Sie die Filterwerte ausgewählt, klicken Sie auf das Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(1)} rechts, und die gefilterte Liste erscheint.
+To filter the list, use the search fields in the top row of the table. In the 'ID / Ext. Ref.' field, you can enter a number. The ID is the number given by CUBE PA. The 'Title' field is a free text field. The 'Project / Subproject' field is a drop-down selection list. The 'Deadline of Submission' field has a calendar selection. Once you've filled the filter fields, click on the magnifying glass symbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(1)} on the right, and the filtered list appears.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{712_BeschaffungFiltern.jpg}}
