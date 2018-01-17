@@ -1,107 +1,108 @@
 
 \clearpage
-\section{Das Beschaffungswesen benutzen}
+\section{La fonction d'acquisition}
 
-Das Beschaffungswesen unterstützt den Benutzer in den Belangen von kleinen oder grossen Ausschreibungen. Das Beschaffungswesen beinhaltet beispielsweise
+La fonction d'acquisition soutient l'utilisateur lors de la gestion de procédures d'acquisition petites et grandes. Le module d'acquisition comprend :
 
 \begin{itemize}
-\item die Offertenerstellung,
-\item die Offertenprüfung,
-\item Vergabanträge,
-\item Genehmigung der Vergaben und
-\item die Verträge.
+\item la création de l'acquisition,
+\item l'examen de l'offre,
+\item la procédure d'adjudication,
+\item l'approbation de l'adjudication et
+\item les contrats.
 \end{itemize}
 
 \vspace{\baselineskip}
 
-Zudem ist es möglich, verschiedene Workflows abzubilden:
+De plus, il est possible de travailler en suivant différents modèles :
 
 \begin{itemize}
-\item Beschaffungen mit freihändiger Vergabe (mit einem Anbieter oder mehreren Anbietern).
-\item Beschaffungen mit Einladungsverfahren oder offenem Verfahren.
+\item Acquisitions de gré à gré (avec un ou plusieurs soumissionnaires).
+\item Acquisitions sur invitation ou procédures ouvertes.
 \end{itemize}
 
 \vspace{\baselineskip}
 
-Da die Workflows einer Beschaffung von Firma zu Firma oder selbst in verschiedenen Projekten ganz unterschiedlich sind, wird dieses Modul (Beschaffungswesen) jeweils auf die Prozesse eines Kunden massgeschneidert erstellt und dokumentiert. Im Folgenden werden beispielhaft Beschaffungsprozesse anhand eines möglichen Ablaufs dokumentiert und ausgeführt.
+Vu que les déroulements d'acquisitions diffèrent d'une entreprise à l'autre ou d'un projet à l'autre au sein d'une même entreprise, ce module (Procédure d'acquisition) est fait sur mesure et documenté selon les processus de chaque client. Dans ce chapitre, des déroulements possibles de procédures d'acquisitions sont suivis et documentés à titre d'exemple.
 
 \vspace{\baselineskip}
 
-\textbf{Einleitung:}
+\textbf{Introduction :}
 
-Um die Orientierung zu erleichtern, sind die Beschaffungen (Ausschreibungen / Offertanfragen), die Offerten und die Verträge nummeriert. Beim Erfassen dieser Elemente werden Sie jeweils aufgefordert, den Zusammenhang herzustellen (welche Offerte gehört zu welcher Beschaffung, welcher Vertrag gehört zu welcher Offerte). Die Nummerierung setzt sich dann entsprechend zusammen:
+Afin de faciliter l'organisation, les acquisitions (invitations / appels d'offres), offres, et contrats sont numérotés. Lors de la création de ces éléments, vous serez menés à établir leurs liens (quelle offre concerne quelle acquisition, quel contrat concerne quelle offre). La numérotation est ensuite composée en fonction :
 
 \vspace{\baselineskip}
 
-Beschaffung Nr. 28 mit der zugehörigen Offerte Nr. 45 ergibt in der Liste der Offerten die Nummer 28.45. Wird dazu der Vertrag Nr. 31 ausgestellt, ergibt dies in der Liste der Verträge die Nummer 28.45.31. Die Nummern setzt der CUBE PA automatisch.
+L'acquisition n. 28 avec l'offre correspondante n. 45 donne dans la liste des offres le numéro 28.45. Si le contrat n. 31 vient s'y ajouter, ceci donne le numéro 28.45.31 dans la liste des contrats. Les numéros sont fixés automatiquement par CUBE PA.
 
-\subsection{Workflow für Beschaffungen mit freihändiger Vergabe}
+\subsection{Flux de travail pour acquisitions de gré à gré}
 
-Dieser Workflow kann für die Vergabe mit einem oder mehreren Anbietern verwendet werden. \\
-Der Workflow besteht aus den folgenden Schritten:
+Ce flux de travail peut être employé pour des procédures avec un ou plusieurs soumissionnaires. \\
+Le flux de travail comporte les étapes suivantes :
 
 \begin{enumerate}
-\item Unterlagen für die Offertanfrage erstellen
-\item Beschaffung initialisieren
-\item Unterlagen für die Offertanfrage hochladen
-\item Offertanfrage versenden
-\item Offerte entgegennehmen und hochladen
-\item Offertprüfungsprotokoll erstellen und an Entscheidungsinstanz versenden
-\item Vertrag erfassen.
+\item Préparation des documents pour l'appel d'offres
+\item Initialisation de l'acquisition
+\item Chargement des documents pour l'appel d'offres
+\item Envoi de l'appel d'offres
+\item Réception et chargement des offres
+\item Établissement des PVs d'examen des offres et transmission à l'instance de décision
+\item Approbation de la procédure par une position d'ordre supérieur
+\item Établissement d'un contrat.
 \end{enumerate}
 
-Für die Fortschrittskontrolle beim Bearbeiten der Beschaffungen werden Stati verwendet. Die Stati in der folgenden Tabelle beschreiben den normalen Projektfortschritt.
+Des états sont utilisés pour le suivi du progrès lors des procédures d'acquisition. Les états dans le tableau suivant décrivent un processus de projet typique.
 
 \vspace{\baselineskip}
 
 \begin{tabular}{|p{5cm}|p{9.5cm}|}    % p{9.5cm} l} %{cl}  % {|m{5.316cm}|m{9.586cm}|}
 \hline
-\textbf{Status} & \textbf{Wer setzt den Status unter welchen Bedingungen} \\
+\textbf{État} & \textbf{Qui fixe l'état et sous quelles conditions} \\
 \hline
-Erstellung Ausschreibung & Dieser Status ist automatisch gesetzt, wenn eine Beschaffung initialisiert wird. \\
+Établissement de l'appel d'offres & Cet état est fixé automatiquement lorsqu'une acquisition est initialisée. \\
 \hline
-Freigabe Stelle X & Sie setzen den Status, sobald die Stelle X die Ausschreibung geprüft hat. \\
+Approbation par X & Vous fixez cet état dès que X aurait vérifié l'appel d'offres. \\
 \hline
-Versand Ausschreibung an Eingeladene & Sie setzen den Status, sobald Sie die Ausschreibung an die Anbieter versandt haben (für freihändiges
-Verfahren und Einladungsverfahren). \\
+Appel d'offres envoyé aux invités & Vous fixez cet état dès que vous aurez envoyé l'appel d'offres aux soumissionnaires (pour procédures de gré à gré 
+et procédures sur invitation). \\
 \hline
-Offertprüfung & Sie setzten den Status, sobald Sie eine Offerte erfasst haben. \\
+Examen des offres & Vous fixez cet état dès que vous aurez ajouté une offre. \\
 \hline
-Offerte an Stelle X & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an die Stelle X versandt haben. \\
+Offre chez X & Vous fixez cet état une fois que vous aurez envoyé une offre avec son PV d'examen à X. \\
 \hline
-Entscheid höher instanzliche Stelle & Sie setzen den Status sobald Sie eine Offerte zusammen mit dem Offertprüfungsprotokoll an die Stelle X versandt haben und im Offertprüfungsprotokoll festgehalten ist, dass beispielsweise ein Entscheid durch ein politisches Organ erforderlich ist. \\
+Décision position d'ordre supérieur & Vous fixez cet état une fois que vous aurez envoyé une offre avec son PV d'examen à X et qu'il est indiqué dans le PV d'examen qu'une décision doit être prise par une autorité politique. \\
 \hline
-Vergabe erfolgt & Die Stelle X setzt den Status sobald der zuständige Projektleiter oder eine höhere Instanz der Vergabe zustimmen \\
+Offre adjugée & X fixe cet état lorsque le chef de projet responsable ou l'autorité d'ordre supérieur aura approuvé l'adjudication \\
 \hline
-Vertrag ausgestellt & Die STelle X setzt den Status sobald es den Vertrag ohne Unterschrift an den Anbieter versandt hat \\
+Contrat établi & X fixe cet état lorsque le contrat non signé aura été envoyé à l'adjudicataire \\
 \hline
-Unterschrift Stelle X/Versand & Die Stelle X setzt den Status sobald es den vom Anbieter unterschriebenen Vertrag unterschrieben hat und an den Auftragnehmer und den Gesamtleiter versandt hat \\
+Signature X / Envoi & X fixe cet état lorsque le contrat signé par l'adjudicataire est envoyé au maître de l'ouvrage et au directeur général \\
 \hline
-Beschaffung abgeschlossen & Sie setzen den Status, sobald Sie den Vertrag erfasst haben. \\
+Acquisition terminée & Vous fixez cet état une fois que vous aurez ajouté le contrat. \\
 \hline
 \end{tabular}
 
 \vspace{\baselineskip}
 
-Die Stati in der folgenden Tabelle beschreiben einen Abbruch oder einen Halt im Projektfortschritt:
+Les états dans le tableau suivant décrivent une interruption ou un arrêt dans le progrès du projet :
 
 \vspace{\baselineskip}
 
 \begin{tabular}{|p{5cm}|p{9.5cm}|}    % p{9.5cm} l} %{cl}  % {|m{5.316cm}|m{9.586cm}|}
 \hline
-\textbf{Status} & \textbf{Wer setzt den Status unter welchen Bedingungen} \\
+\textbf{État} & \textbf{Qui fixe l'état et sous quelles conditions} \\
 \hline
-Offerte(n) abgelehnt / archiviert & Sie setzen den Status, nachdem Sie von der Projektleitung erfahren haben, dass diese Offerte überhaupt nicht mehr weiter verfolgt wird. Die Projektleitung kann den Status auch selbst setzen. \\
+Offre(s) refusée(s) / refusée(s) & Vous fixez cet état quand la direction du projet décide que cette offre ne sera plus suivie. La direction du projet peut aussi fixer cet état. \\
 \hline
-Offerte zur Überarbeitung zurückgewiesen & Sie setzen den Status, nachdem Sie von der Projektleitung erfahren haben, dass diese Offerte zur Überarbeitung zurückgewiesen wurde. Die Projektleitung kann den Status auch selbst setzen \\
+Offre renvoyée pour révision & Vous fixez cet état lorsque la direction du projet décide que cette offre doit être renvoyée pour révision. La direction du projet peut aussi fixer cet état. \\
 \hline
 \end{tabular}
 
-\subsubsection{Schritt 1: Unterlagen für die Offertanfrage erstellen}
+\subsubsection{Étape 1: Préparation des documents pour l'appel d'offres}
 
-Die Unterlagen für die Offertanfrage erstellen Sie vorab mit Excel und Word, oder anderen geeigneten Programmen.
+Vous pouvez préparer les documents d'appel d'offres en utilisant Excel et Word, ou tout autre programme convenable.
 
-\subsubsection{Schritt 2: Beschaffung initialisieren}
+\subsubsection{Étape 2: Initialisation de l'acquisition}
 
 \begin{wrapfigure}[3]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
@@ -109,161 +110,161 @@ Die Unterlagen für die Offertanfrage erstellen Sie vorab mit Excel und Word, od
     \includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-2_Menu_Beschaffungswesen.jpg}
   \end{center}
   \vspace{-20pt}
-  \caption{Das Beschaffungswesen verwenden}
+  \caption{Utiliser la fonction d'acquisition}
   \vspace{-10pt}
 \end{wrapfigure}
 
-Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Beschaffungen'. 
+Dans le menu à gauche, sélectionnez l'élément 'Fonction d'acquisition' et le sous-élément 'Acquisitions'. 
 
 \vspace{5cm}
 
-Es erscheint die Liste der Beschaffungen.
+La liste des acquisitions s'affiche.
 
 \vspace{2cm}
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-2_Beschaffung_Uebersicht.jpg}}
-\caption{Beschaffungen Übersicht}
+\caption{Aperçu des acquisitions}
 % \label{fig:speciation}
 \end{figure}
 
 % Problem
 
 % \pagebreak
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} oben links. Es erscheint die Maske für das Erfassen neuer Beschaffungen:
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} en haut à gauche. Le masque de saisie d'une nouvelle acquisition s'affiche :
 
 \vspace{\baselineskip}
 
-Pflichtfelder sind mit einem Stern * markiert.
+Les champs obligatoires sont marqués par un astérisque *.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{712_BeschaffungErfassen.jpg}}
-\caption{Neue Beschaffung erfassen}
+\caption{Saisir une nouvelle acquisition}
 % \label{fig:speciation}
 \end{figure}
 
-Als erstes prüfen Sie, ob die Auswahlliste des Feldes 'Eingeladene' \col{(3)} die Firma enthält, an die Sie die Offertanfrage richten wollen. Falls dies nicht der Fall ist, wechseln Sie im Menü links zum Punkt 'Konfiguration' (siehe Kapitel \ref{bkm:Ref434830029}) und erfassen die Firma dort (Für diesen Schritt sind administrative Rechte notwendig. Wenden Sie sich an Ihre CUBE PA-Ansprechperson). Ist die Firma in der Auswahl vorhanden, wählen Sie sie aus. Dann können Sie die restlichen Felder ausfüllen:
+Tout d'abord, vérifiez que le menu déroulant du champ 'Soumissionnaires invités' \col{(3)} comprend l'entreprise à laquelle vous souhaitez envoyer l'appel d'offres. Si ce n'est pas le cas, passez au module 'Configuration' dans le menu à gauche (voir chapitre \ref{bkm:Ref434830029}) et ajoutez-y l'entreprise (Des droits d'administrateur sont nécessaires pour cette étape. Contactez votre personne de contact CUBE PA). Si l'entreprise se trouve sur la liste, choisissez-la. Vous pouvez ensuite remplir le reste des champs :
 
 \vspace{\baselineskip}
 
 \begin{compactitem}
 \item
-Titel: Freier Text, kurz und bündig.
+Titre : Texte libre, court et concis.
 \item
-Status: Ist automatisch auf 'Erstellung Ausschreibung' gesetzt und soll so bleiben.
+Etat : Automatiquement fixé à 'Établissement de l'appel d'offres' et doit rester ainsi.
 \item
-Projekt/Teilprojekt: wählen Sie ein oder mehrere zugehörige Projekt(e)/Teilprojekt(e).
+Projet / Sous-projet : Sélectionnez un ou plusieurs projet(s) ou sous-projet(s) correspondants.
 \item
-Externe Referenz: Dieses Feld wird nur für das nachträgliche Erfassen von Beschaffungen benötigt, die in der alten Beschaffungsliste vermerkt waren > nicht benutzen.
+Référence externe : Ce champ est uniquement nécessaire pour la saisie rétroactive d'acquisitions qui se trouvaient sur une autre liste > à ne pas utiliser.
 \item
-Auftragsart: Wählen Sie zwischen Bauauftrag und Dienstleistungsauftrag.
+Type de commande : Choisissez entre contrat de construction ou de services.
 \item
-Ausschreibungsverfahren: Wählen Sie 'Freihändiges Verfahren'.
+Procédure d'appel d'offres : Sélectionnez 'de gré à gré'.
 \item
-Datum der Offertanfrage: Wählen Sie im Kalender das Datum, an dem Sie die Offertanfrage versenden.
+Date de publication : Sélectionnez la date d'envoi de l'appel d'offres dans le calendrier.
 \item
-Frist zur Offerteinreichung: Wählen Sie im Kalender das Datum, an dem Sie die Offerte spätestens erhalten wollen.
+Délai de soumission : Sélectionnez le délai de soumission dans le calendrier.
 \item
-Kostenvoranschlag: Falls ein Kostenvoranschlag vorliegt, können Sie die Summe erfassen. Als Zeichen sind nur Zahlen und ein Punkt zugelassen. Dann haben Sie später einen direkten Vergleich zum Betrag in der Offerte.
+Devis : Si le devis est connu, vous pouvez saisir la somme. Vous pouvez uniquement utiliser des chiffres et un seul point. Vous aurez ensuite une comparaison directe entre le devis et l'offre.
 \item
-Nachtrag zur Beschaffung: Falls die jetzt bearbeitete Beschaffung einen Nachtrag zu einer anderen Beschaffung darstellen soll (das kann ein Grund sein, warum nur ein Anbieter angeschrieben wird), können Sie hier diese andere Beschaffung aus der Liste auswählen.
+Supplément pour acquisition : Si l'acquisition que vous êtes en train d'établir consiste en un supplément pour une autre acquisition (ceci peut être la raison pour laquelle seul un soumissionnaire est invité), vous pouvez choisir l'acquisition de base de la liste.
 \item
-Inhalt/Leistung: kurzer Beschrieb in freiem Text der erwarteten Leistungen des Auftragnehmers, nicht mehr als 2 bis 3 Zeilen.
+Contenu / Prestation : Courte description en texte libre des prestations attendues de l'adjudicataire, pas plus que 2 à 3 lignes.
 \item
-Bemerkungen: Hier können Sie in freiem Text besondere Umstände rund um die Beschaffung festhalten, auch in späteren Schritten.
+Remarques : Ici vous pouvez saisir en texte libre des conditions particulières pour cette acquisition (peut se faire aux prochaines étapes aussi).
 \item
-Text für die Einladungsmail / den Einladungsbrief: Erfassen Sie hier den gesamten Text der Einladungsmail oder des Einladungsbriefs, mit Ausnahme von Ort, Datum, Adresse. Mit diesem Inhalt können Sie später eine vollständige Einladungsmail oder einen Einladungsbrief generieren.
+Texte pour e-mail / lettre d'invitation : Saisissez ici le texte de l'e-mail ou de la lettre d'invitation entier, à l'exception du lieu, de la date et de l'adresse. Vous pourrez ensuite générer un e-mail ou une lettre d'invitation complets à partir de ce contenu.
 \item
-Falls Sie den Einladungsbrief auf Papier versenden wollen, füllen Sie auch die Felder 'Ort, Datum des Briefs' (freier Text), 'Absender' (Listenauswahl der Firma, die den Brief verschickt), 'Unterzeichnender 1' (Listenauswahl) und 'Unterzeichnender 2' (Listenauswahl). Der 'Unterzeichnende 1' ist der hierarchisch höher gestellte, falls es zwei Unterzeichner braucht.
+Si vous souhaitez envoyer la lettre d'invitation sous forme papier, remplissez aussi les champs 'Date, lieu de délivrance' (texte libre), 'Expéditeur' (sélection de liste de l'entreprise qui expédie la lettre), 'Signature 1' (sélection de liste) et 'Signature 2' (sélection de liste). La 'signature 1' est hiérarchiquement plus importante, dans les cas où deux signatures sont requises.
 \end{compactitem}
 
 \vspace{\baselineskip}
 
-Nun klicken Sie auf die Schaltfläche 'Erstellen' \col{(4)}, darunter erscheint nun die Möglichkeit, Beilagen zu
-erfassen:
+Cliquez ensuite sur 'Créer' \col{(4)}, et vous aurez la possibilité d'ajouter des
+pièces jointes :
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-2_Beschaffung_Beilagen_hochladen.jpg}}
-\caption{Beilagen bei Beschaffungen hochladen}
+\caption{Ajouter des pièces jointes à une acquisition}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie dazu auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(5)}. Sie können nun die Felder bearbeiten \col{(6)} und mittels 'Durchsuchen' \col{(7)} eine Datei hochladen. Mit den Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} können Sie bei mehreren Beilagen die Reihenfolge ändern (Pfeile mit der linken Maustaste packen und Zeile verschieben) oder mittels dem Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} eine Beilage wieder löschen.
-Sollen die hochgeladenen Dateien für die Offertanfrage heruntergeladen werden können (beim Versand), setzen Sie das Häkchen bei 'Ausschreibungsdokument' \col{(10)}. Weitere Dokumente können Sie mit dem \includegraphics[height=12pt]{/Icons/pluszeichen.jpg}-Symbol \col{(5)} hinzufügen. Schliessen Sie diesen Vorgang mit 'Übernehmen' ab.
+Pour ajouter une pièce jointe, cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(5)}. Vous pouvez remplir les champs \col{(6)} et charger un fichier en cliquant 'Parcourir' \col{(7)}. Si vous avez chargé plusieurs pièces jointes, les flèches \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} vous permettent de modifier leur ordre (par glisser-déposer). Le symbole de poubelle \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} vous permet de supprimer une pièce jointe.
+Si les documents chargés doivent pouvoir être téléchargés (lors de l'envoi de l'appel d'offre), cochez la case 'Document d'appel d'offre' \col{(10)}. Vous pouvez ajouter des documents additionnels par le moyen du symbole plus \includegraphics[height=12pt]{/Icons/pluszeichen.jpg} \col{(5)}. Terminez la procédure en cliquant 'Actualiser'.
 
 \vspace{\baselineskip}
 
-Sie haben nun die Möglichkeit, direkt mit dem Schritt 3 weiterzufahren oder dies zu einem späteren Zeitpunkt zu tun.
+Vous pouvez ensuite soit passer directement à l'étape 3 soit y retourner plus tard.
 
 \vspace{\baselineskip}
 
-\textbf{Zwischenschritt: Eine Beschaffung nachträglich bearbeiten oder mit der Beschaffung nach einem
-Unterbruch weiterfahren}
+\textbf{Etape intermédiaire : Modifier une acquisition rétroactivement ou continuer avec une acquisition
+après une interruption}
 
 \vspace{\baselineskip}
 
-Es ist keineswegs erforderlich, die Schritte 2 bis 4 unmittelbar hintereinander durchzuführen. Ebenso ist es möglich, nach Abschluss eines Schritts die erfassten Daten nachträglich zu ändern. Der Einstieg finden Sie immer über die Liste der Beschaffungen. Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Beschaffungen'. Nun erscheint die Beschaffungsliste.
+Il n'est pas nécessaire de passer dans l'ordre des étapes 2 à 4. Il est également possible de modifier les données rétroactivement après avoir complété une étape. Vous pouvez toujours accéder à ces étapes depuis la liste des acquisitions. Choisissez l'élément de menu 'Fonction d'acquisition' puis le sous-élément 'Acquisitions'. La liste d'acquisitions s'affiche.
 
 \vspace{\baselineskip}
 
-Sie können nun optisch innerhalb der gesamten Liste suchen oder die Liste filtern. Zum Blättern in der Liste scrollen Sie einfach nach unten, zuunterst sehen Sie Schaltflächen zum Blättern auf die nächste Seite, oder zum Weiter- oder Zurückblättern.
+Vous pouvez visuellement parcourir la liste ou la filter pour chercher l'acquisition souhaitée. Pour feuilleter la liste, utilisez les boutons au bas de la liste pour passer à la page précédente ou suivante ou à un numéro de page spécifique.
 
 \begin{center}
 \includegraphics[height=12pt]{/Icons/SeitenBlaettern.jpg}
 \end{center}
 
-Zum Filtern der Liste stehen ihnen die Suchfelder in der ersten Zeile zur Verfügung. Im Feld 'ID / ext. Ref.' Können Sie eine Zahl eingeben. Die ID ist die vom CUBE PA vergebene Laufnummer. Im Feld 'Titel' können Sie freien Text eingeben. Das Feld 'Projekt/Teilprojekt' verfügt über eine Auswahlliste. Das Feld 'Frist zur Offerteinreichung' verfügt über eine Kalenderauswahl. Haben Sie die Filterwerte ausgewählt, klicken Sie auf das Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(1)} rechts, und die gefilterte Liste erscheint.
+Pour filtrer la liste, utilisez les champs de recherche sous l'en-tête des colonnes. Dans le champ 'ID / Ref. ext.', vous pouvais saisir un chiffre. L'identifiant est celui attribué par CUBE PA. Dans le champ 'Objet', vous pouvez saisir du texte libre. Le champ 'Projet/Sous-projet' contient une liste de sélection. Le champ 'Délai de soumission' dispose d'un calendrier. Une fois les chmaps de recherche remplis, cliquez sur le symbole de loupe \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(1)} à droite, et la liste filtrée s'affiche.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{712_BeschaffungFiltern.jpg}}
-\caption{Mit dem Filter nach Geschäften suchen}
+\caption{Utiliser le filtre pour chercher une acquisition}
 % \label{fig:speciation}
 \end{figure}
 
-Wollen Sie einen Eintrag nur ansehen, ohne ihn zu verändern, klicken Sie auf das blaue Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe.jpg} \col{(2)}. Der Beschaffungseintrag wird geöffnet. Wenn Sie auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} \col{(3)} rechts der gesuchten Zeile klicken, öffnet sich die Maske für das Bearbeiten der Beschaffung.\textcolor{red}{ }Nun können Sie entweder vorhandene Angaben korrigieren oder zu den nächsten Schritten übergehen.
+Si vous souhaitez uniquement visualiser l'acquisition, sans la modifier, cliquez sur le symbole de loupe bleu \includegraphics[height=12pt]{/Icons/Lupe.jpg} \col{(2)}. La saisie de l'acquisition est ouverte. Si vous cliquez sur le symbole de crayon \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} \col{(3)}, le masque de saisie de cette acquisition est ouvert.\textcolor{red}{ }Vous pouvez maintenant soit corriger des données existantes, soit passez aux étapes suivantes.
 
-\subsubsection{Schritt 3: Unterlagen für die Offertanfrage hochladen}
+\subsubsection{Étape 3: Chargement des documents pour l'appel d'offres}
 
-Nun erfassen Sie die vorab erstellten Unterlagen für die Offertanfrage als Beilagen im CUBE PA.
+Dans cette étape, vous pouvez ajouter des documents préparés au préalable en tant que pièces jointes à l'appel d'offres dans CUBE PA.
 
 \vspace{\baselineskip}
 
-Um eine Beilage zu erfassen, klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}. Es erscheinen die Felder für eine Beilage:
+Pour ajouter une pièce jointe, cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}. Les champs suivants s'affichent :
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-3_OffertanfrageHochladen.jpg}}
-\caption{Eine Beilage für die Offertenanfrage hochladen}
+\caption{Ajouter une pièce jointe pour l'appel d'offres}
 % \label{fig:speciation}
 \end{figure}
 
 \begin{itemize}
-\item Sollen die Dokumente beim Versand heruntergeladen werden können, setzen Sie ein Häkchen bei 'Ausschreibungsdokument' \col{(2)}
-\item Titel, Version und Beschreibung sind freier Text \col{(3)}. In vielen Fällen wird es genügen, den Titel zu erfassen.
-\item Laden Sie die Beilage hoch, indem Sie auf die Schaltfläche 'Durchsuchen' \col{(4)} klicken und eine Datei per Doppelklick auswählen. Falls Sie
-eine falsche Datei gewählt haben, laden Sie einfach eine neue hoch.
-\item Sie können mit dem \includegraphics[height=12pt]{/Icons/pluszeichen.jpg}-Symbol \col{(5)} weitere Beilagen hochladen.
-\item Sie können die Reihenfolge der Beilagen ändern, indem Sie mit der linken Maustaste ein Symbol mit den vertikalen Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(6)} packen und die Zeile verschieben.
-\item Durch einen Klick auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(7)} können Sie eine Beilage löschen.
-\item Nach dem Hochladen der Beilagen und dem Bearbeiten der Angaben (Titel etc.) schliessen Sie den Vorgang mit 'Übernehmen' \col{(8)} ab.
+\item Si la pièce jointe est un document d'appel d'offre (à envoyer avec l'appel d'offres), cochez la case 'Document d'appel d'offre' \col{(2)}
+\item Les champs de titre version et description sont des champs de texte libre \col{(3)}. Dans la majorité des cas, il suffit de saisir juste le titre.
+\item Cliquez sur 'Parcourir' \col{(4)} pour choisir un fichier à ajouter. Si vous avez sélectionné le mauvais fichier, 
+ajouter simplement un nouveau.
+\item Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/pluszeichen.jpg}-Symbol \col{(5)} pour ajouter des pièces jointes additionnelles.
+\item Vous pouvez modifier l'ordre des pièces jointes par glisser-déposer en utilisant les flèches \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(6)}.
+\item Cliquez sur le symbole de poubelle \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(7)} pour supprimer une pièce jointe.
+\item Après avoir ajouté les pièces jointes et rempli les données (titre etc.), cliquez sur 'Actualiser' \col{(8)} pour terminer la procédure.
 \end{itemize}
 
-\textbf{Hinweis:} Der Dateiname der hochgeladenen Beialge wird automatisch im Feld 'Titel' hinzugefügt. Sie können diesen selbstverständlich anpassen.
+\textbf{Remarque :} Le nom du fichier chargé est automatiquement repris dans le champ 'Titre'. Vous pouvez modifier ce champs.
 
-\subsubsection{Schritt 4: Offertanfrage versenden}
+\subsubsection{Étape 4: Envoi de l'appel d'offres}
 
-In der Maske zum Bearbeiten der Beschaffung finden Sie nun oben links ein Papierflieger-Symbol \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}. Sobald Sie darauf klicken, erscheint die Versand-Zeile. Links steht der eingeladene Anbieter \col{(1)}, in der Mitte können Sie wiederum auf das Papierflieger-Symbol \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg} \col{(2)} klicken, um eine E-Mail zu generieren, rechts können Sie auf das Briefsymbol \includegraphics[height=12pt]{/Icons/Briefsymbol.jpg} \col{(3)} klicken, um eine PDF-Datei des Briefs zu generieren, die sie nachher ausdrucken können.
+Dans le masque de modification de l'acquisition se trouve en haut à gauche le symbole d'avion en papier \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}. Cliquez dessus et la page d'envoi s'affiche. A gauche, les soumissionnaires invités sont listés \col{(1)}, au milieu, vous pouvez à nouveau cliquer sur le symbole d'avion en papier \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg} \col{(2)} pour générer un e-mail, et à gauche, vous pouvez cliquer sur le symbole de lettre \includegraphics[height=12pt]{/Icons/Briefsymbol.jpg} \col{(3)} pour générer un fichier PDF de la lettre que vous pouvez ensuite imprimer.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{714_BeschaffungVersand.jpg}}
-\caption{Offertenanfrage versenden}
+\caption{Envoyer l'appel d'offre}
 % \label{fig:speciation}
 \end{figure}
 
-Über der Versand-Zeile befindet sich eine Schaltfläche 'Dokumente herunterladen' \col{(4)} zum Herunterladen der Beilagen. Diese benötigen Sie nur, wenn Sie die Beilagen ausdrucken und dem Brief beilegen wollen.
+S'il y a des pièces jointes, cliquez sur 'Télécharger documents' \col{(4)} pour les télécharger. Ceci est uniquement nécessaire si vous avez choisi d'imprimer les documents pour les envoyer avec la lettre d'invitation à l'appel d'offre.
 
 \vspace{\baselineskip}
 
-Wenn sie das Papierfliegersymbol \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg} anklicken, öffnet sich die generierte E-Mail in ihrem E-Mail-Programm. Kontrollieren Sie, ob Adressat, Text und Signatur korrekt sind und nehmen Sie allfällige Korrekturen vor. Die Beilagen werden dem Mail nicht beigelegt, vielmehr erscheint ein Link, mittels dem der Empfänger die Beilagen direkt aus der Datenbank des CUBE PA herunterladen kann. Damit vermeiden Sie Probleme, die sich durch das Versenden von grossen Dateien ergeben können.
+Quand vous cliquez sur le symbole d'avion en papier \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}, le courriel généré est ouvert dans votre programme de courriels. Contrôlez si les destinataires, le texte, et la signature sont en ordre et complétez le courriel si nécessaire. Les pièces jointes ne seront pas inclues dans l'e-mail, mais un lien pour les télécharger directement depuis la base de données CUBE PA est inclus. De cette manière, des problèmes qui peuvent arriver si les pièces jointes sont trop larges sont évités.
 
 \begin{wrapfigure}[7]{r}{6cm}
 \vspace{-15pt}
@@ -271,64 +272,64 @@ Wenn sie das Papierfliegersymbol \includegraphics[height=12pt]{/Icons/Versandsym
 % \caption{Status ändern}
 \end{wrapfigure}
 
-Gehen Sie zur Liste der Beschaffungen zurück (Menü links, Punkt Beschaffungswesen, Unterpunkt 'Beschaffungen', suchen Sie die Beschaffung, öffnen Sie diese zur Bearbeitung durch einem Klick auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg}   und setzen Sie den Status auf 'Versand Ausschreibung an Eingeladene'. Klicken Sie anschliessend auf die Schaltfläche 'Übernehmen'.
+Retournez à la liste des acquisitions (menu à gauche, élément 'Fonction d'acquisition', sous-élément 'Acquisitions'), ouvrez l'acquisition en mode de modification en cliquant sur le symbole de crayon \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} et changez l'état de l'acquisition à 'Appel d'offres envoyé'. Cliquez ensuite sur le bouton 'Actualiser'.
 
 \vspace{\baselineskip}
 
-\subsubsection{Schritt 5: Offerte entgegennehmen und hochladen}
+\subsubsection{Étape 5: Réception et chargement des offres}
 
-Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Offerten'. Es erscheint die Liste der Offerten.
+Dans le menu à gauche, sélectionnez l'élément 'Fonction d'acquisition' puis le sous-élément 'Offres'. La liste des offres s'affiche.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{715_OfferteUebersicht.jpg}}
-\caption{Offerten Übersicht}
+\caption{Aperçu des offres}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} oben links. Es erscheint die Maske für das Erfassen neuer Offerten.
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} en haut à gauche. Les masque de saisie pour une nouvelle offre s'affiche.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{715_OfferteErfassen.jpg}}
-\caption{Neue Offerte erfassen}
+\caption{Saisir une nouvelle offre}
 % \label{fig:speciation}
 \end{figure}
 
 
-Mussfelder sind mit einem Stern * markiert. Füllen Sie die Felder aus:
+Les champs obligatoires sont indiqués par un astérisque *. Saisissez les informations suivants :
 
 \vspace{\baselineskip}
 
 \begin{compactitem}
 \item
-Beschaffung \col{(1)}: Wählen Sie in der Liste die Offertanfrage (Beschaffung) aus, zu der die Offerte gehört. Es erscheinen nur Offertanfragen, die den Status 'Versand Ausschreibung an Eingeladene' haben.
+Acquisition \col{(1)} : Sélectionnez l'appel d'offres (acquisition) auquel l'offre correspond. Seuls les appels d'offres ayant l'état 'Appel d'offres envoyés' apparaissent sur la liste.
 \item
-Anbieter \col{(2)}: Wählen Sie den Anbieter, der zur Offerte gehört. Wenn die Offertanfrage nur an einen Anbieter gesendet wurde, erscheint auch nur dieser Anbieter in der Liste.
+Soumissionnaire \col{(2)} : Sélectionnez le soumissionnaire qui a envoyé l'offre. Si l'appel d'offre a été envoyé à un seul soumissionnaire, seul ce dernier figurera sur la liste.
 \item
-Offertdatum \col{(3)}: Mittels Kalenderauswahl setzen Sie das Datum ein, das auf der Offerte steht.
+Date de l'offre \col{(3)} : Choisissez la date de l'offre au moyen du calendrier.
 \item
-Eingangsdatum \col{(4)}: Mittels Kalenderauswahl setzten Sie das Datum ein, an dem die Offerte eingetroffen ist.
+Date de réception \col{(4)} : Choisissez la date de réception de l'offre au moyen du calendrier.
 \item
-Offertbetrag \col{(5)}: Setzen Sie die Gesamtsumme der Offerte ein. Es sind nur Zahlen und ein Punkt gestattet.
+Montant \col{(5)} : Indiquez le montant total de l'offre. Seuls des chiffres et un point peuvent être saisis.
 \item
-Bemerkungen \col{(6)}: Hier können Sie freien Text eintragen.
+Remarques \col{(6)} : Vous pouvez ici saisir du texte libre.
 \end{compactitem}
 
 \vspace{\baselineskip}
 
-Klicken Sie nun auf die Schaltfläche 'Erstellen' \col{(7)}. Nun erscheint darunter die Möglichkeit, die Offerte
-hochzuladen:
+Cliquez ensuite sur le bouton 'Créer' \col{(7)}. Vous pouvez maintenant charger
+l'offre :
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{715_OfferteHochladen.jpg}}
-\caption{Offerte hochladen}
+\caption{Ajouter une offre}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}, um die Offerte hochzuladen. Erfassen Sie den Titel \col{(2)}, allenfalls auch die Version \col{(3)} und eine Beschreibung \col{(4)} des Dokuments als freien Text in den entsprechenden Feldern. Zum Hochladen klicken Sie auf die Schaltfläche 'Durchsuchen' \col{(5)} und wählen die Datei mit einem Doppelklick aus. Haben Sie eine falsche Datei erwischt, laden Sie einfach eine neue Datei hoch. Klicken Sie auf die Schaltfläche 'Übernehmen' \col{(6)} um die Daten zu sichern.
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} pour ajouter l'offre. Saisissez le titre \col{(2)}, ainsi que la version \col{(3)} et une description \col{(4)} du document en tant que texte libre dans les champs correspondants. Cliquez 'Parcourir' \col{(5)} et sélectionnez le fichier à charger. Si vous avez ajouté le mauvais fichier, ajoutez simplement un nouveau. Cliquez ensuite sur 'Actualiser' \col{(6)} pour enregistrer les données.
 
 \vspace{\baselineskip}
 
-Falls die Offerte aus mehreren Dokumenten besteht, klicken Sie wieder auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(7)} und wiederholen den Vorgang so oft wie nötig. Sie können die Reihenfolge der Dokumente verändern, indem Sie das Symbol mit den vertikalen Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} mit der linken Maustaste packen und die entsprechende Zeile verschieben. Mit einem Klick auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} können Sie ein Dokument löschen.
+Si l'offre comporte plusieurs documents, cliquez à nouveau sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(7)} et répétez le procédé autant que nécessaire. Vous pouvez modifier l'ordre des documents par glisser-déposer en utilisant le symbole des flèches \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)}. Cliquez sur le symbole de poubelle \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} pour supprimer un document.
 
 \vspace{\baselineskip}
 
@@ -337,12 +338,12 @@ Falls die Offerte aus mehreren Dokumenten besteht, klicken Sie wieder auf das Pl
 \includegraphics[height=50mm]{715_Offertpruefung.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
-Gehen Sie in die Liste der Beschaffungen über das Menü links, Punkt 'Beschaffungswesen', Unterpunkt 'Beschaffungen'. Suchen Sie die zur Offerte gehörende Beschaffung und setzen Sie den Status auf 'Offertprüfung', in dem Sie rechts von der Zeile auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} klicken und im Feld 'Status' diesen Status anwählen. Anschliessend klicken Sie auf die Schaltfläche 'Übernehmen'.
+Retournez à la liste des acquisitions (menu à gauche, élément 'Fonction d'acquisition', sous-élément 'Acquisitions'), ouvrez l'acquisition en mode de modification en cliquant sur le symbole de crayon \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} et changez l'état de l'acquisition à 'Examen des offres'. Cliquez ensuite sur le bouton 'Actualiser'.
 
 \vspace{\baselineskip}
 
 \pagebreak
-\subsubsection{Schritt 6: Offertprüfungsprotokoll erstellen und an erforderliche Stelle versenden}
+\subsubsection{Étape 6: Établissement des PVs d'examen des offres et transmission à l'instance de décision}
 
 \begin{wrapfigure}[7]{r}{6cm}
   \vspace{-30pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
@@ -350,54 +351,54 @@ Gehen Sie in die Liste der Beschaffungen über das Menü links, Punkt 'Beschaffu
     \includegraphics[height=80mm]{../chapters/07_Beschaffungswesen/pictures/7-1-6_Menu_Besch_Offertp.jpg}
   \end{center}
   \vspace{-20pt}
-  \caption{Die Offertprüfungsprotokolle aufrufen}
+  \caption{Accès aux PVs d'examen des offres}
   \vspace{-10pt}
 \end{wrapfigure}
 
-Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Offertprüfungsprotokolle' \col{(1)}. Es erscheint die Liste der Offertprüfungsprotokolle.
+Dans le menu à gauche, sélectionnez l'élément 'Fonction d'acquisition' et le sous-élément 'Procès-verbaux d'examen des offres' \col{(1)}. La liste des PVs d'examen des offres s'affiche.
 
 \begin{center}
 \hspace{-15pt}   
 \includegraphics[width=.75\linewidth]{../chapters/07_Beschaffungswesen/pictures/7-1-6_NeuesOffertPruefProtokoll.jpg}
 \end{center}
 
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} oben links. Es erscheint die Maske für das Erfassen neuer Offertprüfungsprotokolle:
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} en haut à gauche. Le masque de saisie d'un nouveau PV d'examen d'offre s'affiche :
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{716_OffertpruefungsprotokollErfassen.jpg}}
-\caption{Neues Offertprüfungsprotokoll erfassen}
+\caption{Saisir un nouveau PV d'examen d'offre}
 % \label{fig:speciation}
 \end{figure}
 
-Mussfelder sind mit einem Stern * markiert. Füllen Sie die Felder aus:
+Les champs obligatoires sont indiqués par un astérisque *. Saisissez les informations suivants :
 
 \vspace{\baselineskip}
 
 \begin{compactitem}
 \item
-Wählen Sie im obersten Feld die zu prüfende Offerte. Die Auswahlliste \col{(1)} zeigt nur diejenigen Offerten, für die noch kein Offertprüfungsprotokoll existiert.
+Dans le premier champ, sélectionnez l'offre à examiner. La liste de sélection \col{(1)} comprend uniquement les offres pour lesquelles un PV d'examen n'existe pas.
 \item
-\textcolor{black}{Datum }\col{(2)} \textcolor{black}{: Geben Sie das Datum des Offertprüfungsprotokoll an. Beim Klicken in das Datumfeld öffnet sich ein Kalender, in welchem Sie den gewünschten Tag auswählen können. }Als Default-Wert wird jeweils das heutige Datum vorgeschlagen.
+\textcolor{black}{Date }\col{(2)} \textcolor{black}{: Saisissez la date d'examen du calendrier. }Par défaut, la date du jour est automatiquement proposée.
 \item
-Wählen Sie im Feld 'Verantwortlich' \col{(3)} den Verantwortlichen für das Offertprüfungsprotokoll aus. Der Verantwortliche ist diejenige Person, die das Offertprüfungsprotokoll unterschreibt.
+Dans le champ 'Responsable' \col{(3)} sélectionnez l'utilisateur responsable du PV. L'utilisateur responsable est celui qui signe le PV d'examen de l'offre.
 \item {\sffamily
-Klicken Sie unter 'Prüfung' \col{(4)} und 'Empfehlung' \col{(5)} die zutreffenden Kästchen an.}
+Sous 'Vérification' \col{(4)} et 'Recommandation' \col{(5)}, cochez les cases qui s'appliquent.}
 \item
-Schreiben Sie im Feld 'Begründung/Bemerkung' \col{(6)} falls nötig einen freien Text.
+Si nécessaire, saisissez un texte dans le champ 'Justification / Remarques' \col{(6)}.
 \end{compactitem}
 
 \vspace{\baselineskip}
 
-Klicken Sie auf die Schaltfläche 'Erstellen' \col{(7)}. Nun erscheint darunter die Möglichkeit, eine Beilage hochzuladen.
+Cliquez sur le bouton 'Créer' \col{(7)}. Vous pouvez maintenant ajouter des pièces jointes.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{716_OffertenpruefungsprotokollBeilagen.jpg}}
-\caption{Beilage beim Offertprüfungsprotokoll hochladen}
+\caption{Ajouter des pièces jointes au PV d'examen d'offre}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}, um die Beilage hochzuladen. Erfassen Sie den Titel \col{(2)}, allenfalls auch die Version \col{(3)} und eine Beschreibung des Dokuments \col{(4)} als freien Text in den entsprechenden Feldern. Zum Hochladen klicken Sie auf die Schaltfläche 'Durchsuchen' \col{(5)} und wählen die Datei mit einem Doppelklick aus. Haben Sie eine falsche Datei erwischt, laden Sie einfach eine neue Datei hoch. Klicken Sie auf die Schaltfläche 'Übernehmen' um die Daten zu sichern. \\
-Falls es mehrere Beilagen braucht, klicken Sie wieder auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(6)} und wiederholen den Vorgang so oft wie nötig. Sie können die Reihenfolge der Dokumente verändern, indem Sie das Symbol mit den vertikalen Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(7)} mit der linken Maustaste packen und die entsprechende Zeile verschieben. Mit einem Klick auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(8)} können Sie ein Dokument löschen.
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} pour ajouter des pièces jointes. Saisissez le titre \col{(2)}, la version \col{(3)} et une description \col{(4)} en tant que texte libre dans les champs correspondants. Cliquez sur 'Parcourir' \col{(5)} pour charger un fichier. Si vous avez sélectionner le mauvais fichier, sélectionnez simplement un nouveau. Cliquez ensuite sur 'Actualiser' pour enregistrer les donneés. \\
+Si vous voulez ajouter des pièces jointes additionnelles, cliquez à nouveau sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(6)} et répétez le procédé autant que nécessaire. Vous pouvez modifier l'ordre des documents par glisser-déposer en utilisant le symbole des flèches \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(7)}. Cliquez sur le symbole de poubelle \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(8)} pour supprimer un document.
 
 \vspace{\baselineskip}
 
@@ -406,9 +407,9 @@ Falls es mehrere Beilagen braucht, klicken Sie wieder auf das Pluszeichen \inclu
 \includegraphics[height=40mm]{716_OffertpruefungsprotokollPDFgen.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
-Klicken Sie auf 'Übernehmen' \col{(9)}, um die Daten zu sichern. Nun können Sie oben links auf das
-Blatt mit der gefalteten Ecke \includegraphics[height=12pt]{/Icons/BLattsymbol.jpg} klicken, um ein Offertprüfungsprotokoll als PDF-Datei zu generieren. Drucken Sie es aus und lassen Sie es unterschreiben. Das unterschriebene Dokument wird anschliessend eingescannt und bei diesem Offertprüfungsprotokoll als
-Beilage wieder angehängt. Das Offertprüfungsprotokoll (Original) wird dann zusammen mit dem Papieroriginal der Offerte an die erforderliche Stelle gesendet.
+Cliquez sur 'Actualiser' \col{(9)} pour enregistrer les données. Cliquez en haut à gauche sur 
+le symbole de feuille \includegraphics[height=12pt]{/Icons/BLattsymbol.jpg} pour générer le procès-verbal d'offre en tant que fichier PDF. Imprimez le document et faites le signer. Scannez ensuite le document signé et ajoutez-le comme pièce jointe au procès-verbal 
+d'examen d'offre. Le procès-verbal original est ensuite à envoyer à l'instance de décision avec l'offre originale.
 
 \vspace{\baselineskip}
 
@@ -417,18 +418,17 @@ Beilage wieder angehängt. Das Offertprüfungsprotokoll (Original) wird dann zus
 \includegraphics[height=50mm]{716_BeschaffungStatus.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
-Gehen Sie im Menü links zum Punkt 'Beschaffungswesen', Unterpunkt 'Beschaffungen'. Suchen Sie die zur Offerte gehörende
-Beschaffung und setzen Sie den Status auf 'Offerte Stelle X', in dem Sie rechts von der Zeile auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} klicken und im Feld 'Status' diesen Status anwählen. Anschliessend klicken Sie auf die Schaltfläche 'Übernehmen'.
+Retournez à la liste des acquisitions (menu à gauche, élément 'Fonction d'acquisition', sous-élément 'Acquisitions'), ouvrez l'acquisition en mode de modification en cliquant sur le symbole de crayon \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} et changez l'état de l'acquisition à 'Offre chez X'. Cliquez ensuite sur le bouton 'Actualiser'.
 
 \vspace{\baselineskip}
 
-Nun kommen Sie erst wieder zum Zug, wenn die entsprechende Stelle den Vertrag ausgestellt hat und dieser von beiden Parteien unterschrieben wurde. Der Gesamtleiter erhält eine Kopie des Vertrags und erfasst diesen im CUBE PA, damit der Vertragsinhalt zugänglich ist.
+La procédure est suspendue dans CUBE PA jusqu'à ce que l'instance de décision aura conclu le contrat et l'aura fait signé par les deux parties. Le contrat doit ensuite être saisi dans CUBE PA pour rendre son contenu accessible.
 
-\subsubsection{Schritt 7: Genehmigung der Vergabe durch eine höhere Instanz}
+\subsubsection{Étape 7: Approbation de la procédure par une position d'ordre supérieur}
 
-Falls Sie im Offertprüfungsprotokoll angekreuzt haben, dass die Vergabe durch eine höhere Instanz (zum Beispiel Bau- und Umweltschutzdirektion oder Regierungsrat) genehmigt werden soll, setzen Sie den Status der Beschaffung auf 'Entscheid höher instanzliche Stelle'.
+Si, dans le PV d'examen d'offre, vous avez cocher la case nécessitant que la décision soit approuvée par une position d'ordre supérieure (par exemple un conseil gouvernemental), fixez l'état de l'acquisition à 'Décision position d'ordre supérieur'.
 
-\subsubsection{Schritt 8: Vertrag erfassen}
+\subsubsection{Étape 8: Établissement d'un contrat}
 
 \begin{wrapfigure}[7]{r}{6cm}
   \vspace{-30pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
@@ -436,12 +436,12 @@ Falls Sie im Offertprüfungsprotokoll angekreuzt haben, dass die Vergabe durch e
     \includegraphics[height=80mm]{../chapters/07_Beschaffungswesen/pictures/7-1-8_Menu_Besch_Vertraege.jpg}
   \end{center}
   \vspace{-20pt}
-  \caption{Die Adressliste im Menü aufrufen}
+  \caption{Accès à la liste des contrats}
   \vspace{-10pt}
 \end{wrapfigure}
 
-Verträge werden sowohl in TDCost erfasst (als Grundlage für die Kostenkontrolle) als auch im CUBE PA, um den Verlauf der Beschaffung vollständig zu dokumentieren und den Inhalt des Vertrags zugänglich zu machen. Erfassen Sie den Vertrag wenn möglich zuerst in TDCost, damit Sie über alle im CUBE
-PA nützlichen Angaben verfügen.
+Les contrats sont enregistrés dans TDCost (comme base pour le contrôle des coûts) aussi bien que dans CUBE PA, afin de pleinement documenter l'avancement de l'acquisition et de pouvoir rendre le contenu des contrats accessible. Si possible, saisissez le contrat d'abord dans TDCost, afin d'avoir à disposition toutes les informations 
+nécessaires de CUBE PA.
 
 \begin{center}
 \hspace{-55mm}   
@@ -450,87 +450,87 @@ PA nützlichen Angaben verfügen.
 
 \vspace{\baselineskip}
 
-Wählen Sie im Menü links den Punkt 'Beschaffungswesen' und den Unterpunkt 'Verträge' \col{(1)}. Es erscheint die Liste der Verträge.
+Dans le menu à gauche, sélectionnez l'élément 'Fonction d'acquisition' et le sous-élément 'Contrats' \col{(1)}. La liste des contrats s'affiche.
 
 \vspace{\baselineskip}
 
-Klicken Sie auf das Plussymbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} oben links. Es erscheint die Maske für das Erfassen neuer Verträge. Mit dem Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(3)} können Sie zurück zur Liste / Übersicht wechseln.
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(2)} en haut à gauche. Le masque de saisie pour un nouveau contrat s'affiche. Le symbole de liste \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(3)} vous permet de retourner à la liste / l'aperçu.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{718_VertragErfassen.jpg}}
-\caption{Neuer Vertrag erfassen}
+\caption{Ajouter un nouveau contrat}
 % \label{fig:speciation}
 \end{figure}
 
-Mussfelder sind mit einem Stern * markiert. Füllen Sie die Felder aus:
+Les champs obligatoires sont indiqués par un astérisque *. Saisissez les informations suivants :
 
 \vspace{\baselineskip}
 
 \begin{compactitem}
 \item {\sffamily\color{black}
-Unter 'Offerte' wählen Sie die Offerte, die als Basis zum Vertrag gedient hat. Es erscheinen nur diejenigen Offerten, die nicht zu einer abgeschlossenen Beschaffung gehören.}
+Sous 'Offre', choisissez l'offre qui sert de base pour ce contrat. Seuls les offres des acquisitions en cours figurent sur la liste de sélection.}
 \item
-Der 'Vertragstitel' wird automatisch aus den Angaben zur Offerte übernommen, Sie können ihn jedoch bearbeiten.
+Le champ 'Titre du contrat' est automatiquement rempli à partir des informations de l'offre. Vous pouvez néanmoins le modifier.
 \item
-Das 'Projekt/Teilprojekt' wird automatisch aus den Abgaben zur Beschaffung übernommen. Sie können jedoch die Auswahl ändern oder ergänzen.
+Le champ 'Projet / Sous-projet' est automatiquement rempli à partir des informations de l'acquisition. Vous pouvez néanmoins modifier ou compléter la sélection.
 \item
-Das 'Vertragsdatum' können Sie über eine Kalenderauswahl setzen.
+La 'Date du contrat' peut être choisie à partir d'un calendrier.
 \item
-Das 'Startdatum' und das 'Enddatum' werden ebenso über eine Kalenderauswahl gesetzt. Es handelt sich dabei um die Termine, an denen die Leistungserbringung beginnen und enden soll.
+Les champs 'Date de début' et 'Date de fin' peuvent également être remplis à partir d'un calendrier. Il s'agit des dates de début et de fin des prestations.
 \item
-Den 'Auftraggeber' wählen Sie aus einer Auswahlliste, der 'Auftragnehmer' erscheint automatisch aufgrund der Angaben zur Offerte.
+Le 'Client' est à choisir à partir d'une liste, et le 'Mandataire' est automatiquement fixé sur la base des données de l'offre.
 \item
-Auch die 'Vertragssumme' erscheint automatisch aufgrund der Angaben zur Offerte. Sie können Sie jedoch ändern, z.B. wenn nur ein Teil der offerierten Leistungen im Vertrag enthalten sind.
+Le 'Montant du contrat' est également automatiquement repris des données de l'offre. Vous pouvez néanmoins le modifier, par exemple si seule une partie des prestations offertes fait partie du contrat.
 \item
-Die 'Vertragsnummer TDCost' erfassen Sie als freien Text, den 'Status TDCost' wählen Sie aus einer Auswahlliste. Falls Sie noch nichts in TDCost erfassen konnten, setzen Sie den Status auf 'Noch nichts erfasst'.
+Les champs 'Numéro de référence externe (Contrat)' et 'Etat externe (Contrat) font référence à la classification du contrat par d'autres systèmes (par exemple TDCost). Si le contrat n'est pas enregistré dans un autre système, fixez l'état à 'indéfini'.
 \item
-Unter 'Überwacher' wählen Sie die Person, die für die Überwachung der Vertragsabwicklung verantwortlich ist, gleich daneben wählen Sie den / die Stellvertreter(in).
+Sous 'Contrôleur', sélectionnez l'utilisateur responsable du suivi du contrat, et choisissez également un 'Contrôleur remplaçant'.
 \item
-Im Feld 'Inhalt/Leistung' erscheinen automatisch die zur Offerte gehörenden Angaben, Sie können sie jedoch ändern, wenn z.B. der Vertrag nicht alle offerierten Leistungen umfasst.
+Dans le champ 'Contenu / Prestation', les données de l'offre sont automatiquement reprises. Vous pouvez néanmoins les modifier, par exemple si seule une partie des prestations offertes fait partie du contrat.
 \item
-Im Feld 'Bemerkungen' können Sie freien Text erfassen.
+Le champ 'Remarques' est un champ de texte libre.
 \end{compactitem}
 
 \vspace{\baselineskip}
 
-Klicken Sie nun auf die Schaltfläche 'Erstellen' \col{(4)} und nun erscheint darunter die Möglichkeit, den Vertrag hochzuladen.
+Cliquez sur le bouton 'Créer' \col{(4)} et vous pouvez ensuite charger le contrat.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{718_VertragHochladen.jpg}}
-\caption{Vertrag Hochladen}
+\caption{Ajouter un contrat}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}, um den Vertrag hochzuladen. Erfassen Sie den Titel \col{(2)}, allenfalls auch die Version \col{(3)} und eine Beschreibung des Dokuments \col{(4)} als freien Text in den entsprechenden Feldern. Zum Hochladen klicken Sie auf die Schaltfläche 'Durchsuchen' \col{(5)} und wählen die Datei mit einem Doppelklick aus. Haben Sie eine falsche Datei erwischt, laden Sie einfach eine neue Datei hoch. Klicken Sie auf die Schaltfläche 'Übernehmen' \col{(6)} um die Daten zu sichern.
+Cliquez sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} pour ajouter le contrat. Saisissez le titre \col{(2)}, la version \col{(3)} et une description du document \col{(4)} en tant que texte libre dans les champs correspondants. Cliquez 'Parcourir' \col{(5)} et sélectionnez le fichier pour le charger. Si vous avez sélectionné le mauvais fichier, choisissez simplement un nouveau. Cliquez ensuite sur 'Actualiser' \col{(6)} pour enregistrer les données.
 
 \vspace{\baselineskip}
 
-Falls der Vertrag aus mehreren Dokumenten besteht, klicken Sie wieder auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(7)} und wiederholen den Vorgang so oft wie nötig. Sie können die Reihenfolge der Dokumente verändern, indem Sie das Symbol mit den vertikalen Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)} mit der linken\textcolor{red}{ }Maustaste packen und die entsprechende Zeile verschieben. Mit einem Klick auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} können Sie ein Dokument löschen.
+Si le contrat comporte plusieurs documents, cliquez à nouveau sur le symbole plus \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(7)} et répétez le procédé autant que nécessaire. Vous pouvez modifier l'ordre des documents par glisser-déposer en utilisant le symbole des flèches \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(8)}. Cliquez sur le symbole de poubelle \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(9)} pour supprimer un document.
+\vspace{\baselineskip}
+
+Retournez à la liste des acquisitions (menu à gauche, élément 'Fonction d'acquisition', sous-élément 'Acquisitions'), ouvrez l'acquisition en mode de modification en cliquant sur le symbole de crayon \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} et changez l'état de l'acquisition à 'Acquisition terminée'. Cliquez ensuite sur le bouton 'Actualiser'.
 
 \vspace{\baselineskip}
 
-Gehen Sie im Menü links zum Punkt 'Beschaffungswesen', Unterpunkt 'Beschaffungen'. Suchen Sie die zum Vertrag gehörende Beschaffung und setzen Sie den Status auf 'Beschaffung abgeschlossen', in dem Sie rechts von der Zeile auf das Bleistiftsymbol klicken und im Feld 'Status' diesen Status anwählen. Anschliessend klicken Sie auf die Schaltfläche 'Übernehmen'.
+\textbf{Ajouter un contrat additionnel à une offre existante.}
 
-\vspace{\baselineskip}
+Si vous avez besoin d'ajouter un contrat additionnel à une offre pour laquelle il existe déjà un contrat, par exemple parce qu'une autre prestation partielle est à fournir, vérifiez d'abord l'état de l'acquisition dans la liste des acquisitions. Si ce dernier est 'Acquisition terminée', changez le à 'Signature X / Envoi' pour que l'offre puisse être sélectionnée quand le contrat est ajoutée. Une  fois le nouveau contrat ajouté, refixez l'état à 'Acquisition terminée'.
 
-\textbf{Weiteren Vertrag zu einer bestimmten Offerte erfassen.}
+\subsubsection{Traiter une offre pour laquelle il n'y a pas eu d'appel d'offres}
 
-Wenn Sie zu einer Offerte, zu der schon einmal ein Vertrag erfasst worden ist, einen weiteren Vertrag erfassen müssen, z.B. weil eine weitere Teilleistung erbracht werden soll, suchen Sie zuerst in der Liste der Beschaffungen nach der passenden Beschaffung und falls der Status auf 'Beschaffung abgeschlossen' steht, ändern den Sie Status von 'Beschaffung abgeschlossen' auf 'Unterschrift Stelle X / Versand'. Damit stellen Sie sicher, dass Ihnen beim Erfassen des Vertrags die Offerte auch wirklich angezeigt wird. Wenn Sie den neuen Vertrag erfasst haben, setzen Sie den Status wieder auf 'Beschaffung abgeschlossen'.
-
-\subsubsection{Eine Offerte behandeln, für die keine Offertanfrage vorhanden ist}
-
-Es kann durchaus vorkommen, dass Sie eine Offerte erfassen müssen, für die vorher gar keine Offertanfrage versendet wurde. Zum Beispiel wurde an einer Sitzung vereinbart, dass jemand eine Offerte einreicht, oder jemand reicht eine Nachtragsofferte zu einem bestehenden Vertrag ein. In solchen Fällen gehen Sie wie folgt vor:
+Il se peut que vous deviez ajouter une offre pour laquelle il n'y a pas eu d'appel d'offres qui a été envoyé. Ceci peut être le cas si par exemple il est agréé à une séance qu'une personne doit envoyer une offre, ou qu'une personne doit envoyer un avenant à un contrat existant. Dans ces cas, procédez comme suit :
 
 
 \begin{itemize}
 \item
-Initialisieren Sie eine Beschaffung so, wie unter Schritt 2 beschrieben, wobei Sie keine Inhalte erfassen müssen, die direkt mit dem Versand einer Offertanfrage zu tun haben. Falls es sich um eine Nachtragsofferte handelt, wählen Sie im Feld 'Nachtrag zu' diejenige Beschaffung, zu der die neue Offerte einen Nachtrag darstellt.
+Initialisez une acquisition comme décrit à l'étape 2, sans saisir les informations liées à l'envoi de l'appel d'offres. Si l'offre est un supplément, choisissez l'offre de base dans le champ 'Supplément pour acquisition'.
 \item
-Überspringen Sie die Schritte 3 und 4.
+Sautez les étapes 3 et 4.
 \item
-Erfassen sie die Offerte so, wie unter Schritt 5 beschrieben. Dieser und die folgenden Schritte funktionieren genau gleich wie bei einer Offerte, die aufgrund einer Offertanfrage eingegangen ist.
+Saisissez l'offre comme indiqué à l'étape 5. Cette étape et les suivantes se déroulent exactement de la même manière que si l'offre a été faite suite à un appel d'offres.
 \end{itemize}
 
-\subsection{Workflow für Beschaffungen mit Einladungsverfahren oder offenem Verfahren}
+\subsection{Flux de travail pour des procédures sur invitation ou des procédures ouvertes}
 
-Ein Beispiels-Workflow für Beschaffungen mit Einladungsverfahren oder offenem Verfahren folgt später.
+Un flux de travail type pour des acquisitions en procédures sur invitation ou en procédures ouvertes suivra plus tard.
+
