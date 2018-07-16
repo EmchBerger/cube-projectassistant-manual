@@ -52,6 +52,8 @@ Anzeigedaten genannt. Es können mehrere Anzeigedaten zu einem Anzeigedatentypen
 \textbf{Sitzungs-Teilnehmerlisten}: Es können beliebige Teilnehmerlisten für Sitzungen zusammengestellt werden. Bei den ausgewählten Personen wird zudem definiert, ob sie auf der Verteilerliste stehen oder nicht. Diese Listen können anschliessend bei der Erstellung von Sitzungseinladungen ausgewählt werden.
 \item
 \textbf{Standard-Traktandenlisten}: Wiederkehrende, gleichbleibende Traktandenlisten können unter dieser Einstellung vordefiniert und später beim Erstellen einer Sitzung ausgewählt werden.
+\item
+\textbf{Repro-Verteilerlisten}: Personen, welche oft Pläne benötigen (Planlieferung in der Dokumentenablage) können hier in Verteilerlisten hinterlegt werden. In der Auswahl der Planlieferung können so anstelle der verschiedenen Personen diese vordefinierten Listen ausgewählt werden.
 \end{itemize}
 
 \vspace{\baselineskip}
@@ -72,19 +74,11 @@ Die 'Bezeichnung' wird momentan nur für die Projekt-/Teilprojekt-Tags genutzt. 
 
 \vspace{\baselineskip}
 
-Der 'Name' (Pflichtfeld) wird überall in CUBE PA für den entsprechenden Tag verwendet.
-
-\vspace{\baselineskip}
-
-Erfasste Tags müssen einem Tag Typen (siehe Kapitel \ref{bkm:Ref444100222}) zugewiesen werden.
+Der 'Name' (Pflichtfeld) wird überall in CUBE PA für den entsprechenden Tag verwendet. Erfasste Tags müssen einem Tag Typen (siehe Kapitel \ref{bkm:Ref444100222}) zugewiesen werden.
 
 \vspace{\baselineskip}
 
 Es ist möglich, Tags hierarchisch zu erfassen. Dazu ist in den jeweils untergeordneten Tags das Feld 'Übergeordneter Tag' auszufüllen. Zu einem Tag können mehrere untergeordnete Tags definiert werden.
-
-\vspace{\baselineskip}
-
-In einer späteren Version von CUBE PA wird es möglich sein, bei der Filterung / Suche mithilfe von Tags auch untergeordnete Tags miteinzubeziehen. In der aktuellen Version von CUBE PA hat die Tag-Hierarchie noch keine Bedeutung.
 
 \vspace{\baselineskip}
 
@@ -117,10 +111,11 @@ Es können mehrere Projektpläne (z.B. Detailterminprogramm, Terminprogramme fü
 Alle erfassten Projektpläne werden hier aufgelistet. Sie können in der Detailansicht betrachtet oder geändert werden. Unter diesem Konfigurationspunkt werden ebenfalls neue Einträge erstellt.
 
 \subsection{Beteiligte}
+\label{bkm:Ref2018071602}
 
-\begin{wrapfigure}[11]{r}{6cm}
-\vspace{-25pt}
-\includegraphics[height=150mm]{134_BeteiligteHinzufuegen.jpg}
+\begin{wrapfigure}[13]{r}{6cm}
+\vspace{-45pt}
+\includegraphics[height=150mm]{../chapters/13_Konfigurationen/pictures/konf_BeteiligteErfassen.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
 
@@ -135,14 +130,15 @@ Das Feld 'Rolle' bietet per Freitext die Rolle eines Beteiligten innerhalb eines
 
 \vspace{\baselineskip}
 
-Die Checkboxen unten 'Ist Firma', 'Ist Arbeitgeber' etc. ermöglichen die Auswahl als WEN Beteiligte in Bereichen von CUBE PA referenziert werden können. Wurde beispielsweise '[x] Ist Firma' markiert, wird jeweils beim Auswahl-/Dropdown-Feld 'Firma' dieser Beteiligte zur Auswahl angezeigt.
+Die Checkboxen unten 'Ist Firma', 'Ist Arbeitgeber' etc. ermöglichen die Auswahl als wen Beteiligte in Bereichen von CUBE PA referenziert werden können. Wurde beispielsweise '[x] Ist Firma' markiert, wird jeweils beim Auswahl-/Dropdown-Feld 'Firma' dieser Beteiligte zur Auswahl angezeigt.\\
+
+\textbf{Ist Reprozentrum:} Wie ein Reprozentrum eingerichtet wird, ist in Kapitel \ref{bkm:Ref2018071601} ersichtlich.
 
 \vspace{\baselineskip}
 \vspace{\baselineskip}
 \vspace{\baselineskip}
 
-% -->>> Wenn \clearpage löschen > Achtung Formatierung zu vorhergehendem Bild beachten -> allenfalls \clearpage bestehen lassen
-% \clearpage
+
 \subsection{Adressen}
 
 Adressen sind in aller Regel Sitzungszimmer. Es können jedoch auch Standorte (ohne Sitzungszimmerfunktion) erfasst werden. Entsprechend ist bei 'Ist Sitzungszimmer' beim Erfassen einer Adresse das Häkchen zu setzen oder leer zu lassen.
@@ -245,3 +241,40 @@ Wiederkehrende, gleichbleibende Traktandenlisten können unter dieser Einstellun
 \end{wrapfigure}
 
 Erst nach dem 'Erstellen' einer neuen Traktandenliste erscheint die Möglichkeit, Traktanden zu erfassen oder zu bearbeiten. Neue Traktanden können in der Reihenfolge wie auch in der Gliederung (1, 2, 3 oder 2, 2.1, 3 etc.) verschoben werden. Einzelne Traktanden wie auch eine ganze Liste können hier gelöscht werden. Wie bei den Standard-Teilnehmerlisten kann eine Traktandenliste mittels dem 'Kopiersymbol' \includegraphics[height=12pt]{/Icons/kopieren.jpg} kopiert werden. Der kopierte Datensatz ist an den drei Sternen vor und nach dem Namen erkennbar (z.B. ***Traktandenliste***). 
+
+\subsection{Repro-Konfigurationen}
+
+\subsubsection{Repro-Verteilerlisten}
+
+Es können Verteilerlisten erstellt werden, für Personen welche wiederkehrend Ausdrucke erhalten sollen.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/13_Konfigurationen/pictures/konf_ReproVListe_Uebersicht.jpg}}
+\caption{Repro-Verteilerlisten in der Übersicht}
+% \label{fig:speciation}
+\end{figure}
+
+Die Listen enthalten die gewünschten Personen, sowie die gängigen Einstellungen (Anzahl Exemplare, ausgedruckte Dokumente, elektronisch zugestellte Dokumente). Einzelne Empfänger wie auch ganze Listen können hier auch wieder gelöscht werden:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/13_Konfigurationen/pictures/konf_ReproVListe_edit.jpg}}
+\caption{Repro-Verteilerlisten im Bearbeitungsmodus}
+% \label{fig:speciation}
+\end{figure}
+
+\subsubsection{Reprozentren einrichten}
+\label{bkm:Ref2018071601}
+
+Um Pläne an ein Reprozentrum senden zu können, muss dieses zuerst angelegt werden:
+
+\begin{enumerate}
+\item Legen Sie im Menü 'Konfigurationen' unter 'Beteiligte' das Reprozentrum an. Siehe dazu auch Kapitel \ref{bkm:Ref2018071602}. Setzten Sie ein Häkchen bei 'Ist Reprozentrum'
+\item Wiederholen Sie obigen Schritt für sämtliche Reprozentren, welche beim Versand / Druck von Dokumenten ausgewählt werden können.
+\item Erstellen Sie im Menü 'Benutzerverwaltung' unter 'Gruppen' eine neue Gruppe, welche sämtliche Druckzentren (Punkt 1 und 2) enthält.
+\end{enumerate}
+
+\textbf{Hinweis:} Bei der Planlieferung in der Dokumentenablage werden nicht die Gruppen, sondern die erstellten Druckzentren (Beteiligte) ausgewählt.
+
+
+
+
