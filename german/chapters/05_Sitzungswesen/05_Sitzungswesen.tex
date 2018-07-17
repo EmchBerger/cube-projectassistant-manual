@@ -294,6 +294,8 @@ Alle Einträge, welche mit den Such-Begriffen übereinstimmen, werden angezeigt.
 \hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Briefsymbol.jpg}} & Die Sitzungseinladung als PDF öffnen (Zum Versand per Email oder Post) \\
 \hline
+\raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/kopieren.jpg}} & Die ausgewählte Sitzung wird kopiert \\
+\hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Bueroklammer.jpg}} & Bei dieser Sitzungseinladung wurden Beilagen angehängt \\
 \hline
 \raisebox{-.25\totalheight}{\includegraphics[height=12pt]{/Icons/Fahne.jpg}} & Die Pendenzliste öffnen\\
@@ -371,6 +373,10 @@ Um den Protokolltext zu einem Traktandum zu erfassen, klicken Sie auf das Aufkla
 
 \vspace{\baselineskip}
 
+\textbf{Ein Entscheid oder eine Pendenz hinzufügen:}
+
+\vspace{\baselineskip}
+
 Die vier Symbole unter dem Textfeld eröffnen weitere Möglichkeiten:
 
 \begin{figure}[H]
@@ -379,35 +385,58 @@ Die vier Symbole unter dem Textfeld eröffnen weitere Möglichkeiten:
 % \label{fig:speciation}
 \end{figure}
 
-\begin{itemize}
-\item
-Sie möchten einen Entscheid erfassen, der automatisch in die Entscheidliste übernommen werden soll? Klicken Sie auf das Symbol ganz links \includegraphics[height=12pt]{/Icons/Gutzeichen_Rahmen.jpg} \col{(a)}, und es erscheint ein Fenster, in dem Sie den Entscheid erfassen können. Die Felder 'Titel' \col{(1)} und 'Beschreibung' \col{(2)} füllen Sie mit freiem Text, im Feld 'Projekt/Teilprojekt' \col{(3)} wählen das entsprechende Projekt aus einer Liste aus. Klicken Sie auf die Schaltfläche 'Erstellen' \col{(4)}, um den Entscheid zu speichern, oder auf das Kreuz \col{(6)}, um die Eingaben zu verwerfen.
+Sie möchten einen \textbf{Entscheid erfassen}, der automatisch in die Entscheidliste übernommen werden soll? Klicken Sie auf das Symbol ganz links \includegraphics[height=12pt]{/Icons/Gutzeichen_Rahmen.jpg} \col{(a)}, und es erscheint ein Fenster, in dem Sie den Entscheid erfassen können. Die Felder 'Titel' \col{(1)} und 'Beschreibung' \col{(2)} füllen Sie mit freiem Text, im Feld 'Projekt/Teilprojekt' \col{(3)} wählen das entsprechende Projekt aus einer Liste aus. Die Traktandennummer wird übernommen, Sie können diese jedoch bei Bedarf anpassen \col{(4)}. Klicken Sie auf die Schaltfläche 'Erstellen' \col{(5)}, um den Entscheid zu speichern, oder auf das Kreuz \col{(6)}, um die Eingaben zu verwerfen.
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.75\linewidth]{521_EntscheidHinzufuegen.jpg}}
+\center{\includegraphics[width=0.75\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_EntscheidHinzufuegen.jpg}}
 \caption{Entscheid hinzufügen}
 % \label{fig:speciation}
 \end{figure}
 
-\end{itemize}
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{521_EntscheidSymbole.jpg}}
+\caption{Weitere Optionen für die Entscheide}
+% \label{fig:speciation}
+\end{figure}
 
-\begin{itemize}
-\item
-Sie möchten eine Pendenz erfassen, die automatisch in die Pendenzenliste übernommen werden soll? Klicken Sie auf das zweite Symbol von links \includegraphics[height=12pt]{/Icons/Pfeil_aus_Box.jpg} \col{(b)}, und es erscheint ein Fenster, in dem Sie die Pendenz erfassen können. Die Felder 'Titel' \col{(1)} und 'Beschreibung' \col{(2)} füllen Sie mit freiem Text, im Feld 'Termin' \col{(3)} wählen Sie aus einem Kalender den gewünschten Zeitpunkt und in den restlichen Feldern \col{(4)} aus einer Liste die entsprechenden Eingaben aus. Klicken Sie auf die Schaltfläche 'Erstellen' \col{(5)}, um die Pendenz zu speichern, oder auf das Kreuz \col{(6)}, um die Eingaben zu verwerfen.
+Sie möchten eine \textbf{Pendenz erfassen}, die automatisch in die Pendenzenliste übernommen werden soll? Klicken Sie auf das zweite Symbol von links \includegraphics[height=12pt]{/Icons/Pfeil_aus_Box.jpg} \col{(b)}. Nun erscheint das Fenster zur Eingabe der Pendenz. Die Felder werden im Folgenden beschrieben. 
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Da die Pendenzenliste auch im Anforderungs- und Mängelmanagement verwendet wird und mit Anforderungen und Arbeitspaketen verknüpft werden kann, erscheinen diese Felder ebenfalls. Im Sitzungswesen können Sie jedoch diese Verknüpfungen nicht erstellen. Für weitere Informationen zu den Pendenzen im Anforderungs- und Mängelmanagement siehe Kapitel \ref{bkm:Ref2018071701}.
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.75\linewidth]{521_PendenzHinzufuegen.jpg}}
+\center{\includegraphics[width=0.75\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_PendenzHinzufuegen.jpg}}
 \caption{Pendenz hinzufügen}
 % \label{fig:speciation}
 \end{figure}
 
+\begin{itemize}
+\item \textbf{Titel*}: Geben Sie hier einen aussagekräftigen Titel ein (Pflichtfeld).
+\item \textbf{Beschreibung*}: Hier können Sie die Pendenz näher beschreiben. Der Text kann formatiert werden (Pflichtfeld).
+\item \textbf{Übergeordnete / Untergeordnete Pendenzen}: Falls die neue Pendenz in Abhängigkeit zu einer anderen vorhanden Pendenz steht, können die über- und untergeordneten Pendenzen hier verknüpft werden.
+\item \textbf{Beilagen}: Sie können der Pendenz Beilagen anhängen oder vorhandene Dokumente (aus dem Dokumentenwesen) verknüpfen. 
+\item \textbf{Termin}: Terminieren Sie ihre Pendenz (Pflichtfeld).
+\item \textbf{Projekt / Teilprojekt}: Die Pendenz kann einem Projekt / Teilprojekt zugewiesen werden.
+\item \textbf{Anforderungen und Arbeitspakete}: Diese beiden Felder habe im Sitzungswesen keine Bedeutung, es sei denn, eine Pendenz wird im Modul Anforderungs- und Mängelmanagement einer Anforderung oder einem Arbeitspaket zugewiesen. Diese Verknüpfungen werden hier angezeigt.
+\item \textbf{Verantwortlich* / Verantwortliches Gremium*}: (Pflichtfeld) Eines dieser beiden Felder muss zwingend ausgefüllt und die Pendenz einer/m verantwortlichen Person/Gremium zugewiesen werden.
+\item \textbf{Mitarbeit}: Optional können Personen für die Mitarbeit eingetragen werden.
+\item \textbf{Trakt. Nr*}: Die Pendenz wird mit der gewünschten Traktandennummer verknüft. Die entsprechende Traktandennummer ist bereits voreingestellt und kann geändert werden (Pflichtfeld).
 \end{itemize}
+
+Speichern Sie die Eingaben mit Klick auf 'Erstellen' \col{(1)} oder verlassen Sie das Fenster mit Klick auf das Kreuz \col{(2)}.
+
+\vspace{\baselineskip}
+
+\textbf{Traktanden in Entscheide oder Pendenzen umwandeln:}
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{521_EntscheidSymbole2.jpg}}
 \caption{Traktanden in Entscheide oder Pendenzen umwandeln}
 % \label{fig:speciation}
 \end{figure}
+
+\textbf{Hinweis:} Für die Umwandlung von Entscheiden und Pendenzen aus Traktanden können Sie sich an obiger Ausführung 'Entscheid hinzufügen' und 'Pendenz hinzufügen' orientieren. 
 
 \begin{itemize}
 \item
@@ -421,6 +450,10 @@ Sie realisieren, dass der soeben erfasste Text zum Traktandum eigentlich eine Pe
 % \vspace{\baselineskip}
 
 \textbf{Tipp}: es ist keineswegs zwingend, den Protokolltext während der Sitzung so wie oben beschrieben perfekt strukturiert zu erfassen. Copy-Paste funktioniert wie in Microsoft Word: Markieren Sie den zu kopierenden Text und benutzen Sie entweder die rechte Maustaste (Kontextmenü) oder die Tastaturkürzel 'Ctrl+C' (Kopieren), 'Ctrl+X' (Ausschneiden) und 'Ctrl+V' (Einfügen). Sie können beispielsweise sämtlichen Text unter dem ersten Traktandum erfassen und im Nachgang zur Sitzung auf die verschiedenen Traktanden verteilen, und auch das Erfassen von Entscheiden und Pendenzen ist im Rahmen der Protokollierung nachträglich möglich.
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Wird im Sitzungsprotokoll (unter Traktanden) ein Entscheid oder eine Pendenz erneut bearbeitet, ist es nun möglich, mittels dem Mülleimersymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} einen Entscheid oder eine Pendenz zu löschen.
 
 \vspace{\baselineskip}
 
@@ -508,9 +541,9 @@ Es erscheint die Maske für das Erfassen des Protokolls:
 
 \begin{itemize}
 \item
-Besprechungsart, Beginn, Ende, Ort, Projektnummer, Projektname, Sitzungsleitung, Protokollführung im oberen Teil der Maske sind automatisch mit den Angaben aus der Einladung versehen. Wollen Sie solche Angaben ändern, klicken Sie auf das jeweils neben dem Feld befindliche Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Stift.jpg} \col{(1)} und ändern Sie die Angaben im betreffenden Feld. Für Ort und Datum \col{(2)} des Protokolls stehen je ein Feld bereit; für das Datum mit Kalenderauswahl und für den Ort mit Listenauswahl. Klicken Sie auf die Schaltfläche 'Übernehmen' \col{(3)} (oben rechts oder unten links), um die Änderungen zu speichern. Es ist nicht unbedingt erforderlich, dass alle Felder ausgefüllt sind, füllen Sie mindestens diejenigen Felder aus, die es erlauben, eine Sitzung eindeutig zu identifizieren.
+Besprechungsart, Beginn, Ende, Ort, Projektnummer, Projektname, Sitzungsleitung, Protokollführung im oberen Teil der Maske sind automatisch mit den Angaben aus der Einladung versehen. Wollen Sie solche Angaben ändern, klicken Sie auf das jeweils neben dem Feld befindliche Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Stift.jpg} \col{(1)} und ändern Sie die Angaben im betreffenden Feld. Für Ort und Datum \col{(2)} des Protokolls stehen je ein Feld bereit; für das Datum mit Kalenderauswahl und für den Ort mit Listenauswahl. Klicken Sie auf die Schaltfläche 'Übernehmen' (oben rechts oder unten links), um die Änderungen zu speichern. Es ist nicht unbedingt erforderlich, dass alle Felder ausgefüllt sind, füllen Sie mindestens diejenigen Felder aus, die es erlauben, eine Sitzung eindeutig zu identifizieren.
 \item
-Nun klicken Sie auf 'Durchsuchen' \col{(4)} unter 'Protokoll hochladen' und wählen Sie mit einem Doppelklick die PDF-Datei mit dem Inhalt des Protokolls aus. Klicken Sie dann auf 'Übernehmen'. Nun erscheint die Information 'Das Protokoll ist als Datei abgelegt' \col{(5)} und der Vorgang ist beendet. Falls Sie das falsche Dokument hochgeladen haben, können Sie es durch Klicken auf das Mülltonnensymbol löschen. Anschliessend kann ein neues Dokument hochgeladen werden.
+Nun klicken Sie auf 'Durchsuchen' \col{(3)} unter 'Protokoll hochladen' und wählen Sie mit einem Doppelklick die PDF-Datei mit dem Inhalt des Protokolls aus. Klicken Sie dann auf 'Übernehmen'. Nun erscheint die Information 'Das Protokoll ist als Datei abgelegt' \col{(4)} und der Vorgang ist beendet. Falls Sie das falsche Dokument hochgeladen haben, können Sie es durch Klicken auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} löschen. Anschliessend kann ein neues Dokument hochgeladen werden.
 \end{itemize}
 
 \vspace{\baselineskip}
@@ -519,10 +552,10 @@ Nun klicken Sie auf 'Durchsuchen' \col{(4)} unter 'Protokoll hochladen' und wäh
 
 \vspace{\baselineskip}
 
-Durch das Hochladen des Dokuments erreichen Sie, dass alle Benutzer des CUBE PAs dieses Protokoll jederzeit und überall lesen können, als wäre es direkt im CUBE PA erfasst worden. Wenn Sie ganz sicher sind, dass alles im Protokoll stimmt, klicken Sie auf die Schaltfläche 'Archivieren' \col{(6)} und bestätigen die Rückfrage \col{(7)}. Dann setzt der CUBE PA den Status für diese Sitzung auf 'Definitiv' und das Protokoll lässt sich nicht mehr bearbeiten und für diese Sitzung kann auch kein neues Protokoll mehr hochgeladen werden.
+Durch das Hochladen des Dokuments erreichen Sie, dass alle Benutzer des CUBE PAs dieses Protokoll jederzeit und überall lesen können, als wäre es direkt im CUBE PA erfasst worden. Wenn Sie ganz sicher sind, dass alles im Protokoll stimmt, klicken Sie auf die Schaltfläche 'Archivieren' \col{(5)} und bestätigen die Rückfrage \col{(6)}. Dann setzt der CUBE PA den Status für diese Sitzung auf 'Definitiv' und das Protokoll lässt sich nicht mehr bearbeiten und für diese Sitzung kann auch kein neues Protokoll mehr hochgeladen werden.
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.5\linewidth]{522_Archivieren.jpg}}
+\center{\includegraphics[width=0.5\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-2_Archivieren.jpg}}
 \caption{Protokoll archivieren}
 % \label{fig:speciation}
 \end{figure}
@@ -550,6 +583,17 @@ Nun klicken Sie auf 'Durchsuchen' \col{(3)} unter 'Neue Datei hochladen:' und w�
 Durch Packen an den vertikalen Pfeilen \includegraphics[height=12pt]{/Icons/VertPfeile.jpg} \col{(4)} und verschieben der Zeile können Sie die Reihenfolge der Beilagen verändern und durch Klicken auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(5)} eine Beilage löschen.
 \end{itemize}
 
+\begin{wrapfigure}[7]{r}{6cm}
+  \vspace{-40pt}
+  \begin{center}
+    \includegraphics[height=50mm]{../chapters/05_Sitzungswesen/pictures/5-2-3_Verknuepfen.jpg}
+  \end{center}
+  \vspace{-20pt}
+%  \caption{Dokument verknüpfen}
+  \vspace{-10pt}
+\end{wrapfigure}
+Mit erneutem Klick auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} können Sie obige Schritte wiederholen und weitere Dokumente hinzufügen. Alternativ lassen sich mittels Klick auf das Verknüpfen-Symbol \includegraphics[height=12pt]{/Icons/Verknuepfen.jpg} \col{(6)} bereits hochgeladene Dokumente aus dem Dokumentenwesen verknüpfen. Mittels Suchfeld können Sie das gewünschte Dokument anzeigen lassen und mit der entsprechenden Dokumentenversion verknüpfen.
+
 \vspace{\baselineskip}
 
 \textbf{Tipp:} Anstelle eines Klicks auf 'Durchsuchen' und Auswählen der Datei, können Sie die gewünschte Datei mit der Maus auf das Feld 'Durchsuchen' ziehen und loslassen. Die Datei wird so ebenfalls hochgeladen und mit der Sitzungseinladung verknüpft.
@@ -574,22 +618,32 @@ Um das Protokoll zu prüfen und zu korrigieren, wählt man im Menü den Punkt 'S
 
 \vspace{\baselineskip}
 
-Nun kann man in allen Feldern Änderungen vornehmen. Soll dokumentiert werden, wer wann welche Veränderungen im Protokoll vorgenommen hat, verwendet man den Überarbeitungsmodus. Dieser funktioniert folgendermassen:
+\textbf{Individueller und globaler Überarbeitungsmodus}
 
 \vspace{\baselineskip}
 
-Sobald Sie mit der Maus in ein Protokoll-Textfeld klicken, erscheint darüber ein Band mit Schaltflächen \col{(1)}. Diese funktionieren wie die analogen Schaltflächen in Microsoft Word. Der Schaltflächen-Block rechts steuert den Überarbeitungsmodus:
+Mit CUBE PA ist es Ihnen möglich, Textänderungen an Traktanden aufzuzeichnen und selbst oder durch andere Personen später anzunehmen oder zu verwerfen. Der überarbeitete Text wird eingefärbt \col{(3)} und wenn Sie die Maus über den Text halten, sehen Sie wer zu welchem Zeitpunkt eine Änderung vorgenommen hat \col{(4)}.\\
 
-\begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{53_Ueberarbeitungsmodus.jpg}}
-\caption{Überarbeitungsmodus einschalten}
-% \label{fig:speciation}
-\end{figure}
+Der Überarbeitungsmodus kann global für das gesamte Protokoll oder nur pro Traktandum eingeschaltet werden.
 
-\begin{itemize}
-\item
-Überarbeitungsmodus einschalten/ausschalten \col{(2)}: Durch einen Klick auf diese Schaltfläche schalten Sie den Überarbeitungsmodus ein und wieder aus. Nach dem Sie den Überarbeitungsmodus eingeschaltet haben, werden die von Ihnen vorgenommenen Änderungen markiert \col{(3)} und der CUBE PA dokumentiert, wer diese Änderungen wann vorgenommen hat \col{(4)}.
-\end{itemize}
+\vspace{\baselineskip}
+
+\textbf{Globaler Überarbeitungsmodus}
+
+\begin{wrapfigure}[7]{r}{6cm}
+  \vspace{-40pt}
+  \begin{center}
+    \includegraphics[height=50mm]{../chapters/05_Sitzungswesen/pictures/5-3_GlobalerUeberarbModus.jpg}
+  \end{center}
+  \vspace{-20pt}
+%  \caption{Dokument verknüpfen}
+  \vspace{-10pt}
+\end{wrapfigure}
+Befinden Sie sich in 'Protokoll bearbeiten' können Sie den Modus mit Klick auf 'Überarbeitungsmodus einschalten' \col{(1)} aktivieren. 
+
+\vspace{\baselineskip}
+
+Änderungen, welche bei den Traktanden vorgenommen werden, sind nun farblich gekennzeichnet \col{(3)}. Halten Sie den Mauszeiger über die Änderungen, sehen Sie wer zu welchem Zeitpunkt etwas geändert hat \col{(4)}:
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{53_UeberarbeitungsmodusReferenz.jpg}}
@@ -597,7 +651,53 @@ Sobald Sie mit der Maus in ein Protokoll-Textfeld klicken, erscheint darüber ei
 % \label{fig:speciation}
 \end{figure}
 
-Die weiteren Schaltflächen sind für die Endredaktion des Protokolls von Bedeutung.
+Sämtliche Protokoll-Änderungen können nun mit einem Klick angenommen oder verworfen werden:
+
+\begin{figure}[H]
+\center{\includegraphics[width=.8\linewidth]{../chapters/05_Sitzungswesen/pictures/5-3_GlobUebrarbMod_AnAb.jpg}}
+\caption{Änderungen annehmen oder verwerfen}
+% \label{fig:speciation}
+\end{figure}
+
+\textbf{Hinweis}: Wenn Sie den Überarbeitungsmodus ausschalten wollen, müssen vorher alle Änderungen angenommen oder verworfen werden.
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis}: Wird der Überarbeitungsmodus neu eingeschaltet und im gleichen Arbeitsschritt das erste oder ein weiteres Traktandum angelegt, werden die Änderungen nicht aufgezeichnet. Bitte speichern Sie zuerst das Protokoll mit 'Übernehmen'. 
+
+\vspace{\baselineskip}
+
+\textbf{Individueller Überarbeitungsmodus}
+
+\vspace{\baselineskip}
+
+\begin{sloppypar}
+
+Im Unterschied zum globalen Überarbeitungsmodus, können Sie pro Traktandum den Überarbeitungsmodus ein- und ausschalten. Klicken Sie ins Protokollfeld, öffnen sich weitere Optionen \col{(1)}. Schalten Sie den Überarbeitungsmodus mit Klick auf das entsprechende Icon ein \col{(2)}:
+
+\end{sloppypar}
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{53_Ueberarbeitungsmodus.jpg}}
+\caption{Überarbeitungsmodus einschalten}
+% \label{fig:speciation}
+\end{figure}
+
+Änderungen, welche in diesem Protokollfeld vorgenommen werden, sind nun gekennzeichnet und können später durch Sie oder durch eine andere Person angenommen oder verworfen werden. Durch Klick auf dasselbe Icon \col{(2)} wird der Überarbeitungsmodus wieder deaktiviert.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{53_UeberarbeitungsmodusReferenz.jpg}}
+\caption{Bearbeitungsreferenz}
+% \label{fig:speciation}
+\end{figure}
+
+Die Protokolländerungen sind fabrlich gekennzeichnet \col{(3)}  und der CUBE PA dokumentiert, wer diese Änderungen wann vorgenommen hat \col{(4)}.
+
+\vspace{\baselineskip}
+
+\clearpage
+
+Die weiteren Schaltflächen sind für die Endredaktion des Protokolls von Bedeutung:
 
 \begin{figure}[H]
 \center{\includegraphics[width=.75\linewidth]{53_Formatierungen.jpg}}
@@ -621,7 +721,7 @@ Alle Änderungen ablehnen \col{(7)}: Durch einen Klick auf diese Schaltfläche l
 Sie können vor dem Abschliessen des Protokolls zur Kontrolle auch ein PDF davon generieren und dieses in Ruhe durchlesen. In der Ansicht 'Protokoll bearbeiten' finden Sie oben links eine Gruppe von vier Symbolen. Klicken Sie das Blatt-Symbol \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg} \col{(1)} ganz rechts an, um ein PDF des Protokolls zu erzeugen.
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{53_ProtokollArchivieren.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-3_ProtokollArchivieren.jpg}}
 \caption{Protokoll archivieren}
 % \label{fig:speciation}
 \end{figure}
