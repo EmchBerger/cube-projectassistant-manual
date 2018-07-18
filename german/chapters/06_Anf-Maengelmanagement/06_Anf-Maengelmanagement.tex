@@ -154,7 +154,7 @@ Um mehrere Anforderungen zu überarbeiten, können diese mit Häkchen (\includeg
 % \label{fig:speciation}
 \end{figure}
 
-Nach dem Erstellen und während dem Bearbeiten kann jeder Anforderung ein Quelldokument angehängt werden, aus welchem die Anforderung stammt. Dieses Dokument muss vorher in der Dokumentenablage erfasst worden sein (Kapitel xy). 
+Nach dem Erstellen und während dem Bearbeiten kann jeder Anforderung ein Quelldokument angehängt werden. Dieses Dokument muss vorher in der Dokumentenablage erfasst worden sein (Siehe Kapitel \ref{bkm:Ref442863508}). 
 
 \subsubsection{Anforderungen gruppieren}
 
@@ -172,7 +172,7 @@ Die Anforderungsautoren haben die Möglichkeit, einzelne Anforderungen in mehrer
 Durch Auswahl einer bestehenden Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) und Klicken der Schaltfläche 'Splitten'  (\includegraphics[height=12pt]{/Icons/A_Splitten.jpg}) wird die Eingabemaske zur Erstellung einer neuen Anforderung geöffnet, wobei die Inhalte der zuvor gewählten Anforderung eingefüllt werden sowie die zuvor gewählte Anforderung als übergeordnete Anforderung ('Elternteil') gesetzt wird. Nach dem Speichern der neuen Unteranforderung besteht die Möglichkeit, weitere 'Kind'-Anforderungen basierend auf demselben 'Elternteil' zu erfassen.
 Nach erfolgreichem Splitten können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt dies über die Baumschaltfläche in der Titelleiste (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}).
 
-\Clearpage
+\clearpage
 \subsubsection{Status ändern}
 
 Hat der Ersteller die Anforderung erfasst und gespeichert, kann er den Status mit Klick auf den kleinen Doppelpfeil (\includegraphics[height=12pt]{/Icons/Status_aendern.jpg}) oben links weiterschalten. 
@@ -195,26 +195,40 @@ Selbst einer Statusänderung kann ein Dokument angehängt \col{(1)} oder ein Dok
 
 Danach geht die Kontrolle über den Status dieser Anforderung zur Prüfung an den TPL Validierung. 
 
-%bishierher
-
 \subsubsection{Erfassung abgeschlossen}
 
-Der TPL Validierung überprüft, ob die Anforderung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend zurücksetzen über die farbige Schaltfläche. Der TPL Validierung kann nun den Status auf 'Anforderung bearbeiten' zurücksetzen. Die Kontrolle geht dann wieder zum Ersteller (Kapitel xy). Ist die Anforderung korrekt und vollständig erfasst, kann der TPL Validierung den Status auf 'Erfassung abgeschlossen' setzen. \\
+Der TPL Validierung überprüft, ob die Anforderung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend zurücksetzen über die farbige Schaltfläche. Der TPL Validierung kann nun den Status auf 'Anforderung bearbeiten' zurücksetzen. Die Kontrolle geht dann wieder zum Ersteller. Ist die Anforderung korrekt und vollständig erfasst, kann der TPL Validierung den Status auf 'Erfassung abgeschlossen' setzen. \\
 
 Am Ende einer RAMS-Phase sind alle Anforderungen idealerweise in diesem Status ('Erfassung abgeschlossen') und bleiben in diesem Zustand während der Ausführung. Vor dem Start zur Nachweisplanung, welche allenfalls Monate oder sogar Jahre später erfolgen kann, muss der TPL Validierung nochmals überprüfen, ob die Anforderungen immer noch korrekt sind. Wenn er selbst keine Änderungen anbringen möchte, setzt er entsprechend den Status entweder nochmals zurück auf 'Anforderung bearbeiten' oder weiter auf 'Nachweisplanung'. Im letzteren Fall liegt die Kontrolle über den Status dann beim Validierer der Anforderung, welcher die Nachweisplanung durchführt. 
 
 \subsubsection{Nachweisplanung}
 \label{bkm:Ref2018071811}
 
-Der Validierer plant den Nachweis der Anforderung und füllt dazu bei der entsprechenden Maske 'Validierung der Anforderung (Planung)' (Abbildung??) die einzelnen Felder aus. Nach dem 'Übernehmen' der Änderungen kann der Validierer den Status weiterschalten zu 'Nachweisplanung abgeschlossen'. Die Kontrolle über den Status obliegt nun wieder dem TPL Validierung zur Überprüfung der Planung. 
+Der Validierer plant den Nachweis der Anforderung und füllt dazu bei der entsprechenden Maske 'Validierung der Anforderung (Planung)'  die einzelnen Felder aus. 
+
+\begin{figure}[H]
+\center{\includegraphics[width=.6\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_ValidierungPlanung.jpg}}
+\caption{Validierung der Anforderung}
+% \label{fig:speciation}
+\end{figure}
+
+Nach dem 'Übernehmen' der Änderungen kann der Validierer den Status weiterschalten zu 'Nachweisplanung abgeschlossen'. Die Kontrolle über den Status obliegt nun wieder dem TPL Validierung zur Überprüfung der Planung. 
 
 \subsubsection{Überprüfung der Nachweisplanung}
 
-Der TPL Validierung überprüft, ob die Nachweisplanung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend zurücksetzen über die farbige Schaltfläche. Der TPL Validierung hat nun die Möglichkeit den Status auf 'Nachweisplanung' zurückzusetzen. Die Kontrolle geht dann wieder zum Validierer (Kapitel yx). Ist die Nachweisplanung korrekt und vollständig, kann der TPL Validierung den Status auf 'Freigegeben zur Validierung' setzen. 
+Der TPL Validierung überprüft, ob die Nachweisplanung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend zurücksetzen über die farbige Schaltfläche. Der TPL Validierung hat nun die Möglichkeit den Status auf 'Nachweisplanung' zurückzusetzen. Die Kontrolle geht dann wieder zum Validierer. Ist die Nachweisplanung korrekt und vollständig, kann der TPL Validierung den Status auf 'Freigegeben zur Validierung' setzen. 
 
-\subsubsection{Freigegeben zur Validierung}
+\subsubsection{Freigegeben zur Validierung - Planung}
 
-Der Validierer erbringt den Nachweis zur Erfüllung der Anforderung selbst oder durch einen Drittanbieter und füllt dazu bei der entsprechenden Maske 'Validierung der Anforderung (Durchführung)' die einzelnen Felder aus. Wichtig ist dabei, dass er auch die entsprechenden Nachweisdokumente hinterlegt. Beim Validierungsergebnis wählt er gezielt aus einer der möglichen Endzustände für die Anforderung aus. Beinhaltet das Validierungsergebnis eine Massnahme, ist ein entsprechender Vorschlag im nächsten Feld zu formulieren. \\
+Der Validierer erbringt den Nachweis zur Erfüllung der Anforderung selbst oder durch einen Drittanbieter und füllt dazu bei der entsprechenden Maske 'Validierung der Anforderung (Durchführung)' die einzelnen Felder aus. 
+
+\begin{figure}[H]
+\center{\includegraphics[width=.6\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_ValidierungDurchf.jpg}}
+\caption{Validierung der Anforderung - Durchführung}
+% \label{fig:speciation}
+\end{figure}
+
+Wichtig ist dabei, dass er auch die entsprechenden Nachweisdokumente hinterlegt. Beim Validierungsergebnis wählt er gezielt aus einer der möglichen Endzustände für die Anforderung aus. Beinhaltet das Validierungsergebnis eine Massnahme, ist ein entsprechender Vorschlag im nächsten Feld zu formulieren. \\
  
 Nach dem 'Übernehmen' der Änderungen kann der Validierer den Status im erscheinenden Fenster zu 'Überprüfung der Validierung' weiterschalten. Die Kontrolle über den Status obliegt nun wieder dem TPL Validierung zur Überprüfung der Validierung und Beurteilung des Validierungsergebnisses. 
 
@@ -229,15 +243,15 @@ Der TPL Validierung überprüft, ob die Durchführung der Validierung vollständ
 % \label{fig:speciation}
 \end{figure}
 
-Nun kann der TPL Validierung im Bedarfsfall den Status auf 'Freigegeben zur Validierung' zurücksetzen. Die Kontrolle geht dann wieder zum Validierer (Kapitel yx). Ist die Durchführung der Validierung korrekt und vollständig, kann der TPL Validierung den Status auf 'Validierung abgeschlossen' setzen. 
+Nun kann der TPL Validierung im Bedarfsfall den Status auf 'Freigegeben zur Validierung' zurücksetzen. Die Kontrolle geht dann wieder zum Validierer. Ist die Durchführung der Validierung korrekt und vollständig, kann der TPL Validierung den Status auf 'Validierung abgeschlossen' setzen. 
 
 \subsubsection{Validierung abgeschlossen}
 
-Der Validierungsprozess für diese Anforderung ist in diesem Status abgeschlossen. Das heisst nicht, dass die Anforderung zwingend erfüllt wurde. Es ist möglich, dass die Anforderung nicht erfüllt ist und weitere Massnahmen, z.B. betriebliche Massnahmen, notwendig sind. Die Erfassung von Massnahmen ist in einer separaten Anwendung ---Modul--- durchzuführen.
+Der Validierungsprozess für diese Anforderung ist in diesem Status abgeschlossen. Das heisst nicht, dass die Anforderung zwingend erfüllt wurde. Es ist möglich, dass die Anforderung nicht erfüllt ist und weitere Massnahmen, z.B. betriebliche Massnahmen, notwendig sind. Die Erfassung von Massnahmen ist separat durchzuführen.
 
 %% Kann/wird eine solche Massnahme mit einem anderen Modul abgedeckt -> Arbeitspaket, Mangel?
 
-% bishierher (Seite 16 / Kap 5.1.4)
+%bishierher
 
 \pagebreak
 
