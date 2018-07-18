@@ -725,6 +725,7 @@ Sie können vor dem Abschliessen des Protokolls zur Kontrolle auch ein PDF davon
 Wenn Sie ganz sicher sind, dass alles im Protokoll stimmt, klicken Sie auf die Schaltfläche 'Archivieren' \col{(2)} und bestätigen die Rückfrage \col{(3)}. Dann setzt der CUBE PA den Status für diese Sitzung auf 'Definitiv' und das Protokoll lässt sich nicht mehr bearbeiten.
 
 \subsubsection{Das Sitzungsprotokoll als pdf}
+\label{bkm:Ref2018071801}
 
 Wie oben beschrieben können Sie mittels \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg}-Symbol \col{(1)} von der Sitzung ein PDF-Protokoll erstellen.
 
@@ -739,22 +740,50 @@ Weiter wird dem Protokoll die Pendenzenliste angehängt. Sie enthält sämtliche
 % \label{fig:speciation}
 \end{figure}
 
-\textbf{Hinweis:} Die Kopfzeile (Logo) wie auch die Fusszeile lassen sich individuell konfigureren.
+\textbf{Hinweis:} Die Kopfzeile (Logo) wie auch die Fusszeile lassen sich individuell konfigurieren.
 
 \clearpage
-\subsection{Pendenzen erstellen}
+\subsection{Pendenzen in der Übersicht}
+\label{bkm:Ref2018071802}
 
-Sie können auch Pendenzen unabhängig von einem Sitzungsprotokoll erstellen. Wählen Sie im Menü den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Pendenzen'. Darauf erscheint die Pendenzenliste.
-
-\vspace{\baselineskip}
-
-Klicken Sie auf das Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} oben links, erscheint die Ansicht 'Pendenz erfassen' mit der Maske zur Eingabe einer Pendenz.
+Pendenzen werden im Sitzungswesen, im Anforderungs- und Mängelmanagement oder unabhängig verwendet. Werden Pendenzen im Sitzungswesen mit einer Sitzung verknüpft, erscheinen diese auch im  Sitzungsprotokoll (siehe Kapitel \ref{bkm:Ref2018071801}).
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-4_Pendenzen.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-4_PendenzenUebersicht.jpg}}
 \caption{Pendenzen erfassen}
 % \label{fig:speciation}
 \end{figure}
+
+Mit dem Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} wird ohne Sitzungszuweisung eine neue Pendenz angelegt.\\
+Mittels dem Pfeil-Symbol \includegraphics[height=12pt]{/Icons/Doppelpfeil.jpg} \col{(2)} werden alle Mängel (aus dem Anforderungs- und Mängelmanagement) aufgelistet, welche mit den ausgewählten Pendenzen in Verbindung stehen.
+Mit dem \includegraphics[height=12pt]{/Icons/Listegenerieren.jpg}-Symbol können Sie von den gefilterten Pendenzen eine Excelliste generien lassen \col{(3)}.
+
+\vspace{\baselineskip}
+
+Über das Volltextsuche-Feld \col{(4)} lassen sich sämtliche Pendenzen durchsuchen. Ergänzend oder alternativ können Sie Suchbegriffe in jede Spalte eintragen und mittels dem Lupen-Symbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(6)} die Suche starten.\\
+Mit dem Spaltenkonfigurator \includegraphics[height=12pt]{/Icons/SpaltenEinst.jpg} \col{(5)} lassen sich überflüssige Spalten ausblenden.
+Nebst dem Excelexport (\includegraphics[height=12pt]{/Icons/Listegenerieren.jpg}) können Sie die ausgewhälten Pendenzen auch als PDF speichern. Dazu klicken Sie auf das Blattsymbol \includegraphics[height=12pt]{/Icons/Blattsymbol_s.jpg} \col{(7)}.
+
+\vspace{\baselineskip}
+
+Die Pendenzen verwenden ein Statussystem, mit welchem der momentane Zustand einer Pendenz definiert wird. Das Statussystem kann jeweils mit Klick auf das Fragezeichen (\includegraphics[height=12pt]{/Icons/Fragezeichen.jpg}) \col{(8)} abgerufen werden. Folgende Status sind bei den Pendenzen verfügbar:
+
+\clearpage
+\vspace{\baselineskip}
+
+\begin{compactitem}
+	\item \textbf{pendent}: Die Pendenz wurde eröffnet, aber noch nicht bearbeitet. Dieser Wert ist beim Eröffnen einer Pendenz automatisch gesetzt.
+	\item \textbf{bearbeitet}: Der Verantwortliche hat seine Arbeit getan und setzt den Status auf 'bearbeitet'.
+	\item \textbf{abgeschlossen}: Die interne Sitzung des Gesamtleiters bestätigt, dass die Pendenz abgeschlossen ist.
+	\item \textbf{Abschluss bestätigt}: An derjenigen Sitzungsart, an der die Pendenz eröffnet wurde, wird bestätigt, dass die Pendenz
+abgeschlossen ist.
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+\textbf{Hinweise zum Statussystem:} Erst wenn eine Pendenz den Status 'Abschluss bestätigt' hat, wird die Pendenz 'grün' dargestellt und als abgeschlossen betrachtet (siehe auch Farblegende unten). Pendenzen mit Status 'Abschluss bestätigt' werden auf dem Sitzungsprotokoll (Pendenzenliste) nicht mehr angezeigt.
+
+\vspace{\baselineskip}
 
 \textbf{Farblegende:}
 
@@ -764,12 +793,20 @@ Klicken Sie auf das Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.
 \includegraphics[height=12pt]{/Icons/PunktRot.jpg} & Pendenz ist überfällig \\
 \end{tabular}
 
-% \vspace{\baselineskip}
-
 % Die Verwendung der gelben Markierung ist abhängig von der Gesamtdauer einer Pendenz (Zeitpunkt der Erstellung bis Fälligkeit).
 
+% \vspace{\baselineskip}
+
+\subsubsection{Pendenzen erstellen}
+
+Pendenzen können direkt in einem Sitzungsprotokoll oder im Anforderungs- und Mängelmanagement erstellt werden. Zudem können Pendenzen auch unabhängig von einer Sitzung oder einem Mangel erstellt werden. Wählen Sie im Menü den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Pendenzen'.
+
+\vspace{\baselineskip}
+
+In der Pendenzenübersicht klicken Sie auf das Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} oben links. Es erscheint die Formularansicht 'Pendenz erfassen':
+
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{54_PendenzenErfassen.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-5_PendenzenErfassen.jpg}}
 \caption{Pendenzen erfassen}
 % \label{fig:speciation}
 \end{figure}
@@ -778,21 +815,40 @@ Füllen Sie die Felder aus.
 
 \begin{itemize}
 \item
-'Titel' \col{(1)} und 'Beschreibung' \col{(2)} können Sie als freien Text erfassen.
+'Titel*' und 'Beschreibung*' können Sie als freien Text erfassen (Pflichtfelder). Der Text in der Beschreibung kann formatiert werden.
 \item
-Den 'Termin' \col{(3)} erfassen Sie über eine Kalenderauswahl, alle anderen Felder \col{(4)} verfügen über eine Listenauswahl. Im Feld 'Status' erscheint automatisch 'pendent'. Das ist der normale Status, wenn eine Pendenz neu angelegt wird.
+'Übergeordnete Pendenzen' / 'Untergeordnete Pendenzen': Pendenzen können in Abhängigkeit mit anderen Pendenzen gesetzt werden. Wählen Sie hier die über- und untergeordneten Abhängigkeit zu anderen Pendenzen aus.
+% Welche Auswirkung haben diese Abhängigkeit in Bezug auf das Statussystem oder sonstige Einstellungen?
+\item 
+'Beilagen' hinzufügen: Sie können beliebig viele Beilagen als Anhang oder Link hinzufügen. Verlinkt werden Dokumente, welche im Dokumentenwesen bereits gespeichert sind.
+\item
+'Termin*': Terminieren Sie die Pendenz (Pflichtfeld).
+\item
+'Projekt / Teilprojekt': Die Pendenz kann mit einem Projekt oder Teilprojekt verknüpft werden.
+\item
+'Status*': Der Startstatus 'pendent' wird jeweils standardmässig eingetragen und kann angepasst werden. Weitere Informationen zum Statussystem siehe oben unter Kapitel \ref{bkm:Ref2018071802} (Pflichtfeld).
+\item
+'Auftrag erteilt durch' wird standardmässig durch die Person ausgefüllt, welcher in der CUBE PA Instanz eingeloggt ist. Das Feld kann jedoch angepasst werden.
+\item
+'Anforderungen' und 'Arbeitspaket': Diese beiden Felder werden im Anforderungs- und Mängelmanagement benötigt, resp. werden Pendenzen mit Anforderungen und Arbeitspaketen verknüpft. Mehr dazu im Kapitel \ref{bkm:Ref2018071701} (Anforderungs- und Mängelmanagement)
+\item
+'Verantwortlich*' und 'Verantwortliches Gremium*': Eines der beiden Pflichtfelder muss ausgefüllt werden.
+\item
+'Mitarbeiter': Hier können weitere Mitarbeiter hinzugefügt werden.
 \end{itemize}
-Klicken Sie auf 'Erstellen' \col{(5)}, um die Pendenz der Pendenzenliste anzufügen.
 
-\subsection{Pendenzen suchen, lesen, nachführen}
-Im Verlauf der Projektarbeit besteht der Bedarf, Pendenzen nachzuführen, z.B. als erledigt zu bezeichnen, den Termin zu verschieben oder den Inhalt zu präzisieren. Dies können Sie tun, indem Sie eine Pendenz in der Pendenzenliste suchen und bearbeiten.
+Klicken Sie auf 'Erstellen', um die Pendenz zu speichern und der Pendenzenliste anzufügen.
+
+\subsubsection{Pendenzen suchen, lesen, nachführen}
+
+Im Verlauf der Projektarbeit besteht der Bedarf, Pendenzen nachzuführen, z.B. als 'abgeschlossen' zu bezeichnen, den Termin zu verschieben oder den Inhalt zu präzisieren. Dies können Sie tun, indem Sie eine Pendenz in der Pendenzenliste suchen und bearbeiten.
 
 \vspace{\baselineskip}
 
 Um eine oder mehrere Pendenzen zu suchen, wählen Sie im Menüband den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Pendenzen'. Darauf erscheint die Pendenzenliste:
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-5_PendenzenUebersicht.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-6_PendenzenUebersicht.jpg}}
 \caption{Nach einer Pendenz suchen}
 % \label{fig:speciation}
 \end{figure}
@@ -804,10 +860,14 @@ Sie können nun optisch innerhalb der gesamten Pendenzenliste suchen oder die Pe
 % \label{fig:speciation}
 \end{figure}
 
-Zum Filtern der Pendenzenliste stehen ihnen die Suchfelder in der ersten Zeile zur Verfügung. In den Feldern 'Titel' und 'Beschreibung' können Sie freien Text eingeben; in den Feldern 'Besprechungsart', 'Projekt/Teilprojekt', 'Verantwortlich', 'Verantwortliches Gremium' und 'Status' steht jeweils eine Auswahlliste zur Verfügung. Im Feld 'Nr.' können Sie eine Sitzungsnummer eingeben und im Feld 'Termin' steht eine Kalenderauswahl zur Verfügung. Haben Sie die Filterwerte ausgewählt, klicken Sie auf das Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(1)} links oder drücken die 'Enter'-Taste und die gefilterte Pendenzenliste erscheint.
+Zum Filtern der Pendenzenliste stehen ihnen die Suchfelder der einzelnen Spalten, sowie das Volltext-Suchfeld zur Verfügung. In einigen Spaltenfeldern können Sie freien Text zur Suche eingeben, in anderen Spalten die Auswahl per Dropdown-Menü vornehmen. Die Ansicht und Spaltenzahl ist abhängig von den Einstellungen, welche Sie links über der Lupe mit dem Zahnrädchen (Spalten konfigurieren) vornehmen können.
+
+\vspace{\baselineskip}
+
+Haben Sie die Suchworte / Filterwerte eingegeben oder ausgewählt, klicken Sie auf das Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(1)} links oder drücken die 'Enter'-Taste und die gefilterte Pendenzenliste erscheint.
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-5_PendenzenFelderBearbeiten.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-6_PendenzenFelderBearbeiten.jpg}}
 \caption{Pendenzen bearbeiten}
 % \label{fig:speciation}
 \end{figure}
@@ -822,34 +882,51 @@ Wollen Sie wieder zur gesamten Pendenzenliste zurückkehren, löschen Sie die Fi
 \includegraphics[height=14pt]{55_PendenzenFeldLoeschen.jpg}
 \end{center}
 
-Wollen Sie eine Pendenz bearbeiten, gibt es zwei Möglichkeiten: Sie können direkt in der Pendenzenliste das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Stift.jpg} \col{(4)} links neben einem Feld anklicken, den Feldinhalt verändern und dann das Häkchensymbol \includegraphics[height=12pt]{/Icons/Gutzeichen.jpg} \col{(5)} unter dem Feld anklicken, um die Änderung zu übernehmen. Beim Status können Sie immer direkt auf die Auswahl zugreifen und den Status ändern \col{(6)}. Oder Sie klicken auf das Bearbeiten-Symbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} \col{(7)} links der Pendenz, dann öffnet sich die Ansicht 'Pendenz bearbeiten' \col{(8)}. Sie können nun die Feldinhalte verändern und zuletzt 'Übernehmen' anklicken, um die Änderungen zu speichern. Mit dem Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(9)} kehren Sie zur Pendenzenliste zurück, die vorher gefilterte Auswahl bleibt aktiv.
-
+Wollen Sie eine Pendenz bearbeiten, gibt es zwei Möglichkeiten: Sie können direkt in der Pendenzenliste das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Stift.jpg} \col{(4)} links neben einem Feld anklicken, den Feldinhalt verändern und dann das Häkchensymbol \includegraphics[height=12pt]{/Icons/Gutzeichen.jpg} \col{(5)} unter dem Feld anklicken, um die Änderung zu übernehmen. Oder Sie klicken auf das Bearbeiten-Symbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} \col{(7)} links der Pendenz, dann öffnet sich die Ansicht 'Pendenz bearbeiten' \col{(8)}. Sie können nun die Feldinhalte verändern und zuletzt 'Übernehmen' anklicken, um die Änderungen zu speichern. Mit dem Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(9)} kehren Sie zur Pendenzenliste zurück, die vorher gefilterte Auswahl bleibt aktiv.
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{55_PendenzenBearbeiten.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-6_PendenzenBearbeiten.jpg}}
 \caption{Pendenz bearbeiten}
 % \label{fig:speciation}
 \end{figure}
 
-Der Status einer Pendenz kann folgende Werte annehmen:
+% bishierher
+
+\subsection{Entscheide erfassen, suchen und lesen}
+
+Entscheide werden grundsätzlich im Rahmen von Sitzungen im Protokoll erstellt (Entscheid hinzufügen oder Traktandum in Entscheid umwandeln). 
+Mit der Auswahl im Menü links 'Sitzungswesen' und dann den Unterpunkt 'Entscheide' gelangen Sie zur Übersicht der Entscheide:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-5_EntscheideUebersicht.jpg}}
+\caption{Entscheideliste}
+% \label{fig:speciation}
+\end{figure}
+
+Wie bei den Pendenzen können Sie auch hier die Einträge filtern und nach Begriffen suchen. Ebenso können Sie die Liste in Form eines PDF-Dokuments generieren. \\
+
+Mit Klick auf das Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} können neue Entscheide erfasst werden.
+
+\clearpage
+In wenigen Schritten haben Sie ein neuer Entscheid erfasst:
+
+\begin{figure}[H]
+\center{\includegraphics[width=.6\linewidth]{../chapters/05_Sitzungswesen/pictures/5-5_EntscheidErfassen.jpg}}
+\caption{Protokoll lesen}
+% \label{fig:speciation}
+\end{figure}
 
 \begin{compactitem}
-\item
-Pendent: Die Pendenz wurde eröffnet, aber noch nicht bearbeitet. Dieser Wert ist beim Eröffnen einer Pendenz automatisch gesetzt.
-\item
-Bearbeitet: Der Verantwortliche hat seine Arbeit getan und setzt den Status auf 'bearbeitet'.
-\item
-Abgeschlossen: Die interne Sitzung des Gesamtleiters bestätigt, dass die Pendenz abgeschlossen ist.
-\item
-Abschluss bestätigt: An derjenigen Sitzungsart, an der die Pendenz eröffnet wurde, wird bestätigt, dass die Pendenz
-abgeschlossen ist.
+	\item Geben Sie einen aussagekräftigen Titel ein. Der Titel ist ein Pflichtfeld.
+	\item Nun können Sie eine nähere Beschreibung über den Entscheid eintragen und den Text auch formatieren. Die Beschreibung ist ein Pflichtfeld.
+	\item Der Entscheid wird einem Projekt / oder Teilprojekt zugeteilt. Wählen Sie aus der Liste der erfassten Projekten aus (Pflichtfeld).
+	\item Mit 'Erstellen' werden die Daten gespeichert und der Entscheid angelegt. Andernfalls können Sie oben links mit dem Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} das Formular ohne die Daten zu speichern verlassen und gelangen wieder zur Entscheide-Übersicht.
+
 \end{compactitem}
 
-\subsection{Entscheide suchen und lesen}
+\clearpage
 
-Wollen Sie Entscheide nachlesen, wählen Sie im Menüband den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Entscheide'. Darauf erscheint die Entscheidliste. Diese können Sie durchblättern und filtern wie die Pendenzenliste. Ebenso können Sie die Liste in Form eines PDF-Dokuments generieren. Sie können jedoch weder einen neuen Entscheid hinzufügen noch einen Entscheid bearbeiten. Entscheide können Sie nur im Rahmen eines Sitzungsprotokolls erfassen oder bearbeiten.
-
-\subsection{Protokolle lesen}
+\subsection{Sitzungsprotokolle lesen}
 
 Wollen Sie Sitzungsprotokolle lesen, wählen Sie im Menüband den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Sitzungen'. Darauf erscheint die Sitzungsliste.
 
