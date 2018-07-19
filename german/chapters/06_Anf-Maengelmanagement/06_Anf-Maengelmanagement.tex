@@ -75,7 +75,7 @@ Abhängig von der Rolle, die ein Mitarbeiter inne hat, werden ihm Kacheln angeze
 Wählen Sie im Menü links den Punkt 'Anforderungs- und Mängelmanagement' und dann den Unterpunkt 'Anforderungen'.
 
 % \pagebreak
-\vspace{9.5cm}
+\vspace{10.5cm}
 
 Sie sehen die Übersicht der Anforderungen. Die gewohnte Arbeitsweise von CUBE PA können Sie auch hier anwenden. (Volltextsuche, Spalten filtern und sortieren, sowie Spalten ein- und ausblenden \includegraphics[height=12pt]{/Icons/SpaltenEinst.jpg} etc.).
 
@@ -120,7 +120,13 @@ Die Prozesse und Abläufe werden nachfolgend anhand der Status beschrieben, welc
 
 \vspace{\baselineskip}
 
-Es gibt zwei Möglichkeiten eine Anforderung zu bearbeiten. Entweder eröffnet man eine komplett neue Anforderung oder eine bestehende Anforderung wird angepasst.
+Eine Besonderheit des Anforderungs- und Mängelmanagements ist die grafische Weiterschaltung des Statussystems. Mit farbigen Buttons wird dem Benutzer immer der nächste Schritt oder die Rückgabe an vorhergehende Stelle angezeigt. Mit wenigen Klicks wird die Anforderung durch den Prozess geführt.
+
+\begin{figure}[H]
+\center{\includegraphics[width=.45\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_grafStatus.jpg}}
+% \caption{Anforderung erstellen oder bearbeiten}
+% \label{fig:speciation}
+\end{figure}
 
 \subsection{Anforderungen erstellen und bearbeiten}
 \label{bkm:Ref2018071810}
@@ -143,7 +149,9 @@ Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübers
 
 \textbf{Hinweis:} Falls bei den Optionen einer Anforderung das Bearbeiten-Symbol (\includegraphics[height=12pt]{/Icons/bearbeiten.jpg}) fehlt, besitzen Sie nur Leserechte und können die Anforderung nicht ändern.
 
-\clearpage
+%\clearpage
+\vspace{\baselineskip}
+
 \textbf{Mehrere Anforderungen bearbeiten}
 
 Um mehrere Anforderungen zu überarbeiten, können diese mit Häkchen (\includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) ausgewählt werden. Danach ist es möglich mit der Schaltfläche 'Serienbearbeitung' (\includegraphics[height=12pt]{/Icons/A_Serienbearbeitung.jpg}) in der Titelleiste die einzelnen Anforderungen nacheinander zu bearbeiten und jeweils mit dem Button \includegraphics[height=12pt]{/Icons/speichern_weiter.jpg} \col{(2)} zur nächsten Anforderung zu springen ohne diese erneut auswählen zu müssen. Mit dem \includegraphics[height=12pt]{/Icons/Abbrechen_r.jpg}-Symbol \col{(1)} können Sie die Maske ohne die Daten zu speichern wieder verlassen. \\
@@ -253,15 +261,106 @@ Der Validierungsprozess für diese Anforderung ist in diesem Status abgeschlosse
 
 %bishierher
 
-\pagebreak
-
-\section{Arbeitspaket}
-
-folgt später
+% \pagebreak
 
 \section{Mängel}
 
-folgt später
+In Bezug auf die Anforderungen werden sämtliche Mängel erfasst. 
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_MaengelUebersicht.jpg}}
+\caption{Übersicht der erfassten Mängel}
+% \label{fig:speciation}
+\end{figure}
+
+\textbf{Die Mängelübersicht kurz erklärt:}
+
+\vspace{\baselineskip}
+
+\begin{compactitem}
+	\item Mit dem Plussymbol (\includegraphics[height=12pt]{/Icons/Plussymbol.jpg}) wird ein neuer Mangel erfasst. 
+	\item Für die Suche bereits erfasster Mängel stehen wie gewohnt die Volltextsuche und die Spaltenfilterung zur Verfügung. Mit dem Filter-Symbol (\includegraphics[height=12pt]{/Icons/Filter.jpg}) können Sie die erweiterten Filteroptionen einblenden (Such- und Filtereinstellungen speichern).
+	\item Mit dem \includegraphics[height=12pt]{/Icons/Doppelpfeil_l.jpg}-Symbol können Sie sich alle Pendenzen anzeigen lassen, welche via Arbeitspaketen mit den ausgewählten Mängel verknüpft sind.
+	\item Mit dem \includegraphics[height=12pt]{/Icons/Pfeil_l.jpg}-Symbol werden Ihnen alle Arbeitspakete angezeigt, welche mit den ausgewählten Mängel verknüpft sind.
+	\item Mit dem \includegraphics[height=12pt]{/Icons/ListeGenerieren.jpg}-Symbol wird von den ausgewählten / gefilterten Mängel eine Excelliste erstellt.
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+Mit Klick auf die ID-Nummer eines Mangels können Sie den Mangel anzeigen lassen oder bearbeiten. Die Mängel besitzen ein Statussystem, welches den Zustand / Fortschritt der Bearbeitung dokumentiert. Mit Klick auf das Status-Symbol (\includegraphics[height=12pt]{/Icons/Status.jpg}) erhalten Sie eine Statistik über den 'Zustand' der Mängel (Wie viele Mängel haben welchen Status).
+
+\begin{figure}[H]
+\center{\includegraphics[width=.5\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_MaengelStatistik.jpg}}
+\caption{Visualisierung Statusübersicht der Mängel}
+% \label{fig:speciation}
+\end{figure}
+
+\textbf{Neuen Mangel erfassen}
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_MaengelErfassen.jpg}}
+\caption{Neuer Mangel erfassen}
+% \label{fig:speciation}
+\end{figure}
+
+Geben Sie einen Titel (Pflichtfeld) und eine Beschreibung für den Mangel ein. Weiter kann der Mangel mit einem Arbeitspaket und einer Datei verknüpft werden (die gewünschte Datei muss vorher in der Dokumentenablage erfasst werden).\\
+Nach Klick auf 'Erstellen' sind die Daten gespeichert und der neue Mangel angelegt. Mit dem Listensymbol (\includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg}) gelangen Sie wieder zur Übersicht.
+
+\pagebreak
+\section{Arbeitspaket}
+
+Arbeitspakete entsprechen einer Sammlung thematisch ähnlicher Mängel oder Pendenzen. Es enthält so zum Beispiel sämtliche Mängel, welche dann an Firma X zur Korrektur übergeben werden.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_ArbeitspUebersicht.jpg}}
+\caption{Übersicht der erfassten Arbeitspaketen}
+% \label{fig:speciation}
+\end{figure}
+
+\textbf{Die Arbeitspaketübersicht kurz erklärt:}
+
+\vspace{\baselineskip}
+
+\begin{compactitem}
+	\item Mit dem Plussymbol (\includegraphics[height=12pt]{/Icons/Plussymbol.jpg}) wird ein neues Arbeitspaket erfasst. 
+	\item Für die Suche bereits erfasster Arbeitspakete stehen wie gewohnt die Volltextsuche und die Spaltenfilterung zur Verfügung. Mit dem Filter-Symbol (\includegraphics[height=12pt]{/Icons/Filter.jpg}) können Sie die erweiterten Filteroptionen einblenden (Such- und Filtereinstellungen speichern).
+	\item Mit dem \includegraphics[height=12pt]{/Icons/Doppelpfeil_l.jpg}-Symbol können Sie sich alle Pendenzen anzeigen lassen, welche mit den ausgewählten Arbeitspaketen verknüpft sind.
+	\item Mit dem \includegraphics[height=12pt]{/Icons/Doppelpfeil.jpg}-Symbol werden Ihnen alle Mängel angezeigt, welche mit den ausgewählten Arbeitspaketen verknüpft sind.
+	\item Mit dem \includegraphics[height=12pt]{/Icons/ListeGenerieren.jpg}-Symbol wird von den ausgewählten / gefilterten Arbeitspaketen eine Excelliste erstellt.
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+Mit Klick auf die ID-Nummer eines Arbeitspakets können Sie den Arbeitspaket anzeigen lassen oder bearbeiten. Die Arbeitspakete besitzen ein Statussystem, welches den Zustand / Fortschritt der Bearbeitung dokumentiert.
+
+\vspace{\baselineskip}
+
+Bei den Spalten 'Verknüpfte Mängel / Verknüpfte Pendenzen' gelangen Sie mittels den blauen Titel (Links) direkt auf den entsprechenden Mangel, resp. die entsprechende Pendenz.
+
+\pagebreak
+\textbf{Ein neues Arbeitspaket erfassen:}
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_ArbeitspErstellen.jpg}}
+\caption{Ein neues Arbeitspaket erstellen}
+% \label{fig:speciation}
+\end{figure}
+
+Geben Sie für das Arbeitspaket einen aussagekräftigen Titel (Pflichtfeld) und eine Beschreibung ein.\\
+Das Arbeitspaket kann bei 'Verknüpfte Mängel / Verknüpfte Pendenzen' mit Mängel, resp. Pendenzen verknüpft werden (Mehrfachauswahl). Mit dem \includegraphics[height=12pt]{/Icons/verschieben.jpg}-Symbol \col{(4)} können Sie die Reihenfolge der Pendenzen verändern. Packen Sie das Symbol und ziehen Sie die Zeile an die gewünschte Position. Mit dem Lupensymbol (\includegraphics[height=12pt]{/Icons/Lupe.jpg}) \col{(5)} können Sie die Pendenz betrachten (Die Pendenz wird in neuem Browserfenster geöffnet). Mit dem roten Kreuzchen (\includegraphics[height=12pt]{/Icons/roKreuzchen.jpg}) kann eine verknüpfte Pendenz wieder entfernt werden \col{(5)}.
+
+\vspace{\baselineskip}
+
+Mit dem Listensymbol (\includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg}) \col{(1)} gelangen Sie wieder zur Arbeitspaket-Übersicht. Mit dem Lupensymbol (\includegraphics[height=12pt]{/Icons/Lupe.jpg}) \col{(2)} können Sie das Arbeitspaket im Ansichtsmodus betrachten. Mit dem \includegraphics[height=12pt]{/Icons/Status_aendern.jpg}-Symbol \col{(3)} kann der Status verändert werden:
+
+\begin{figure}[H]
+\center{\includegraphics[width=.5\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_ArbeitspStatus.jpg}}
+\caption{Ein neues Arbeitspaket erstellen}
+% \label{fig:speciation}
+\end{figure}
+
+In der Maske wird der mögliche neue Status vorgeschlagen. Geben Sie optional einen Grund für die Statusänderung ein und verknüpfen Sie bei Bedarf ein Dokument aus der Dokumentenablage (das gewünschte Dokument muss vorher in der Dokumentenablage hochgeladen werden).\\
+Mit 'Übernehmen' werden die Eingaben gespeichert und der Vorgang abgeschlossen, mit dem Kreuzchen (\includegraphics[height=12pt]{/Icons/X_Button.jpg}) oben links verlassen Sie das Statusfenster ohne etwas zu speichern (Abbrechen).
 
 \section{Pendenzen}
 
