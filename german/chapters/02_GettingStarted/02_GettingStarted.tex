@@ -381,10 +381,60 @@ Mit roter Schrift wird dann jeweils das Feld bezeichnet, welches ausgefüllt wer
 Laden Sie in der Dokumentenablage eine grössere Datei hoch, kann das einige Zeit in Anspruch nehmen. Wollen Sie während dem Hochladen bereits die Eingaben speichern, erscheint eine Meldung, dass noch gerade Dateien hochgeladen werden. Warten Sie bis das Hochladen abgeschlossen ist (Fortschritt = 100 \%), danach können Sie auch 'Übernehmen' klicken. Meldung:
 
 \begin{figure}[H]
-\center{\includegraphics[width=.6\linewidth]{../chapters/02_GettingStarted/pictures/2-5-4_MeldungHochladen}}
+\center{\includegraphics[width=.6\linewidth]{../chapters/02_GettingStarted/pictures/2-5-4_MeldungHochladen.jpg}}
 \caption{Warnung beim Speichern während dem Hochladen einer Datei}
 % \label{fig:speciation}
 \end{figure}
+
+\pagebreak
+\subsection{Benachrichtigung bei Veränderungen der Dateneinträgen und Dokumenten}
+
+CUEB PA bietet in einigen Modulen (Dokumentenablage, Pendenzen, Anforderungen, Beschaffungswesen etc.) die Möglichkeit, Benachrichtigungsregeln zu erstellen und so die Veränderungen von Einträgen und Dokumenten zu verfolgen. Wird ein 'beobachtetes' Dokument oder ein entsprechender Eintrag verändert, erhalten Sie eine Email. Dadurch sind Sie immer auf dem Laufenden und wissen, wann von Ihnen wieder eine Aktion erfolgen kann oder Daten aktualisiert wurden.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/02_GettingStarted/pictures/getS_Benachrichtigung.jpg}}
+\caption{Benachrichtigung erstellen}
+% \label{fig:speciation}
+\end{figure}
+
+Eine Benachrichtigungsregel kann überall dort erstellt werden, wo das Auge-Symbol ersichtlich ist. Mit Klick auf das Auge-Symbol \includegraphics[height=12pt]{/Icons/Auge_g.jpg} \col{(1)} gelangen Sie zur Konfigurationsseite:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/02_GettingStarted/pictures/getS_BenachRegelErstellen.jpg}}
+\caption{Benachrichtigungsregel erstellen}
+% \label{fig:speciation}
+\end{figure}
+
+Klicken Sie auf das Plussymbol \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg}, nun können Sie eine neue Regel erstellen.
+
+Die Konfiguration im Überblick:
+
+\begin{compactitem}
+	\item \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}: Sie können mehrere Regeln erstellen, wiederholen Sie den Konfigurationsschritt.
+	\item \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg} \col{(2)}: Standardmässig wird ein einzelner Datensatz beobachtet. Wenn Sie das Gutzeichen in der Box entfernen, gilt die Regel für alle Datensätze (z.B. für alle Pendenzen).
+	\item \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(3)}: Eine erstellte Regel können Sie auch wieder löschen.
+	\item \includegraphics[height=12pt]{/Icons/Gutzeichen.jpg} \col{(4)}: Einstellungen werden mit dem Gutzeichen gespeichert.
+	\item \includegraphics[height=12pt]{/Icons/Refresh.jpg} \col{(5)}: Mit dem Refresh-Symbol aktualisieren Sie die Einträge.
+	\item \includegraphics[height=12pt]{/Icons/X_Button.jpg} \col{(6)}: Oben rechts schliessen Sie das Fenster ohne die Einträge / Regeln zu speichern.
+	\item \col{(a)}: Wählen Sie das gewünschte Benachrichtigungsintervall aus.\\
+	\textbf{Hinweis:} Falls Änderung innerhalb einer Minuten gemacht werden, erfolgen keine Meldung für sämtliche Änderungen. Die kleinste Zeiteinheit ist eine Minute.
+	\item \col{(b)}: In der Spalte 'Beobachtete Felder' können Sie die gewünschten Felder auswählen, für welche die Benachrichtigungsregel gültig sein soll. Wie unter \col{(c)} beschrieben, werden sämtliche Felder eines oder aller Datensätze beobachtet, wenn das Feld nicht ausgefüllt wird.
+\end{compactitem}
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/02_GettingStarted/pictures/getS_BenachOptionen.jpg}}
+\caption{Benachrichtigungsregel erstellen}
+% \label{fig:speciation}
+\end{figure}
+
+\textbf{Farblegende:}\\
+\includegraphics[height=12pt]{/Icons/Auge_g.jpg}: Wurde keine Benachrichtigungsregel auf einen Datensatz angewandt, ist das Auge grau.\\
+\includegraphics[height=12pt]{/Icons/Auge_r.jpg}: Wurde eine Benachrichtigungsregel für diesen Datensatz erstellt, ist das Auge rot.\\
+\includegraphics[height=12pt]{/Icons/Auge_b.jpg}: Wurde bei einem Datensatz ausgewählt, dass sämtliche Datensätze beobachtet werden sollen, ist das Auge blau\\
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis}: Die Möglichkeit sämtliche Datensätze zu beobachten ist mit Bedacht anzuwenden.
 
 
 \pagebreak
