@@ -1,5 +1,4 @@
 
-
 \section{Getting started}
 \subsection{Zugangsberechtigung einholen / neues Passwort anfordern}
 
@@ -434,7 +433,57 @@ Die Konfiguration im Überblick:
 
 \vspace{\baselineskip}
 
-\textbf{Hinweis}: Die Möglichkeit sämtliche Datensätze zu beobachten ist mit Bedacht anzuwenden.
+\textbf{Hinweis}: Die Möglichkeit sämtliche Datensätze zu beobachten, ist mit Bedacht anzuwenden.
+
+\pagebreak
+\subsection{Statussystem} % Workflow
+
+Verschiedene Module von CUBE PA verwenden ein Statussystem. Beispielsweise folgt das Beschaffungswesen einem Workflow (verschiedene Status), welcher zusammen mit dem Kunden definiert wurde.
+
+Andere Module enthalten ebenfalls ein Statussystem, mit welchem ein Workflow definiert werden kann. Im Folgenden wird die Anwendung eines generischen Statussystems beschrieben. In Folgenden Modulen ist aktuell ein Statussystem implementiert:
+
+\vspace{\baselineskip}
+
+\begin{compactitem}
+	\item \textbf{Anforderungs- und Mängelmanagement:} Anforderungen, Mängel und Arbeitspakete
+	\item \textbf{Dokumentenablage:} Dossier und Dokumente
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+\textbf{Statussystem in der Dokumentenablage:}
+
+\vspace{\baselineskip}
+
+Im Betrachtungs- oder Bearbeitungsmodus eines Dokuments finden Sie oben das Statussymbol \includegraphics[height=12pt]{/Icons/status_aendern.jpg} \col{(1)}: 
+
+\begin{figure}[H]
+\center{\includegraphics[width=.75\linewidth]{../chapters/02_GettingStarted/pictures/getS_StatusAufrufen.jpg}}
+\caption{Einen Status aufrufen}
+% \label{fig:speciation}
+\end{figure}
+
+Im folgenden Fenster kann der Status geändert werden:
+
+\begin{figure}[H]
+\center{\includegraphics[width=.85\linewidth]{../chapters/02_GettingStarted/pictures/getS_StatusAendern.jpg}}
+\caption{Ein Status ändern}
+% \label{fig:speciation}
+\end{figure}
+
+Oben links sehen Sie für welches Dokument Sie den Status ändern \col{(1)}. Die Status sind vorgegeben und können per Dropdown ausgewählt werden \col{(2)} (Das Statussystem kann grundsätzlich an betriebliche Workflows angepasst werden). Geben Sie einen Grund für den Statuswechsel an \col{(3)}. Sie haben auch die Möglichkeit Dokumente mit einem Statuswechsel zu verlinken. Klicken Sie dazu auf das Linksymbol \includegraphics[height=12pt]{/Icons/link.jpg} \col{(4)}. (Das gewünschte Dokument muss vorgängig in der Dokumentenablage erfasst werden.) Wurden sämtliche Angaben gemacht, können Sie den Statuswechsel mit 'Übernehmen' \col{(5)} abschliessen. Mit Klick auf \includegraphics[height=12pt]{/Icons/link.jpg} \col{(6)} oben rechts können Sie das Fenster ohne Daten zu speichern verlassen.
+
+\vspace{\baselineskip}
+
+\textbf{Dateien verlinken:}
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/02_GettingStarted/pictures/getS_LinkHinzufuegen.jpg}}
+\caption{Ein Dokument beim Statuswechsel verlinken}
+% \label{fig:speciation}
+\end{figure}
+
+Tippen Sie Suchbegriffe ins Feld 'Datei*'. Im Anschluss wählen Sie gewünschte Version des Dokumets aus oder wählen die Option '\includegraphics[height=12pt]{/Icons/checkbox_leer.jpg} Immer die neuste Version referenzieren'. Ergänzen Sie nach Bedarf die Informationen für das verlinkte Dokument und klicken Sie auf 'Übernehmen' \col{(5)}, um den Vorgang abzuschliessen.
 
 
 \pagebreak
