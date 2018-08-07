@@ -17,7 +17,7 @@ Ausgehend von Beschaffungen und Verträgen werden diese mit dem Kontenplan verkn
 
 \vspace{2cm} 
 
-Wurde der Kontenplan erstellt, werden in einem zweiten Schritt sämtliche Rechnungen erfasst und einem Konto (Ausgabestelle) zugeordnet. In der Rechnungsübersicht sehen Sie tabellarisch wie hoch die Vertragsbeträge sind, die Rechnungen in Bezug auf eine Konto werden zusammengezählt und der noch verbleibende Kostenteil wird errechnet. So haben Sie stets eine praktische Übersicht über die laufenden Beschaffungs- / Projektkosten.
+Wurde der Kontenplan erstellt, werden in einem zweiten Schritt sämtliche Rechnungen erfasst und einem Konto (Ausgabestelle) zugeordnet. In der Rechnungsübersicht sehen Sie tabellarisch wie hoch die Vertragsbeträge sind, die Rechnungen in Bezug auf ein Konto werden zusammengezählt und der noch verbleibende Kostenteil wird errechnet. So haben Sie stets eine praktische Übersicht über die laufenden Beschaffungs- und Projektkosten.
 
 
 \subsection{Controlling-Übersicht}
@@ -31,13 +31,19 @@ Wurde der Kontenplan erstellt, werden in einem zweiten Schritt sämtliche Rechnu
 
 Das Controlling Dashboard zeigt Ihnen grafisch an, wie viele Rechnungen welchen Zustand (Status) haben. In den Tabellen sind dann die Rechnungen aufgeführt, welche erfasst jedoch noch nicht geprüft und zum Zweiten geprüft, aber noch nicht freigegeben wurden. Mit Klick auf den Rechnungstitel gelangen Sie direkt in den Bearbeitungsmodus der Rechnung und können diese weiterverarbeiten, respektive den Status ändern.
 
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Dashboards sind kundenspezifisch konfigurierbar. Entsprechend kann die Ansicht Ihrer CUBE PA-Instanz anders aussehen als in diesem Handbuch abgebildet.
+
+\vspace{\baselineskip}
+
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/09_Controlling/pictures/contr_Kontouebersicht.jpg}}
 \caption{Die Kontenübersicht}
 % \label{fig:speciation}
 \end{figure}
 
-In der Kontenübersicht sind wie eingangs beschrieben, sämtliche Konten-Positionen aufgeführt. Mit einem Klick können Sie in die entsprechende Beschaffung und den dazugehörigen Vertrag wechseln. Wird die Dateneingabe regelmässig gepflegt, haben Sie stets eine aktuelle Übersicht über die Beschaffungs- / Projektkosten. CUBE PA weisst die Beträge aus den Verträgen aus, zählt sämtliche eingegeben Rechnungen zusammen und hebt die Differenz zu den geplanten Kosten hervor.
+In der Kontenübersicht sind wie eingangs beschrieben, sämtliche Konten-Positionen aufgeführt. Mit einem Klick können Sie in die entsprechende Beschaffung und den dazugehörigen Vertrag wechseln. Wird die Dateneingabe regelmässig gepflegt, haben Sie stets eine aktuelle Übersicht über die Beschaffungs- und Projektkosten. CUBE PA weisst die Beträge aus den Verträgen aus, zählt sämtliche eingegeben Rechnungen zusammen und hebt die Differenz zu den geplanten Kosten hervor.
 
 \subsection{Kontenplan}
 
@@ -71,7 +77,14 @@ Geben Sie dem neuen Konto einen Namen (Pflichtfeld). Mittels den Feldern 'Überg
 \vspace{\baselineskip}
 
 Wurden einem Konto bereits Rechnungen zugeordnet, werden diese hier auch angezeigt. Löschen oder Ändern von Rechnungen ist hier nicht möglich.\\
-Weisen Sie einem Konto unbedingt eine Beschaffung zu. Nur auf diesem Weg ist es CUBE PA möglich den hinterlegten Betrag in der Beschaffung (in den Verträgen) in der Übersicht darzustellen. \\
+Weisen Sie einem Konto unbedingt eine Beschaffung zu. Nur auf diesem Weg ist es CUBE PA möglich den hinterlegten Betrag in der Beschaffung (in den Verträgen) in der Übersicht darzustellen.
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Nachträge zu einer Beschaffung werden automatisch auf der Rechnungsübersicht berücksichtigt. Achten Sie darauf, dass Sie entsprechend nur die Originalbeschaffung einem Konto zuweisen, nicht aber die Nachtragsbeschaffungen.
+
+\vspace{\baselineskip}
+
 Einem Konto können Sie ähnlich wie beim Dokumentenwesen Schlagworte (Tags) zuweisen. Diese werden zuvor in der Konfiguration definiert und als Kontentag markiert. Diese Definitionen übernimmt in aller Regel ein Administrator oder ein Superuser.
 
 \subsection{Rechnungen}
