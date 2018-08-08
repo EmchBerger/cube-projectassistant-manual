@@ -21,7 +21,7 @@ Wählen Sie im Menü links den Punkt 'Importieren' und dann den gewünschten Unt
 
 \begin{wrapfigure}[10]{r}{6cm}
 \vspace{-15pt}
-\includegraphics[height=50mm]{121_DatenImportieren.jpg}
+\includegraphics[height=50mm]{../chapters/12_Importieren/pictures/12-1_DatenImportieren.jpg}
 \caption{Daten importieren}
 \end{wrapfigure}
 Mittels der Importier-Funktion 'Terminplan Daten' lässt sich ein neues, aktuelles Detailterminprogramm einlesen. Die Projektplanung erfolgt in Microsoft Project und wird als XML File exportiert und im CUBE PA importiert. Dabei gehen die bestehenden Daten im CUBE PA verloren. Die eingelesenen Daten können nicht geändert, sondern nur angezeigt werden. So ist es möglich auch auf Computern ohne Microsoft Project die Projektplanung einzusehen und nach gewünschten Zeitfenstern zu filtern. Weitere Informationen befinden sich im Kapitel \ref{bkm:Ref445400921} 'Die Terminplanung benutzen'.
@@ -31,7 +31,7 @@ Mittels der Importier-Funktion 'Terminplan Daten' lässt sich ein neues, aktuell
 Um im CUBE PA die zusätzlichen Anzeige- und Filteroptionen (Projekt / Teilprojekt, Ressourcen) verwenden zu können, müssen die entsprechenden Informationen bereits im MS-Project File enthalten sein. Die Ressourcen werden dabei gemäss üblicher MS-Project Vorgehensweise vorgängig definiert und anschliessend den einzelnen Vorgängen zugewiesen. Die Zuordnung der Vorgänge zu einem Projekt / Teilprojekt wird mit Hilfe von benutzerdefinierten Feldern ermöglicht. Dazu sind im Project-File zwei neue Spalten hinzuzufügen (Typ Text, z.B. Text1 und Text2). Diese Spalten sind in der Gantt-Diagramm Ansicht entweder direkt in der Tabelle oder unter Format - Benutzerdefinierte Felder mit 'Subproject\_1' und 'Subproject\_2' zu benennen \col{(1)}. Dies ermöglicht das korrekte Einlesen der Daten im CUBE PA. Den einzelnen Vorgängen können anschliessend die Projekte (Teilprojekte) gemäss den Tag Definitionen in CUBE PA zugewiesen werden. Dies geschieht durch manuelle resp. Dropdown-Eingabe der Projektnamen in den Spalten 'Subproject\_1' und 'Subproject\_2'. Vor dem Export / Import sollte unbedingt geprüft werden, dass sämtliche Vorgänge den korrekten Projekten zugeordnet sind und keine Felder leergelassen wurden. Nur so kann verhindert werden, dass bei späterer Filterung in CUBE PA keine Vorgänge irrtümlicherweise ausgeblendet werden.
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{121_zusSpaltenMSProject.jpg}}
+\center{\includegraphics[width=1\linewidth]{../chapters/12_Importieren/pictures/12-1_zusSpaltenMSProject.jpg}}
 \caption{Zusätzlich benötigte Spalten in MS-Project}
 % \label{fig:speciation}
 \end{figure}
