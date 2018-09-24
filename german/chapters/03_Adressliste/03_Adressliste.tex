@@ -2,7 +2,7 @@
 \clearpage
 \section{Die Adressliste benutzen}
 \label{bkm:Ref443738751}
-In der Adressliste werden auf einfache Art und Weise sämtliche im CUBE PA erfassten Personen und Firmen angezeigt. Mittels der Filterfunktion können Einträge rasch gefunden werden.
+In der Adressliste werden auf einfache Art und Weise sämtliche im CUBE PA erfassten Personen und Organisationen/Firmen angezeigt. Mittels der Filterfunktion können Einträge rasch gefunden werden.
 
 \vspace{\baselineskip}
 
@@ -11,21 +11,20 @@ Für die Benutzung der Adressliste sind folgende Eigenschaften zu berücksichtig
 % \liststyleWWviiiNumxiii
 \begin{itemize}
 \item
-Ist ein Benutzer des CUBE PA entsprechend berechtigt, kann er in der Adressliste neue Personen und Firmen erfassen oder bestehende Einträge bearbeiten.
+Ist ein Benutzer des CUBE PA entsprechend berechtigt, kann er in der Adressliste neue Personen und neue Organisationen erfassen oder bestehende Einträge bearbeiten.
 
 \item
 Personen, welche auf diese Weise erfasst wurden, stehen automatisch in allen Personen-Auswahlfeldern zur Verfügung (z.B. Pendenzen). Jedoch können sich diese neu erfassten Personen im CUBE PA nicht anmelden. Wird dies erwünscht, kann der Administrator behilflich sein, resp. ist mit dem CUBE PA Support Kontakt aufzunehmen (siehe Kapitel
 \ref{bkm:Ref443502661}).
 
 \item
-Wird einer Person eine Firma zugewiesen, erscheint in der Adressliste automatisch die Firmenadresse. Ist dies z.B. wegen abweichender Firmenstandorte nicht erwünscht, kann im Bearbeitungsfenster der Person eine spezifische Adresse
-hinterlegt werden.
+Wird einer Person einer Organisation zugewiesen, erscheint in der Adressliste automatisch die Organisationsadresse. Ist dies z.B. wegen abweichenden Organisationsstandorten nicht erwünscht, kann im Bearbeitungsfenster der Person eine spezifische Adresse hinterlegt werden.
 
 \item
-Bei Personen, welche sich aktiv in CUBE PA einloggen können, kann die Firmenzugehörigkeit aus Sicherheitsgründen (Zugriffsrechte) nur durch den Administrator geändert werden. Melden Sie solche Mutationen bitte dem Administrator, resp. dem CUBE PA Support (siehe Kapitel \ref{bkm:Ref443502661}).
+Bei Personen, welche sich aktiv in CUBE PA einloggen können, kann die Organisationszugehörigkeit aus Sicherheitsgründen (Zugriffsrechte) nur durch den Administrator geändert werden. Melden Sie solche Mutationen bitte dem Administrator, resp. dem CUBE PA Support (siehe Kapitel \ref{bkm:Ref443502661}).
 
 \item
-Firmeneinträge, welche in der Adressliste erfasst wurden, stehen nicht automatisch als Anbieter oder Auftraggeber im Beschaffungswesen zur Verfügung. Sollen Firmen auch im Beschaffungswesen angezeigt werden, muss dies durch den Administrator entsprechend konfiguriert werden.
+Organisationseinträge, welche in der Adressliste erfasst wurden, stehen nicht automatisch als Anbieter oder Auftraggeber im Beschaffungswesen zur Verfügung. Sollen Organisationen auch im Beschaffungswesen angezeigt werden, muss dies durch den Administrator entsprechend konfiguriert werden.
 
 \item
 Nebst den Standard-Feldern können benutzerdefinierte Felder hinzugefügt werden (Konfiguration nur durch CUBE PA Support). Diese Felder können anschliessend ebenfalls gefiltert und exportiert werden.
@@ -35,23 +34,24 @@ Nebst den Standard-Feldern können benutzerdefinierte Felder hinzugefügt werden
 \textbf{Personen und Benutzer:} In der Adressverwaltung wird vorwiegend von 'Personen' gesprochen. 'Benutzer' unterscheiden sich von 'Personen' darin, dass sie sich in CUBE PA anmelden können. Jede 'Person' kann entsprechend zu einem 'Benutzer' konfiguriert werden. Diese Anpassungen werden im Modul 'Benutzerverwaltung' vorgenommen. Dazu braucht es jedoch administrative Rechte. Wenden Sie sich bei Bedarf an den CUBE Support.
 
 \pagebreak
-\subsection{Finden von Personen oder Firmen in der Adressliste}
+\subsection{Finden von Personen oder Organisationen in der Adressliste}
 
-\begin{wrapfigure}[2]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+\begin{wrapfigure}[7]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
   \begin{center}
     \includegraphics[width=1\linewidth]{../chapters/03_Adressliste/pictures/3-1_Menu_Adressliste.jpg}
   \end{center}
   \vspace{-20pt}
-  \caption{Die Adressliste verwenden}
+  \caption{Adresslistenmenü}
   \vspace{-10pt}
 \end{wrapfigure}
 
-Wählen Sie aus dem Menü links den Punkt 'Adressliste' aus.
+Wählen Sie aus dem Menü links den Punkt 'Adressliste' aus. Als Unterpunkte sehen Sie 'Personen' und 'Organisationen'. Wählen Sie das Gewünschte aus.\\
+Im Folgenden wird der Umgang mit 'Personen' erläutert. Die Bedienweise bezieht sich aber mehrheitlich auch auf 'Organisationen'.
 
-\vspace{7cm}
+\vspace{4cm}
 
-Es erscheint eine Liste mit sämtlichen im CUBE PA hinterlegten Adressen von Personen und Firmen:
+Es erscheint eine Liste mit sämtlichen im CUBE PA hinterlegten Adressen von Personen oder Organisationen:
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/03_Adressliste/pictures/3-1_Adressliste_Uebersicht.jpg}}
@@ -59,33 +59,42 @@ Es erscheint eine Liste mit sämtlichen im CUBE PA hinterlegten Adressen von Per
 % \label{fig:speciation}
 \end{figure}
 
-Oben links haben Sie die Möglichkeit, neue Personen \includegraphics[height=12pt]{/Icons/Person.jpg} oder Firmen \includegraphics[height=12pt]{/Icons/Haus.jpg} zu erfassen. Beachten Sie die Eigenschaften, welche eingangs des Kapitels aufgeführt wurden (Kapitel \ref{bkm:Ref443738751}). \newline
-Mit Klick auf \includegraphics[height=12pt]{/Icons/ListeGenerieren.jpg} \col{(3)} werden die gefilterten Daten als Exceldatei exportiert. So können Sie die Daten beispielsweise für einen Serienbrief verwenden oder Massenänderungen vornehmen und anschlissend die Tabelle wieder importieren. \\
+Oben links haben Sie die Möglichkeit, neue Personen \includegraphics[height=12pt]{/Icons/Person.jpg} oder Organisationen \includegraphics[height=12pt]{/Icons/Haus.jpg} zu erfassen. Beachten Sie die Eigenschaften, welche eingangs des Kapitels aufgeführt wurden (Kapitel \ref{bkm:Ref443738751}). \newline
+Mit Klick auf \includegraphics[height=12pt]{/Icons/ListeGenerieren.jpg} \col{(3)} werden die gefilterten Daten als Exceldatei exportiert. So können Sie die Daten beispielsweise für einen Serienbrief verwenden oder Massenänderungen vornehmen und anschlissend die Tabelle wieder importieren. 
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Die Exportfunktion wird nur bei den Personen unterstützt.
+
 \textbf{Hinweis:} Für die Importfunktion beachten Sie die Hinweise im Kapitel \ref{bkm:Ref2018090701}.
 
 \vspace{\baselineskip}
 
 Mit dem Konfigurations-Symbol \includegraphics[height=12pt]{/Icons/SpaltenEinst.jpg} \col{(4)} können Spalten ein- und ausgeblendet werden, um die Tabelle übersichtlicher zu gestalten. \\
-Für die Suche / Filterung verwenden Sie die bestehenden Suchfelder \col{(6)} der Spalten (Wenn Sie benutzerdefinierte Felder verwenden, können Sie auch bei diesen Feldern suchen / filtern.). Sobald Sie Eingaben machen, wird die Datenbank durchsucht und das Suchresultat angepasst. \\
+Für die Suche / Filterung verwenden Sie die bestehenden Suchfelder \col{(6)} der Spalten (Wenn Sie benutzerdefinierte Felder verwenden, können Sie auch bei diesen Feldern suchen / filtern.). Sobald Sie Eingaben machen, wird die Datenbank durchsucht und das Suchresultat angepasst.
+
+\vspace{\baselineskip}
+
 \textbf{Hinweis:} Mit einem Doppelklick auf das Lupen-Symbol \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(5)} werden die Suchbegriffe gelöscht und der Filter zurückgesetzt.
 
 \vspace{\baselineskip}
 
-Mit einem Klick auf den Namen \col{(7)} oder die Firma werden weitere Optionen eingeblendet. Mit dem vCard-Symbol \includegraphics[height=12pt]{/Icons/vCard.jpg} \col{(8)} wird vom ausgewählten Datensatz eine vCard für Outlook geöffnet oder gespeichert. Fürs Bearbeiten eines Datensatzes klicken Sie auf das Bearbeiten-Symbol \includegraphics[height=12pt]{/Icons/bearbeiten.jpg} \col{(9)}. Abhängig von den Berechtigungen erscheint ein weiteres Symbol \includegraphics[height=12pt]{/Icons/User.jpg} \col{(10)}. Mit Klick darauf werden die Usereinstellungen geöffnet (Anpassungen bei Berechtigungen, Zugehörigkeiten etc.) - diese Option ist ausschliesslich für Superuser und Administratoren.
+Mit einem Klick auf den Namen \col{(7)} oder die Organisation werden weitere Optionen eingeblendet. Mit dem vCard-Symbol \includegraphics[height=12pt]{/Icons/vCard.jpg} \col{(8)} wird vom ausgewählten Datensatz eine vCard für Outlook geöffnet oder gespeichert. Fürs Bearbeiten eines Datensatzes klicken Sie auf das Bearbeiten-Symbol \includegraphics[height=12pt]{/Icons/bearbeiten.jpg} \col{(9)}. Abhängig von den Berechtigungen erscheint ein weiteres Symbol \includegraphics[height=12pt]{/Icons/User.jpg} \col{(10)}. Mit Klick darauf werden die Usereinstellungen geöffnet (Anpassungen bei Berechtigungen, Zugehörigkeiten etc.) - diese Option ist ausschliesslich für Superuser und Administratoren.
 
 \vspace{\baselineskip}
 
 Standardmässig werden für eine bessere Übersicht nur die ersten Zeilen eines Datensatzes angezeigt \col{(11)}. Sie können jedoch auf den 'ausgegrauten' Text klicken, um sämtliche Angaben anzeigen zu lassen.
 
-\subsection{Neue Personen oder Firmen in der Adressliste erfassen}
+\clearpage
+\subsection{Neue Personen oder Organisationen in der Adressliste erfassen}
 \label{bkm:Ref2018071901}
-Berechtigte Benutzer können in der Adressliste neue Personen oder Firmen erfassen oder bestehende Einträge ändern:
+Berechtigte Benutzer können in der Adressliste neue Personen oder Organisationen erfassen oder bestehende Einträge ändern:
 
 \vspace{\baselineskip}
 
 \begin{tabular}{cc} %{cl}
 \includegraphics[width=0.49\textwidth]{../chapters/03_Adressliste/pictures/3-2_Personeneintraege.jpg} & \includegraphics[width=0.49\textwidth]{../chapters/03_Adressliste/pictures/3-2_Firmeneintraege.jpg} \\
-Personeneinträge & Firmeneinträge \\
+Personeneinträge & Organisationseinträge \\
 \end{tabular}
 
 % \begin{figure} 
@@ -95,5 +104,12 @@ Personeneinträge & Firmeneinträge \\
 % \end{figure}
 
 \vspace{\baselineskip}
-Alle Felder mit * sind Pflichtfelder und müssen ausgefüllt werden. Kann / soll keine E-Mail-Adresse hinterlegt werden, kann dieses Pflichtfeld mittels einem Häkchen 'Keine E-Mail-Adresse' \col{(2)} umgangen und leergelassen werden. Nach dem Eingeben der gewünschten / bekannten Feldern wird der Datensatz mit 'Erstellen' \col{(3)} gespeichert und steht anschliessend in der Adressliste zur Verfügung. Wurde bei einem bestehenden Eintrag auf das Bearbeitungssymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} geklickt, wird die gleiche Maske (siehe oben) geöffnet. Alle bereits hinterlegten Daten sind in den entsprechenden Feldern vorhanden und können geändert werden. Wie oben eingangs des Kapitels bereits vermerkt, kann bei einer Person die Firmenzugehörigkeit aus Sicherheitsgründen (Zugriffsrechte) nicht, resp. nur durch den Administrator geändert werden.\newline
+Alle Felder mit * sind Pflichtfelder und müssen ausgefüllt werden. Kann / soll keine E-Mail-Adresse hinterlegt werden, kann dieses Pflichtfeld mittels einem Häkchen 'Keine E-Mail-Adresse' \col{(2)} umgangen und leergelassen werden. Nach dem Eingeben der gewünschten / bekannten Feldern wird der Datensatz mit 'Erstellen' \col{(3)} gespeichert und steht anschliessend in der Adressliste zur Verfügung. Wurde bei einem bestehenden Eintrag auf das Bearbeitungssymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} geklickt, wird die gleiche Maske (siehe oben) geöffnet. Alle bereits hinterlegten Daten sind in den entsprechenden Feldern vorhanden und können geändert werden. Wie oben eingangs des Kapitels bereits vermerkt, kann bei einer Person die Organisations-/ Firmenzugehörigkeit aus Sicherheitsgründen (Zugriffsrechte) nicht, resp. nur durch den Administrator geändert werden.
+
+\vspace{\baselineskip}
+
 Durch Klick auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(1)} gelangen Sie zurück zur Adressliste.
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis zu Zusatzfeldern:} Es ist möglich sogenannte 'custom fields' (benutzerdefinierte Felder) in der Adressliste zu hinterlegen und die bestehenden Datenbankfelder dadurch zu erweitern. Für weitere Auskünfte oder das Bereitstellen solcher Datenbankfelder kontaktieren Sie bitte den CUBE-Support.
