@@ -817,6 +817,7 @@ Beachten Sie, dass die Auslieferung auch abhängig ist von der Bestellzeit. Für
 \caption{Zweckangabe für den Lieferschein}
 % \label{fig:speciation}
 \end{figure}
+\textbf{Rückmeldung bis} Terminieren Sie den 'Zweck' und setzen Sie das gewünschte Datum. \\
 \textbf{Mitteilung an Empfänger:} Hier können Sie mittels Freitext die nötigen Angaben für den/die Empfänger eingeben. \\
 \textbf{Mitteilung ans Reprozentrum:} Diese Angaben sind nach Abschluss der Planbestellung für das Reprozentrum sichtbar. \\
 \textbf{Beilagen:} Pro Dokument, welches im Dokumentenkorb war und nun für die Planlieferung zur Verfügung steht, können Sie Detailangaben vornehmen.   Mit Klick auf den blauen Dokumententitel können Sie das Dokument / den Plan nochmals öffnen oder auf Ihrem Computer abspeichern.
@@ -829,15 +830,38 @@ Haben Sie alle nötigen Angaben gemacht, klicken Sie auf 'Weiter zu Seite 2' um 
 % \label{fig:speciation}
 \end{figure}
 
-Hier können Sie einen oder mehrere Empfänger auswählen. Gehen Sie wie folgt vor: aus der Dropdownliste 'Empfänger hinzufügen' wählen Sie die gewünschte Person aus. Wiederholen Sie diesen Schritt mit weiteren benötigten Empfängern. So bald Sie einen Empfänger aus der Liste ausgewählt haben, erscheint dieser unten im Dialogfenster. Sie können nun noch einige Einstellungen vornehmen, wie zum Beispiel wie viele Exemplare pro Empfänger benötigt werden und ob der / die Empfänger die Pläne ausgedruckt (Druckexemplar) oder als PDF/Dokument per E-Mail zugestellt benötigt / benötigen (elektronisch). \\
-Sie haben nun die Möglichkeit individuelle Nachrichten an die einzelnen Empfänger zu versenden (E-Mail / Lieferschein) \col{(2)}. Werden hier nun Nachrichten hinterlegt, werden die allgemeinen Nachrichten auf der ersten Dialogseite (Allgemeine Angaben) dadurch ersetzt (Siehe auch Information mit Klick auf \includegraphics[height=12pt]{/Icons/Info_blau.jpg}. \col{(2)}\\
-Mit dem Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(3)} können Sie die ausgewählten Empfänger wieder löschen. Werden mittels obiger Dropdownliste 'Empfänger hinzufügen' \col{(1)} Empfänger ausgewählt, welche bereits unten in der Liste stehen, erscheint folgende Meldung:
+Hier können Sie einen oder mehrere Empfänger auswählen \col{(1)} oder eine vordefinierte Empfängerliste wählen \col{(2)}. Gehen Sie wie folgt vor: aus der Dropdownliste 'Empfänger hinzufügen' wählen Sie die gewünschte Person aus. Wiederholen Sie diesen Schritt mit weiteren benötigten Empfängern. So bald Sie einen Empfänger aus der Liste ausgewählt haben, erscheint dieser unten im Dialogfenster. Sie können nun noch weitere Einstellungen vornehmen, wie zum Beispiel wie viele Exemplare pro Empfänger benötigt werden und ob der / die Empfänger die Pläne ausgedruckt (Druckexemplar) oder als PDF/Dokument per E-Mail zugestellt benötigt / benötigen (elektronisch). \\
+
+
+\begin{wrapfigure}[2]{r}{5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-45pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=.6\linewidth]{../chapters/11_Dokumentenablage/pictures/repro_elektronisch.jpg}
+  \end{center}
+  \vspace{-20pt}
+%  \caption{Zusammenfassung im Excelexport}
+  \vspace{-10pt}
+\end{wrapfigure}
+Sollen die Pläne/Dokumente 'elektronisch' \col{(3)} verteilt werden, können Sie aus nebenstehenden Optionen auswählen:
+
+\vspace{2cm} 
+
+% \begin{figure}[H]
+% \center{\includegraphics[width=.15\linewidth]{../chapters/11_Dokumentenablage/pictures/repro_elektronisch.jpg}}
+% \end{figure}
+
+Wird ein Lieferschein benötigt, kann dies pro Person definiert werden \col{(4)}. Sollen Rückmeldung der Pläne/Dokumente erfolgen, kann ein Kontrollblatt generiert und verschickt werden \col{(5)}. Sind die Drucklieferungen verrechenbar wird das Häkchen entsprechend gesetzt \col{(6)}. Haben Sie mehrere Empfänger und soll für bestimmte Empfänger eine persönliche Nachricht (anstelle der allgemeinen Nachricht) verschickt werden (E-Mail / Lieferschein), können Sie die gewünschte individuelle Nachricht unter 'Persönliche Nachricht' \col{(7)} eintragen. Klicken Sie auf das \includegraphics[height=12pt]{/Icons/Info_blau.jpg}. \col{(7)}, erhalten Sie die entsprechende Information.\\
+Mit dem Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(8)} können Sie die ausgewählten Empfänger wieder löschen. Werden mittels obiger Dropdownliste 'Empfänger hinzufügen' \col{(1)} Empfänger ausgewählt, welche bereits unten in der Liste stehen, erscheint folgende Meldung:
 
 \begin{figure}[H]
 \center{\includegraphics[width=.5\linewidth]{../chapters/11_Dokumentenablage/pictures/11-dkorb_Meldung_doppeltePerson.jpg}}
 \caption{Meldung: Empfänger existiert bereits}
 % \label{fig:speciation}
 \end{figure}
+
+\textbf{Hinweis:} Die Verteilerliste im Email erscheint nur, wenn 'kein Lieferschein' ausgewählt wurde \col{(4)}.
+
+\vspace{\baselineskip}
 
 Müssen Sie nochmals bei den 'Allgemeinen Angaben' Änderungen vornehmen oder diese kontrollieren, können Sie mittels Klick auf 'Zurück zu allgemeinen Angaben' wieder zu diesen Angaben gelangen. Ist alles in Ordnung und wollen Sie die Pläne wie nun definiert bestellen, klicken Sie auf 'Auftrag absenden'. Die entsprechenden Emails (Bestätigung, Bestellung, elektronische Lieferung) werden verschickt und CUBE PA öffnet in der Dokumentenablage im Ansichtsmodus den Lieferschein. Das Reprozentrum erhält den Auftrag per Email mit einem Link in den CUBE PA. Dort können sie den Auftrag bearbeiten und die benötigten Dokumente / Pläne herunterladen. Wurde der Auftrag durch das Reprozentrum bearbeitet, resp. ausgelöst, wird durch das Reprozentrum die Bestellung als 'abgeschlossen' markiert. Dies wird dem Besteller so auch protokolliert.
 
@@ -851,6 +875,17 @@ Wurde eine Bestellung ausgelöst, wird diese beim Besteller (Bearbeiter des CUBE
 
 \vspace{\baselineskip}
 
+\textbf{Excel Kontrollblatt}\\
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/repro_Kontrollblatt.jpg}}
+\caption{Excel Kontrollblatt}
+% \label{fig:speciation}
+\end{figure}
+
+Wie oben beschrieben, können Sie pro Person und Auftrag festlegen, ob ein Kontrollblatt erstellt werden soll. Dieses dient dazu, Rückmeldungen hinsichtlich den versendeten Plänen / Dokumenten notieren zu können. Beispielsweise werden Korrekturen oder auch 'Dokumentfreigaben' mittels dem Kontrollblatt festgehalten und zurück gemeldet.
+
+\pagebreak
 \textbf{Die Druckaufträge in der Übersicht:}\\
 
 \begin{wrapfigure}[5]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
@@ -876,12 +911,12 @@ Wählen Sie im Menü links den Menüpunkt 'Dokumentenablage' und den Unterpunkt 
 Mit Klick auf das Fragezeichen \col{(2)} erhalten Sie Infos zur Übersicht und können mit dem untenstehenden Link in die 'Dokumentenablage' wechseln:
 
 \begin{figure}[H]
-\center{\includegraphics[width=.4\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrInfo.jpg}}
+\center{\includegraphics[width=.45\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrInfo.jpg}}
 % \caption{Neues Dokument: Zugriffsrechte}
 % \label{fig:speciation}
 \end{figure}
 
-Klicken Sie auf das \euro{-Symbol} \col{(1)} erhalten Sie eine Excelliste, welche die gefilterten Druckaufträge enthält:
+Klicken Sie auf das \euro{-Symbol} \col{(1)} erhalten Sie eine Excelliste, welche die gefilterten Druckaufträge enthält und zur Abrechnung dienlich ist:
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrExcel.jpg}}
@@ -889,20 +924,24 @@ Klicken Sie auf das \euro{-Symbol} \col{(1)} erhalten Sie eine Excelliste, welch
 % \label{fig:speciation}
 \end{figure}
 
-Sie können hier Anpassungen vornehmen und im Arbeitsblatt 'Zusammenfassung' eine Übersicht gewinnen, welche beispielsweise für eine Verrechnung verwendet wird.
+\begin{wrapfigure}[8]{l}{7cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-25pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrExcelZu.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Zusammenfassung im Excelexport}
+  \vspace{-10pt}
+\end{wrapfigure}
 
-\begin{figure}[H]
-\center{\includegraphics[width=.45\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrExcelZu.jpg}}
-\caption{Zusammenfassung im Excelexport}
-% \label{fig:speciation}
-\end{figure}
+Berücksichtigt werden bei der Aufstellung die Angaben bezüglich 'Verrechenbarkeit', welche vorab in CUBE PA bei den Druckaufträgen hinterlegt wurden. Nun können Sie hier Anpassungen vornehmen und im Arbeitsblatt 'Zusammenfassung' eine Übersicht gewinnen, welche Aufträge weiter verrechnet werden können.
 
-\vspace{\baselineskip}
+% \vspace{2.5cm}
 
 Mit Klick auf die Druckauftragsnummer in der Übersicht \col{(3)} erhalten Sie Detailinformationen zum Druckauftrag:
 
 \begin{figure}[H]
-\center{\includegraphics[width=.6\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrDetails.jpg}}
+\center{\includegraphics[width=.5\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_DruckauftrDetails.jpg}}
 \caption{Detailinformationen zum Druckauftrag / Lieferschein herunterladen}
 % \label{fig:speciation}
 \end{figure}
@@ -917,8 +956,20 @@ Mit Klick auf 'Lieferschein' \col{(1)} wird der Download-Link des Lieferscheins/
 
 Auch von der Druckauftragsübersicht können Sie mit Klick auf das Lupensymbol \includegraphics[height=12pt]{/Icons/Lupe.jpg} \col{(4)} das Dokument in der Dokumentenablage öffnen oder mittels dem Download-Symbol Lupensymbol \includegraphics[height=12pt]{/Icons/Download.jpg} \col{(5)} das Dokument gleich öffnen oder speichern.
 
-%bishierher
+\vspace{\baselineskip}
 
+\begin{wrapfigure}[13]{l}{9cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-25pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/repro_verk_Dokumente.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Verknüpfte Dokumente}
+  \vspace{-10pt}
+\end{wrapfigure}
+Dokumente, welche beim Auftrag eines Reprodrucks erstellt worden sind (Lieferschein, Kontrollblätter), werden in der Dokumentenablage abgelegt. Im Ansichtsmodus dieser Dokumente, sowie derjenigen, welche via Reprodruck versandt wurden, sind sämtliche zusammenhängende Dokumente unter 'Verbundene Dokumente' aufgeführt \col{(1)}. Mit Klick auf den blauen Textlink gelangen Sie in den Ansichtsmodus des entsprechenden Dokumentes.
+
+\pagebreak
 \subsubsection{Zugriffsrechte bei Dokumenten verwalten}
 \label{bkm:Ref442869495}
 
@@ -942,9 +993,15 @@ Klicken Sie auf 'OK' um zu den Eingaben zurückzukehren.
 
 \vspace{\baselineskip}
 
-Mit dem Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} können Sie neue Rechte für das Dokument vergeben. Mit Klick auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(2)} kehren Sie zur Dokumentenübersicht zurück.
+Mit dem Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} können Sie neue Rechte für das Dokument vergeben. 
+Klicken Sie auf das \includegraphics[height=12pt]{/Icons/Fragezeichen.jpg} \col{(2)} erfahren Sie, welche Personen und Gruppen bei der Auswahl 'Standard-Zugriffsrechte' berechtigt werden.
+Mit Klick auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(3)} kehren Sie zur Dokumentenübersicht zurück.
 
-\vspace{\baselineskip}
+\begin{figure}[H]
+\center{\includegraphics[width=.6\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_Standardrechte_Info.jpg}}
+\caption{Standard-Zugriffsrechte}
+% \label{fig:speciation}
+\end{figure}
 
 Wenn Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} klicken, erscheint folgende Eingabemaske, bei welcher die Berechtigungen vergeben werden können:
 
@@ -975,7 +1032,6 @@ Haben Sie die nötigen Änderungen vorgenommen, schliessen Sie diese mit 'Übern
 
 \textbf{Hinweis:} Für die erste Person / Gruppe (in der Regel ist das die Person, welche das Dokument in CUBE PA anlegt) werden automatisch sämtliche Zugriffsrechte vergeben. Für die weiteren Gruppen / Personen werden nur noch die Lese-Zugriffsrechte vorgeschlagen. Selbstverständlich kann dies jederzeit angepasst werden.
 
-
 \subsubsection{Dokumente online bearbeiten / Aus- und Einchecken der Dokumente}
 \label{bkm:Ref442780171}\label{bkm:Ref442776572}
 
@@ -988,6 +1044,8 @@ Wenn Sie Dokumente inhaltlich bearbeiten und anschliessend eine neue Version in 
 \end{figure}
 
 Klicken Sie in der Dokumenten-Übersicht den blauen Titel des gewünschten Dokuments \col{(1)} an. Es öffnen sich die Optionen. Hier oder alternativ wenn Sie sich im Betrachtungsmodus eines Dokuments befinden (erreichbar mit dem Lupensymbol in der Übersicht \includegraphics[height=12pt]{/Icons/Lupe.jpg} \col{(3)}), können Sie unten im Eintrag auf das Symbol 'auschecken' \includegraphics[height=12pt]{/Icons/Auschecken.jpg} klicken \col{(4)}. Das Dokument wird ausgecheckt, geöffnet und für die Bearbeitung durch weitere Benutzer gesperrt. Nun können Sie direkt im Dokument arbeiten. 
+
+\vspace{\baselineskip}
 
 \begin{wrapfigure}[5]{r}{6cm}
 \vspace{-15pt}
@@ -1020,11 +1078,7 @@ Wenn Sie 'offline' arbeiten wollen, ist es nicht zwingend notwendig, dass Sie da
 
 \textbf{Tipp}: Ein von Ihnen ausgechecktes Dokument erscheint automatisch in ihrer persönlichen Projektübersicht. Sie können das Dokument direkt zur weiteren Bearbeitung öffnen oder wieder einchecken. \newline
 
-%\vspace{\baselineskip}
-
 \textbf{Hinweis}: Das online-Bearbeiten von Dokumenten ist mit den gängigen MS Office Programmen durchführbar. Dokumente in anderen Formaten (z.B. PDF oder CAD-Pläne) können zwar auch ausgecheckt werden, eine online-Bearbeitung ist aber nicht möglich. Die Bearbeitung solcher Dokumente erfolgt in jedem Fall offline. \newline
-
-% \vspace{\baselineskip}
 
 \textbf{Hinweis}: Ein ausgechecktes Dokument ist für die Bearbeitung durch weitere Benutzer gesperrt. Die Symbole für die Bearbeitung \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} und das Auschecken \includegraphics[height=12pt]{/Icons/Auschecken.jpg} von Dokumenten werden nicht mehr angezeigt und an derer Stelle wird ein rotes Dreieckssymbol \includegraphics[height=12pt]{/Icons/Warnung_rot.jpg} \col{(1)} dargestellt. Im Feld 'Datei auschecken (aktuellste Version)' in der Anzeigemaske des Dokuments erfolgt eine Meldung, wer das Dokument zurzeit ausgecheckt hat \col{(2)}.
 
@@ -1089,23 +1143,21 @@ Für jedes Dokument können 'Tags' definiert werden, um später nach ihnen zu su
 \end{figure}
 
 \begin{wrapfigure}[8]{r}{5cm}
-\vspace{-30pt}
+\vspace{-20pt}
 \includegraphics[height=50mm]{../chapters/11_Dokumentenablage/pictures/11-2-8_DokTagHinzufuegen.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
 Um nach Dokumenten mit entsprechenden Tags zu suchen, gehen Sie wie folgt vor:
 Wählen Sie im Menü links unter dem Punkt 'Dokumentenablage' den Unterpunkt 'Dokumente' aus. In der Übersicht sehen Sie die erfassten / hochgeladenen Dokumente \col{(1)}. In der Spalte 'Tags' klicken Sie in das Suchfeld \col{(2)}. Sie können den gewünschten Tag mittels manueller Eingabe im Feld oder durch Anklicken im Dropdown-Menü suchen und auswählen \col{(3)}.
 
-\vspace{\baselineskip}
+\pagebreak
 
 \begin{wrapfigure}[6]{r}{5cm}
-\vspace{-30pt}
+\vspace{-15pt}
 \includegraphics[height=50mm]{../chapters/11_Dokumentenablage/pictures/11-2-8_TagEingabe.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
 Sie können für eine Suchanfrage / gleichzeitig mehrere Tags auswählen. Dazu klicken Sie rechts von erster Tag-Eingabe \col{(4)} (Diese ist in Grauem Feld hinterlegt) ins Suchfeld \col{(5)}. Klicken Sie nach Eingabe der Tags auf die Lupe (links von den Filterfeldern) \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} \col{(6)} oder verwenden Sie die 'Enter'-Taste. Es werden alle Dokumente angezeigt, denen einen oder mehrere der ausgewählten Tags zugeordnet wurden.
-
-\vspace{\baselineskip}
 
 \subsubsection{Die erweiterte Suche}
 
@@ -1175,7 +1227,7 @@ Klicken Sie auf 'Bahnsysteme' \col{(1)}, um zur nächsten Ebene / Auswahl zu gel
 
 Ihre oben ausgewählten Tags wurden nun in den Filter übernommen \col{(1)}. Sie haben nachträglich die Möglichkeit, einzelne Tags oder auch alle mittels dem Kreuzchen \includegraphics[height=12pt]{/Icons/Kreuzchen_b.jpg} neben dem Titel 'Tags' zu löschen. Sie können nun weitere Tags hinzufügen, sei es durch Eingabe in die Tag-Zeile oder durch erneutes Navigieren mittels der Ordnerstruktur.
 
-\vspace{\baselineskip}
+\vspace{10cm}
 
 \subsubsection{Dokumentenablage mit mobilen Geräten verwenden}
 
