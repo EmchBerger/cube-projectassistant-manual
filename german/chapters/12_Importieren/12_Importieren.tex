@@ -29,11 +29,35 @@ Mittels der Importier-Funktion 'Terminplan Daten' lässt sich ein neues, aktuell
 
 \vspace{\baselineskip}
 
-Um im CUBE PA die zusätzlichen Anzeige- und Filteroptionen (Projekt / Teilprojekt, Ressourcen) verwenden zu können, müssen die entsprechenden Informationen bereits im MS-Project File enthalten sein. Die Ressourcen werden dabei gemäss üblicher MS-Project Vorgehensweise vorgängig definiert und anschliessend den einzelnen Vorgängen zugewiesen. Die Zuordnung der Vorgänge zu einem Projekt / Teilprojekt wird mit Hilfe von benutzerdefinierten Feldern ermöglicht. Dazu sind im Project-File zwei neue Spalten hinzuzufügen (Typ Text, z.B. Text1 und Text2). Diese Spalten sind in der Gantt-Diagramm Ansicht entweder direkt in der Tabelle oder unter Format - Benutzerdefinierte Felder mit 'Subproject\_1' und 'Subproject\_2' zu benennen \col{(1)}. Dies ermöglicht das korrekte Einlesen der Daten im CUBE PA. Den einzelnen Vorgängen können anschliessend die Projekte (Teilprojekte) gemäss den Tag Definitionen in CUBE PA zugewiesen werden. Dies geschieht durch manuelle resp. Dropdown-Eingabe der Projektnamen in den Spalten 'Subproject\_1' und 'Subproject\_2'. Vor dem Export / Import sollte unbedingt geprüft werden, dass sämtliche Vorgänge den korrekten Projekten zugeordnet sind und keine Felder leergelassen wurden. Nur so kann verhindert werden, dass bei späterer Filterung in CUBE PA keine Vorgänge irrtümlicherweise ausgeblendet werden.
+Um im CUBE PA die zusätzlichen Anzeige- und Filteroptionen (Projekt / Teilprojekt, Ressourcen) verwenden zu können, müssen die entsprechenden Informationen bereits im MS-Project File enthalten sein. Die Ressourcen werden dabei gemäss üblicher MS-Project Vorgehensweise vorgängig definiert und anschliessend den einzelnen Vorgängen zugewiesen. Die Zuordnung der Vorgänge zu einem Projekt / Teilprojekt wird mit Hilfe von benutzerdefinierten Feldern ermöglicht. Dazu sind im Project-File zwei neue Spalten hinzuzufügen (Typ Text, z.B. Text1 und Text2). Diese Spalten sind in der Gantt-Diagramm Ansicht entweder direkt in der Tabelle oder unter Format - Benutzerdefinierte Felder mit 'Subproject\_1' und 'Subproject\_2' zu benennen \col{(1)}. Dies ermöglicht das korrekte Einlesen der Daten im CUBE PA. Den einzelnen Vorgängen können anschliessend die Projekte (Teilprojekte) gemäss den Tag Definitionen in CUBE PA zugewiesen werden. Dies geschieht durch manuelle resp. Dropdown-Eingabe der Projektnamen in den Spalten 'Subproject\_1' und 'Subproject\_2'. Vor dem Export / Import sollte unbedingt geprüft werden, dass sämtliche Vorgänge den korrekten Projekten zugeordnet sind und keine Felder leer gelassen wurden. Nur so kann verhindert werden, dass bei späterer Filterung in CUBE PA keine Vorgänge irrtümlicherweise ausgeblendet werden.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/12_Importieren/pictures/12-1_zusSpaltenMSProject.jpg}}
 \caption{Zusätzlich benötigte Spalten in MS-Project}
+% \label{fig:speciation}
+\end{figure}
+
+\textbf{Zusätzliche Angaben für die Konfiguration in MS Project:} 
+
+\vspace{\baselineskip}
+
+Verwenden Sie für die zwei zusätzlich benötigten Spalten den Feldnamen 'Gliederungscode1' und 'Gliederungscode2'. In den Feldeinstellungen (Rechtsklick auf die zusätzlichen Spalten) ergänzen die den Spaltentitel entsprechend mit 'Subproject\_1' und 'Subproject\_2'.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/12_Importieren/pictures/imp_KonfMSPro1.jpg}}
+\caption{Konfigurationen in MS Project}
+% \label{fig:speciation}
+\end{figure}
+
+Die Auswahlbegriffe (Nachschlagetabelle) für die zusätzlichen Spalten definieren Sie wie folgt:
+
+\vspace{\baselineskip}
+
+Rechtsklick auf die zusätzlichen Spalten. Wählen Sie 'Benutzerdefinierte Felder'. Sie sehen die Liste mit den Gliederungscodes. Gliederungscode 1 und 2 werden wie oben beschrieben für die zusätzlichen Spalten verwendet. Klicken Sie zuerst den 'Gliederungscode 1' an und wählen Sie 'Umbenennen...'. Nun können Sie die Auswahlliste (Nachschlagetabelle) ergänzen. Gehen Sie dann gleich vor für den 'Gliederungscode 2'.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/12_Importieren/pictures/imp_KonfMSPro2.jpg}}
+\caption{Nachschlagetabelle bei den Gliederungscodes ausfüllen}
 % \label{fig:speciation}
 \end{figure}
 
