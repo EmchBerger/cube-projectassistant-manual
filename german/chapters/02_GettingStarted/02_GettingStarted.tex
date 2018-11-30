@@ -257,8 +257,6 @@ Entscheiden.
 \textbf{Benutzerverwaltung}: Verwalten von Benutzern, Teams und Gruppen.
 \end{itemize}
 
-% bishierher
-
 \subsubsection{Schaltflächen}
 
 Die folgenden Schaltflächen kommen immer wieder vor:
@@ -416,6 +414,17 @@ Laden Sie in der Dokumentenablage eine grössere Datei hoch, kann das einige Zei
 % \label{fig:speciation}
 \end{figure}
 
+\textbf{Erzwungener Zugang:}\\
+Wenn Sie sich auf einer spezifischen Seite in CUBE PA befinden (in einem spezifischen Dokument, einer Anforderung etc.) und jemand ebenfalls exakt auf diese Seite zugreifen will, erhält dieser Benutzer die Meldung, ob er sich den Zugang auf diese Seite erzwingen will. Falls der Benutzer 'Ja' klickt, erscheint bei Ihnen folgende Meldung: 
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/02_GettingStarted/pictures/getS_Zugriffsmeldung.jpg}}
+\caption{Meldung: Erzwungener Zugang}
+% \label{fig:speciation}
+\end{figure}
+
+Ein spezifisches Dokument, eine spezifische Sitzung etc. kann immer nur durch einen Benutzer zur gleichen Zeit bearbeitet werden.
+
 \pagebreak
 \subsection{Übersicht der Filteranwendung / Suchen in den verschiedenen Modulen}
 
@@ -460,11 +469,30 @@ Für weitere Eigenheiten in der Bedienung der entsprechenden Modulen beachten Si
 
 \vspace{\baselineskip}
 
-Nebst dem Hochladen von Dateien in der Dokumentenablage kann es erwünscht sein, neu Dokumente in verschiedenen Modulen zu integrieren
+Nebst dem Hochladen von Dateien in der Dokumentenablage kann es erwünscht sein, neue Dokumente in verschiedenen Modulen zu integrieren/hochzuladen. Beispielsweise benötigen Sie bei einer Sitzungseinladung oder einem Statuswechsel ein Dokument, welches noch nicht in CUBE PA (Dokumentenablage) hochgeladen ist. Nun können Sie in den verschiedenen Module das gewünschte Dokument hochladen, so dass es anschliessend auch in der Dokumentenablage verfügbar ist.
 
-% bishierher
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/02_GettingStarted/pictures/getS_DokUploadModal.jpg}}
+\caption{Dokumente hochladen}
+% \label{fig:speciation}
+\end{figure}
 
+Klicken Sie in den verschiedenen Modulen jeweils auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)}. Ein zusätzliches Fenster wird geöffnet. Die Funktionalität ist dieselbe wie beim Hochladen von Dokumenten in der Dokumentenablage. Detaillierte Informationen finden Sie unter Kapitel \ref{bkm:Ref442863508}.
 
+\vspace{\baselineskip}
+
+Im Folgenden sind die rudimentären Funktionen erklärt:\\
+
+\begin{compactitem}
+	\item Öffnen Sie mit dem grauen Plussymbol \includegraphics[height=12pt]{/Icons/plus_grau.jpg} \col{(2)} das Explorerfenster, um eine Datei auszuwählen.
+	\item Alternativ können Sie eine Datei in das Fenster hineinziehen \col{(3)}.
+	\item Beachten Sie, dass mindestens ein Zugriffsrecht oder die 'Standard-Zugriffsrechte' vergeben werden müssen.
+	\item Schliessen Sie den Vorgang mit Klick auf \includegraphics[height=14pt]{/Icons/B_Erstellen.jpg} \col{(5)} ab.
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Auf obige Weise kann jeweils nur ein Dokument hochgeladen werden. Sie können jedoch den Schritt für das Hochladen von Dokumente beliebig oft wiederholen und insgesamt mehrere Dokumente hinzufügen. Sollen mehrere Dokumente gleichzeitig hochgeladen werden, wählen Sie den Weg über die Dokumentenablage - siehe Kapitel \ref{bkm:Ref442863508}.
 
 \subsection{Benachrichtigung bei Veränderungen der Dateneinträgen und Dokumenten}
 \label{bkm:Ref2018080601}
@@ -507,16 +535,16 @@ Die Konfiguration im Überblick:
 % \label{fig:speciation}
 \end{figure}
 
+\pagebreak
 \textbf{Farblegende:}\\
 \includegraphics[height=12pt]{/Icons/Auge_g.jpg}: Wurde keine Benachrichtigungsregel auf einen Datensatz angewandt, ist das Auge grau.\\
 \includegraphics[height=12pt]{/Icons/Auge_r.jpg}: Wurde eine Benachrichtigungsregel für diesen Datensatz erstellt, ist das Auge rot.\\
-\includegraphics[height=12pt]{/Icons/Auge_b.jpg}: Wurde bei einem Datensatz ausgewählt, dass sämtliche Datensätze beobachtet werden sollen, ist das Auge blau.\\
+\includegraphics[height=12pt]{/Icons/Auge_b.jpg}: Wurde bei einem Datensatz ausgewählt, dass sämtliche Datensätze beobachtet werden sollen, ist das Auge blau.
 
 \vspace{\baselineskip}
 
 \textbf{Hinweis}: Die Möglichkeit sämtliche Datensätze zu beobachten, ist mit Bedacht anzuwenden.
 
-\pagebreak
 \subsection{Statussystem} % Workflow
 \label{bkm:Ref2018073101}
 
@@ -553,7 +581,7 @@ Im folgenden Fenster kann der Status geändert werden:
 % \label{fig:speciation}
 \end{figure}
 
-Oben links sehen Sie für welches Dokument Sie den Status ändern \col{(1)}. Die Status sind vorgegeben und können per Dropdown ausgewählt werden \col{(2)} (Das Statussystem kann grundsätzlich an betriebliche Workflows angepasst werden). Geben Sie einen Grund für den Statuswechsel an \col{(3)}. Sie haben bei einem Statuswechsel auch die Möglichkeit Dokumente zu verlinken. Klicken Sie dazu auf das Linksymbol \includegraphics[height=12pt]{/Icons/link.jpg} \col{(4)} (Das gewünschte Dokument muss vorgängig in der Dokumentenablage erfasst werden.). Wurden sämtliche Angaben gemacht, können Sie den Statuswechsel mit 'Übernehmen' \col{(5)} abschliessen. Mit Klick auf \includegraphics[height=12pt]{/Icons/X_Button.jpg} \col{(6)} oben rechts können Sie das Fenster ohne Daten zu speichern, verlassen.
+Oben links sehen Sie für welches Dokument Sie den Status ändern \col{(1)}. Die Status sind vorgegeben und können per Dropdown ausgewählt werden \col{(2)} (Das Statussystem kann grundsätzlich an betriebliche Workflows angepasst werden). Geben Sie einen Grund für den Statuswechsel an \col{(3)}. Sie haben bei einem Statuswechsel auch die Möglichkeit Dokumente zu verlinken. Klicken Sie dazu auf das Linksymbol \includegraphics[height=12pt]{/Icons/link.jpg} \col{(4)} (Das gewünschte Dokument muss vorgängig in der Dokumentenablage erfasst werden.). Ist das Dokument nicht in der Dokumentablage erfasst, können Sie mittels Klick auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(5} in einem zusätzlichen Fenster das gewünschte Dokumente hochladen. Dies funktioniert auf dieselbe Weise wie in der Dokumentenablage unter Kapitel \ref{bkm:Ref442863508} beschrieben. Wurden sämtliche Angaben gemacht, können Sie den Statuswechsel mit 'Übernehmen' \col{(6)} abschliessen. Mit Klick auf \includegraphics[height=12pt]{/Icons/X_Button.jpg} \col{(7)} oben rechts können Sie das Fenster ohne Daten zu speichern, verlassen.
 
 \vspace{\baselineskip}
 
@@ -565,7 +593,7 @@ Oben links sehen Sie für welches Dokument Sie den Status ändern \col{(1)}. Die
 % \label{fig:speciation}
 \end{figure}
 
-Tippen Sie Suchbegriffe ins Feld 'Datei*'. Im Anschluss wählen Sie gewünschte Version des Dokumets aus oder wählen die Option '\includegraphics[height=12pt]{/Icons/checkbox_leer.jpg} Immer die neuste Version referenzieren'. Ergänzen Sie nach Bedarf die Informationen für das verlinkte Dokument und klicken Sie auf 'Übernehmen' \col{(5)}, um den Vorgang abzuschliessen.
+Tippen Sie Suchbegriffe ins Feld 'Datei*'. Im Anschluss wählen Sie gewünschte Version des Dokumets aus oder wählen die Option '\includegraphics[height=12pt]{/Icons/checkbox_leer.jpg} Immer die neuste Version referenzieren'. Ergänzen Sie nach Bedarf die Informationen für das verlinkte Dokument und klicken Sie auf 'Übernehmen' \col{(6)}, um den Vorgang abzuschliessen.
 
 \vspace{\baselineskip}
 
@@ -613,7 +641,6 @@ Nebst obigen Darstellungsarten lassen sich häufig benutzte und gespeicherte Fil
 
 \vspace{\baselineskip}
 
-\pagebreak
 \textbf{Benutzerdefinierte Formularfelder}
 
 \vspace{\baselineskip}
