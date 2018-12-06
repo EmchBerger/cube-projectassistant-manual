@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+%
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\renewcommand{\familydefault}{\sfdefault} % Standardfont ändern auf Sans Se rif (bny)
+
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=3cm]{geometry} % Required to change the page size to A4
+% manuelle Seitenränder eingesetzt durch bny einfach alles inkl. [] wieder löschen, 09.04.2016
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage[utf8x]{inputenc}
+\usepackage[german]{babel} % Sprache umschalten /hat funktioniert bis auf Authors, bny 13.04.2016
+\usepackage{graphicx} % Required for including pictures
+\usepackage{graphics} % Möglichkeit Bilder im Textfluss einzubinden - bny / 09.04.2016
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage[dvipsnames]{xcolor} % von bny hinzugefügt
+\usepackage{paralist} % Aufzählung mit weniger Abstand - bny
+\usepackage[bookmarksopen=true,colorlinks,linkcolor = black]{hyperref} % Hinzugefügt am 21.04.2016 - bny
+\usepackage{adjustbox} % Bild/Text ausrichten; hinzugefügt am 21.04.2016, bny
+\usepackage{eurosym}
+\usepackage{xcolor} % für Textbox mit Farbhintergrund, bny 09.11.2018
+\usepackage{mdframed} % für Textbox mit Farbhintergrund, bny 09.11.2018
+
+\linespread{1.2} % Line spacing
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\setlength{\parindent}{0pt} % Neue Absätze nicht einrücken - bny 09.04.2016
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\newcommand{\col}[1]{\textbf{\textcolor[rgb]{0.4392157,0.1882353,0.627451}{#1}}}
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{figure}[t] % Example image
+\flushright  % rechtsbuendig
+\includegraphics[width=0.2\linewidth]{0_EmBeLogo}
+\end{figure}
+
+\vspace*{2cm}
+
+\center
+
+\HRule \\[0.4cm]
+{ \huge \bfseries CUBE ProjectAssistant - Reprodruck}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\textsf{\Large Spezialanleitung}\\[0.5cm] % Major heading such as course name
+\textsf{\large Version 2.12 / 05.12.2018}\\[0.5cm] % Minor heading such as course title
+
+\vspace*{3cm}
+
+\flushleft\textbf{ Impressum}
+\rule{\textwidth}{1pt}
+% \begin{flushright}
+% \begin{flushleft}
+
+% \end{flushleft}
+% \end{flushright}
+\vspace{\baselineskip}
+
+\begin{tabular}{lp{12cm}}
+Auftragsnummer & BE.N.\\
+Auftraggeber & .\\
+Datum & 05.12.2018\\
+Version & 2.12\\
+Autor & Benjamin Nyffenegger\\
+Freigabe & Markus Schafroth\\
+Verteilen & .\\
+Datei & .\\
+Seitenzahl & 4 \\
+Copyright & \copyright{ Emch+Berger AG Bern}\\
+\end{tabular}
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	Eingebundene Kapitel
+%----------------------------------------------------------------------------------------
+% Achtung, werden Kapitel ein-/ausgeblendet -> in Titelseite Seiteanzahl anpassen
+
+\include{chapters/DocRepro}
+
+\end{document}
+
+
