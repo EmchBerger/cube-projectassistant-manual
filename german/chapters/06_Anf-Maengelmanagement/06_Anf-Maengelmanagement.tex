@@ -16,7 +16,7 @@ Das Modul 'Anforderungs - und Mängelmanagement' ist ein Hilfsmittel zur Erfassu
 
 \vspace{\baselineskip}
 
-Das Modul beinhaltet folgende 4 Kategorien:
+Das Modul beinhaltet folgende 5 Kategorien:
 
 \vspace{\baselineskip}
 
@@ -25,23 +25,24 @@ Das Modul beinhaltet folgende 4 Kategorien:
 	\item Arbeitspakete
 	\item Mängel (Vorbehalte)
 	\item Pendenzen
+	\item Checklisten
 \end{compactitem}
 
 \vspace{\baselineskip}
 
 \textbf{Anforderungen:} Zuerst werden die Anforderungen erfasst, welche im Zusammenhang mit dem Projekt, den Vorbereitungen oder Umsystemen stehen. \\
 
-\textbf{Arbeitspakete:} Sie beschreiben Arbeitsschritte eines Projekts oder fassen gewisse Arbeiten zusammen, welche bspw. einen Auftragsnehmer betreffen. \\
+\textbf{Arbeitspakete:} Sie beschreiben Arbeitsschritte eines Projekts oder fassen gewisse Arbeiten zusammen, welche bspw. einen Auftragnehmer betreffen. \\
 
 \textbf{Mängel (Vorbehalte):} Bezeichnen die Mängel an Projektarbeiten, welche noch einer Korrektur oder Besserung bedürfen. Sie können mit Pendenzen oder Arbeitspaketen verknüpft werden. Die Mängel beziehen sich jeweils auf eine Anforderung. Mängel erhalten einen Status, welcher den Projektzustand wiedergibt (Beispielsweise: Freigegeben und Abgeschlossen). Das Statussystem kann kundenspezifisch konfiguriert werden. \\
 
-\textbf{Pendenzen:} Die Pendenzen entsprechen den Pendenzen des Sitzungswesens und können Bestandteil eines Mangels sein. 
+\textbf{Pendenzen:} Die Pendenzen entsprechen den Pendenzen des Sitzungswesens und können Bestandteil eines Mangels sein. \\
 
-\pagebreak
+\textbf{Checklisten:} Checklisten unterstützen bei einer Abnahme oder einer Begehung. Details zu Checklisten finden Sie im Kapitel \ref{bkm:Ref2018102501}.
 
 \subsection{Anforderungsübersicht}
 
-Unter Übersicht oder Anforderungsübersicht finden Sie auf einen Blick die 'Anforderungsstatistik'. Diese zeigt Ihnen den Anteil / Fortschritt eines jeden Status an.
+Im Menü unter 'Übersicht' oder 'Anforderungsübersicht' finden Sie auf einen Blick die 'Anforderungsstatistik'. Diese zeigt Ihnen den Anteil / Fortschritt eines jeden Status an.
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_Dashboard.jpg}}
@@ -49,13 +50,13 @@ Unter Übersicht oder Anforderungsübersicht finden Sie auf einen Blick die 'Anf
 % \label{fig:speciation}
 \end{figure}
 
-\textbf{Anforderungsstatistik}
+\textbf{Anforderungsstatistik:}
 Grafisch dargestellt sehen Sie die Aufteilung in Prozent sämtlicher Anforderungen nach Status. In Klammern hinter der Legende sehen Sie wie viele Anforderungen einem Status zugeordnet sind. \\
 
-\textbf{Schnellzugriffe}
+\textbf{Schnellzugriffe:}
 Durch die 'Schnellzugriffe' können Sie direkt auf gefilterte Sets von Anforderungen, Dokumenten und Pendenzen zugreifen. \\
 
-\textbf{Übersicht über Status}
+\textbf{Übersicht über Status:}
 Abhängig von der Rolle, die ein Mitarbeiter inne hat, werden ihm Kacheln angezeigt, welche seine nächsten Schritte festhalten. In diesen Kacheln kann er dann direkt auf die entsprechenden Anforderungen klicken und die weitere Bearbeitung vornehmen.
 
 \pagebreak
@@ -77,7 +78,7 @@ Wählen Sie im Menü links den Punkt 'Anforderungs- und Mängelmanagement' und d
 % \pagebreak
 \vspace{10.5cm}
 
-Sie sehen die Übersicht der Anforderungen. Die gewohnte Arbeitsweise von CUBE PA können Sie auch hier anwenden. (Volltextsuche, Spalten filtern und sortieren, sowie Spalten ein- und ausblenden \includegraphics[height=12pt]{/Icons/SpaltenEinst.jpg} etc.).
+Sie sehen die Übersicht der Anforderungen. Die gewohnte Arbeitsweise von CUBE PA können Sie auch hier anwenden. (Volltextsuche, Spalten filtern und sortieren, sowie Spalten ein- und ausblenden (\includegraphics[height=12pt]{/Icons/SpaltenEinst.jpg}) etc.).
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_Anf_Uebersicht.jpg}}
@@ -116,7 +117,7 @@ Die Prozesse und Abläufe werden nachfolgend anhand der Status beschrieben, welc
 
 \vspace{\baselineskip}
 
-\textbf{Hinweis:} Das Statussystem / der Prozessablauf ist projekt- / kundenspezifisch und wird demnach nach Absprache mit dem Kunden konfiguriert. Diese Anleitung orientiert sich an einem Praxisbeispiel, entsprechend sind Abweichungen möglich.
+\textbf{Hinweis:} Das Statussystem / der Prozessablauf ist projekt- / kundenspezifisch und wird nach Absprache mit dem Kunden konfiguriert. Diese Anleitung orientiert sich an einem Praxisbeispiel, entsprechend sind Abweichungen möglich.
 
 \vspace{\baselineskip}
 
@@ -139,11 +140,11 @@ Eine Besonderheit des Anforderungs- und Mängelmanagements ist die grafische Wei
 
 \subsubsection{Neue Anforderung erstellen}
 
-Mit Klick auf das Plussymbol (\includegraphics[height=12pt]{/Icons/Plussymbol.jpg}) \col{(1)} wird eine neue Anforderung erstellt. Nun müssen alle Pflichtfelder ausgefüllt und der Eintrag durch die blaue Schaltfläche 'Erstellen' gespeichert werden. 
+Mit Klick auf das Plussymbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} wird eine neue Anforderung erstellt. Nun müssen alle Pflichtfelder ausgefüllt und der Eintrag durch die blaue Schaltfläche 'Erstellen' gespeichert werden. 
 
 \subsubsection{Bestehende Anforderung bearbeiten}
 
-Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübersicht die gewünschte Anforderung suchen und mit Klick auf die 'ID'-Nummer \col{(2)} öffnen sich weitere Optionen. Wählen Sie das Bearbeiten-Symbol (\includegraphics[height=12pt]{/Icons/bearbeiten.jpg}) \col{(3)}. Nun erscheinen die bisherigen Angaben in einer Maske. Die Maske zum Bearbeiten von Anforderungen beinhaltet einige Pflichtfelder, welche mit einem Stern (*) markiert sind. Diese müssen zwingend ausgefüllt oder ausgewählt werden, falls dies beim Erstellen noch nicht erfolgt ist. Für gewisse Felder sind mehrere Auswahlen möglich. Nach dem Erfassen der Anforderung müssen die Änderungen übernommen werden, damit sie in der Datenbank gespeichert werden. Die entsprechende blaue Schaltfläche 'Übernehmen' befindet sich unten an der Maske oder alternativ oben in der Mitte der Leiste. Wollen Sie nach dem Speichern gleich zur Übersicht zurückkehren, klicken Sie auf \includegraphics[height=12pt]{/Icons/ueb_schliessen.png} oben in der Mitte des Bildschirms. \\
+Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübersicht die gewünschte Anforderung suchen und mit Klick auf die 'ID'-Nummer \col{(2)} öffnen sich weitere Optionen. Wählen Sie das Bearbeiten-Symbol (\includegraphics[height=12pt]{/Icons/bearbeiten.jpg}) \col{(3)}. Nun erscheinen die bisherigen Angaben in einer Maske. Die Maske zum Bearbeiten von Anforderungen beinhaltet einige Pflichtfelder, welche mit einem Stern (*) markiert sind. Diese müssen zwingend ausgefüllt oder ausgewählt werden, falls dies beim Erstellen noch nicht erfolgt ist. Für gewisse Felder ist eine Mehrfachauswahl möglich. Nach dem Erfassen der Anforderung müssen die Änderungen übernommen werden, damit sie in der Datenbank gespeichert werden. Die entsprechende blaue Schaltfläche 'Übernehmen' befindet sich unten in der Eingabemaske oder alternativ oben in der Mitte der Browserseite. Wollen Sie nach dem Speichern gleich zur Übersicht zurückkehren, klicken Sie auf \includegraphics[height=12pt]{/Icons/ueb_schliessen.png} oben in der Mitte des Bildschirms. \\
 
 \vspace{\baselineskip}
 
@@ -151,6 +152,17 @@ Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübers
 
 %\clearpage
 \vspace{\baselineskip}
+
+\textbf{Bestehende Anforderung kopieren}
+
+- Wenn Status -Anforderung bearbeiten-
+
+
+% bishierherf
+
+\vspace{\baselineskip}
+
+
 
 \textbf{Mehrere Anforderungen bearbeiten}
 
@@ -169,19 +181,40 @@ Nach dem Erstellen und während dem Bearbeiten kann jeder Anforderung ein Quelld
 Der TPL Validierung hat die Möglichkeit für mehrere Anforderungen, welche z.B. thematisch oder organisatorisch zusammengehören, eine neue übergeordnete Anforderung zu erstellen. Diese Funktion steht nur für Anforderungen zur Verfügung, welche sich aktuell im Status 'Erfassung abgeschlossen' befinden. Sowohl die existierenden (Unter-)Anforderungen wie auch die neu erstellte übergeordnete Anforderung durchlaufen anschliessend den normalen Lebenszyklus gemäss Statuskonfiguration. Bevor die übergeordnete Anforderung in den abschliessenden Status 'Validierung abgeschlossen' verschoben werden kann, wird automatisch geprüft, ob die Validierung aller untergeordneten Anforderungen bereits abgeschlossen ist. Andernfalls erscheint eine Warnung. \\
 
 \textbf{Vorgehen:}
-Mehrere bestehende Anforderungen können in der Anforderungsübersicht ausgewählt werden (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}). Durch Klicken der Schaltfläche 'Gruppieren' \includegraphics[height=12pt]{/Icons/A_Gruppieren.jpg} wird die Eingabemaske zur Erstellung einer neuen Anforderung geöffnet, wobei die zuvor gewählten Anforderungen als untergeordnete Anforderungen ('Kinder') vorausgewählt werden. Ebenfalls werden Mehrfachauswahlfelder vorausgefüllt (Summe aller Auswahlen der 'Kinder') und ggf. Einfachauswahlfelder ausgefüllt (nur falls Auswahl bei den 'Kindern' identisch ist).
-Nach erfolgreichem Gruppieren können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung erfolgt dies über die Baumschaltfläche (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}) in der Titelleiste.
+Mehrere bestehende Anforderungen können in der Anforderungsübersicht ausgewählt werden (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}). Durch Klicken der Schaltfläche 'Gruppieren' \includegraphics[height=12pt]{/Icons/A_Gruppieren.jpg} wird die Eingabemaske zur Erstellung einer neuen Anforderung geöffnet, wobei die zuvor gewählten Anforderungen als untergeordnete Anforderungen ('Kinder') vorausgewählt werden. Ebenfalls werden Mehrfachauswahlfelder bereits ausgefüllt (Summe aller Auswahlen der 'Kinder') und ggf. Einfachauswahlfelder ausgefüllt (nur falls Auswahl bei den 'Kindern' identisch ist).
+Nach erfolgreichem Gruppieren können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung erfolgt dies über die Baumschaltfläche (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}) in der Titelleiste (Pro Markierung ( \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt eine Darstellung).
 
 \subsubsection{Anforderungen splitten}
 
 Die Anforderungsautoren haben die Möglichkeit, einzelne Anforderungen in mehrere An-forderungen aufzuteilen. Dabei wird bei jedem Splitting-Vorgang eine neue Anforderung erfasst, die der bereits existierenden Anforderung untergeordnet und standardmässig mit demselben Inhalt vorausgefüllt ist. Analog zum beschriebenen Verhalten beim Gruppieren von Anforderungen durchlaufen anschliessend alle existierenden und neuen Anforderungen den normalen Lebenszyklus. Für die übergeordneten Anforderungen wird ebenfalls (unabhängig davon, ob sie durch Gruppierung oder Splitting entstanden sind) vor dem Abschluss geprüft, ob alle untergeordneten Anforderungen abschliessend validiert sind. \\
 
-\textbf{Vorgehen:}
+\textbf{Vorgehen:}\\
+\textbf{Hinweis:} Das Splitten ist nur für Anforderungen im Status 'Anforderung bearbeiten' möglich.\\
 Durch Auswahl einer bestehenden Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) und Klicken der Schaltfläche 'Splitten'  (\includegraphics[height=12pt]{/Icons/A_Splitten.jpg}) wird die Eingabemaske zur Erstellung einer neuen Anforderung geöffnet, wobei die Inhalte der zuvor gewählten Anforderung eingefüllt werden sowie die zuvor gewählte Anforderung als übergeordnete Anforderung ('Elternteil') gesetzt wird. Nach dem Speichern der neuen Unteranforderung besteht die Möglichkeit, weitere 'Kind'-Anforderungen basierend auf demselben 'Elternteil' zu erfassen.
-Nach erfolgreichem Splitten können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt dies über die Baumschaltfläche in der Titelleiste (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}).
+Nach erfolgreichem Splitten können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt dies über die Baumschaltfläche in der Titelleiste (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}).\\
+
+Auch die durch ein Splitting neu erstellten Anforderung können wiederum mit obigen Schritten gesplittet werden. Entsprechend wird dies in einem Anforderungsbaum abgebildet:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_AnfBaum2.jpg}}
+\caption{Anforderungsbaum mit mehreren Ebenen - erstellt durch Splitting}
+% \label{fig:speciation}
+\end{figure}
 
 \clearpage
 \subsubsection{Status ändern}
+
+Um einen Status zu ändern, haben Sie jeweils zwei Möglichkeiten:
+
+\begin{figure}[H]
+\center{\includegraphics[width=.75\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_StatusSystem.jpg}}
+\caption{Auswahl der Bedienung des Statussystems}
+% \label{fig:speciation}
+\end{figure}
+
+Nebst der gewohnten Möglichkeit in CUBE PA einen Status zu ändern (mit Klick auf \includegraphics[height=12pt]{/Icons/Status_aendern.jpg} \col{(a)}), lässt sich im \textbf{Anforderungs- und Mängelmanagement-Modul} die Status-Änderung mittels farbigen Schaltflächen bedienen \col{(b)}. Sie erhalten jeweils in der Button-Beschriftung die möglichen 'Zustände'. Im Hintergrund wird der entsprechende Status ausgewählt und im Statusdialog für die Weiterschaltung oder die Zurücksetzung vorgeschlagen.
+
+\vspace{\baselineskip}
 
 Hat der Ersteller die Anforderung erfasst und gespeichert, kann er den Status mit Klick auf den kleinen Doppelpfeil (\includegraphics[height=12pt]{/Icons/Status_aendern.jpg}) oben links weiterschalten. 
 
@@ -191,9 +224,12 @@ Hat der Ersteller die Anforderung erfasst und gespeichert, kann er den Status mi
 % \label{fig:speciation}
 \end{figure}
 
-Bei der Statusänderung erscheint ein neues Fenster, in welchem man den nächstmöglichen Status auswählen kann. Zudem kann der Grund für die Statusänderung angegeben werden. \\
+Bei der Statusänderung erscheint ein neues Fenster, in welchem man die nächstmöglichen Status auswählen kann (weiter zum nächsten Prozessschritt oder zurückweisen zum letzten Status). Zudem kann der Grund für die Statusänderung angegeben werden. \\
 
-Auch bei einer Statusänderung kann ein Dokument verlinkt \col{(2)} werden, so zum Beispiel ein Foto als Nachweis.\\
+Auch bei einer Statusänderung kann ein Dokument verlinkt \col{(2)} werden, so zum Beispiel ein Foto als Nachweis.
+
+\vspace{\baselineskip}
+
 \textbf{Hinweis:} Jedes Dokument, Foto etc, muss vorher in der Dokumentenablage erfasst werden, damit es hier zur Verfügung steht (Siehe Kapitel \ref{bkm:Ref442863508})
 
 \begin{figure}[H]
@@ -206,9 +242,9 @@ Danach geht die Kontrolle über den Status dieser Anforderung zur Prüfung an de
 
 \subsubsection{Erfassung abgeschlossen}
 
-Der TPL Validierung überprüft, ob die Anforderung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend zurücksetzen über die farbige Schaltfläche. Der TPL Validierung kann nun den Status auf 'Anforderung bearbeiten' zurücksetzen. Die Kontrolle geht dann wieder zum Ersteller. Ist die Anforderung korrekt und vollständig erfasst, kann der TPL Validierung den Status auf 'Erfassung abgeschlossen' setzen. \\
+Der TPL Validierung überprüft, ob die Anforderung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend über die farbige Schaltfläche auf 'Anforderung bearbeiten' zurücksetzen. Die Kontrolle geht dann wieder zum Ersteller. Ist die Anforderung korrekt und vollständig erfasst, kann der TPL Validierung den Status auf 'Erfassung abgeschlossen' setzen. \\
 
-Am Ende einer RAMS-Phase sind alle Anforderungen idealerweise in diesem Status ('Erfassung abgeschlossen') und bleiben in diesem Zustand während der Ausführung. Vor dem Start zur Nachweisplanung, welche allenfalls Monate oder sogar Jahre später erfolgen kann, muss der TPL Validierung nochmals überprüfen, ob die Anforderungen immer noch korrekt sind. Wenn er selbst keine Änderungen anbringen möchte, setzt er entsprechend den Status entweder nochmals zurück auf 'Anforderung bearbeiten' oder weiter auf 'Nachweisplanung'. Im letzteren Fall liegt die Kontrolle über den Status dann beim Validierer der Anforderung, welcher die Nachweisplanung durchführt. 
+Am Ende einer RAMS-Phase sind alle Anforderungen idealerweise in diesem Status ('Erfassung abgeschlossen') und bleiben in diesem Zustand während der Ausführung. Vor dem Start zur Nachweisplanung, welche allenfalls Monate oder sogar Jahre später erfolgen kann, muss der TPL Validierung nochmals überprüfen, ob die Anforderungen immer noch korrekt sind. Wenn er selbst keine Änderungen anbringen möchte, setzt er den Status entweder nochmals zurück auf 'Anforderung bearbeiten' oder falls die Einträge noch gültig sind, weiter auf 'Nachweisplanung'. Im letzteren Fall liegt die Kontrolle über den Status dann beim Validierer der Anforderung, welcher die Nachweisplanung durchführt. 
 
 \subsubsection{Nachweisplanung}
 \label{bkm:Ref2018071811}
@@ -225,7 +261,7 @@ Nach dem 'Übernehmen' der Änderungen kann der Validierer den Status weiterscha
 
 \subsubsection{Überprüfung der Nachweisplanung}
 
-Der TPL Validierung überprüft, ob die Nachweisplanung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend zurücksetzen über die farbige Schaltfläche. Der TPL Validierung hat nun die Möglichkeit den Status auf 'Nachweisplanung' zurückzusetzen. Die Kontrolle geht dann wieder zum Validierer. Ist die Nachweisplanung korrekt und vollständig, kann der TPL Validierung den Status auf 'Freigegeben zur Validierung' setzen. 
+Der TPL Validierung überprüft, ob die Nachweisplanung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status über die farbige Schaltfläche entsprechend auf 'Nachweisplanung' zurücksetzen. Die Kontrolle geht dann wieder zum Validierer. Ist die Nachweisplanung korrekt und vollständig, kann der TPL Validierung den Status auf 'Freigegeben zur Validierung' setzen. 
 
 \subsubsection{Freigegeben zur Validierung - Planung}
 
@@ -244,7 +280,7 @@ Nach dem 'Übernehmen' der Änderungen kann der Validierer den Status im erschei
 \subsubsection{Überprüfung der Validierung}
 \label{bkm:Ref2018071812}
 
-Der TPL Validierung überprüft, ob die Durchführung der Validierung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder den Status entsprechend über die farbige Schaltfläche zurücksetzen: 
+Der TPL Validierung überprüft, ob die Durchführung der Validierung vollständig und korrekt erfasst wurde. Falls dies nicht der Fall ist, kann er entweder die Änderungen selbst durchführen oder über die farbige Schaltfläche den Status auf 'Freigegeben zur Validierung' zurücksetzen. Dazu klickt er auf den roten Button 'Validierung geprüft, nicht OK': 
 
 \begin{figure}[H]
 \center{\includegraphics[width=0.5\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_Ueberpruefung.jpg}}
@@ -252,17 +288,15 @@ Der TPL Validierung überprüft, ob die Durchführung der Validierung vollständ
 % \label{fig:speciation}
 \end{figure}
 
-Nun kann der TPL Validierung im Bedarfsfall den Status auf 'Freigegeben zur Validierung' zurücksetzen. Die Kontrolle geht dann wieder zum Validierer. Ist die Durchführung der Validierung korrekt und vollständig, kann der TPL Validierung den Status auf 'Validierung abgeschlossen' setzen. 
+Die Kontrolle geht dann wieder zum Validierer. Ist die Durchführung der Validierung korrekt und vollständig, kann der TPL Validierung mit Klick auf den grünen Button 'Validierung geprüft, OK' den Status auf 'Validierung abgeschlossen' setzen. 
 
 \subsubsection{Validierung abgeschlossen}
 
 Der Validierungsprozess für diese Anforderung ist in diesem Status abgeschlossen. Das heisst nicht, dass die Anforderung zwingend erfüllt wurde. Es ist möglich, dass die Anforderung nicht erfüllt ist und weitere Massnahmen, z.B. betriebliche Massnahmen, notwendig sind. Die Erfassung von Massnahmen ist separat durchzuführen.
 
-%% Kann/wird eine solche Massnahme mit einem anderen Modul abgedeckt -> Arbeitspaket, Mangel?
-
 %bishierher
 
-% \pagebreak
+\pagebreak
 
 \subsection{Mängel (Vorbehalte)}
 
