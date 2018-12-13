@@ -121,13 +121,16 @@ Die Prozesse und Abläufe werden nachfolgend anhand der Status beschrieben, welc
 
 \vspace{\baselineskip}
 
+\begin{wrapfigure}[5]{r}{7cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-25pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_grafStatus.jpg}
+  \end{center}
+  \vspace{-20pt}
+  % \caption{Das Anforderungs- und Mängelmanagement verwenden}
+  \vspace{-10pt}
+\end{wrapfigure}
 Eine Besonderheit des Anforderungs- und Mängelmanagements ist die grafische Weiterschaltung des Statussystems. Mit farbigen Buttons wird dem Benutzer immer der nächste Schritt oder die Rückgabe an vorhergehende Stelle angezeigt. Mit wenigen Klicks wird die Anforderung durch den Prozess geführt.
-
-\begin{figure}[H]
-\center{\includegraphics[width=.45\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_grafStatus.jpg}}
-% \caption{Anforderung erstellen oder bearbeiten}
-% \label{fig:speciation}
-\end{figure}
 
 \subsection{Anforderungen erstellen und bearbeiten}
 \label{bkm:Ref2018071810}
@@ -144,7 +147,7 @@ Mit Klick auf das Plussymbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg
 
 \subsubsection{Bestehende Anforderung bearbeiten}
 
-Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübersicht die gewünschte Anforderung suchen und mit Klick auf die 'ID'-Nummer \col{(2)} öffnen sich weitere Optionen. Wählen Sie das Bearbeiten-Symbol (\includegraphics[height=12pt]{/Icons/bearbeiten.jpg}) \col{(3)}. Nun erscheinen die bisherigen Angaben in einer Maske. Die Maske zum Bearbeiten von Anforderungen beinhaltet einige Pflichtfelder, welche mit einem Stern (*) markiert sind. Diese müssen zwingend ausgefüllt oder ausgewählt werden, falls dies beim Erstellen noch nicht erfolgt ist. Für gewisse Felder ist eine Mehrfachauswahl möglich. Nach dem Erfassen der Anforderung müssen die Änderungen übernommen werden, damit sie in der Datenbank gespeichert werden. Die entsprechende blaue Schaltfläche 'Übernehmen' befindet sich unten in der Eingabemaske oder alternativ oben in der Mitte der Browserseite. Wollen Sie nach dem Speichern gleich zur Übersicht zurückkehren, klicken Sie auf \includegraphics[height=12pt]{/Icons/ueb_schliessen.png} oben in der Mitte des Bildschirms. \\
+Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübersicht die gewünschte Anforderung suchen und mit Klick auf die 'ID'-Nummer \col{(2)} öffnen sich weitere Optionen. Wählen Sie das Bearbeiten-Symbol (\includegraphics[height=12pt]{/Icons/bearbeiten.jpg}) \col{(3)}. Nun erscheinen die bisherigen Angaben in einer Maske. Die Maske zum Bearbeiten von Anforderungen beinhaltet einige Pflichtfelder, welche mit einem Stern (*) markiert sind. Diese müssen zwingend ausgefüllt oder ausgewählt werden, falls dies beim Erstellen noch nicht erfolgt ist. Für gewisse Felder ist eine Mehrfachauswahl möglich. Nach dem Erfassen der Anforderung müssen die Änderungen übernommen werden, damit sie in der Datenbank gespeichert werden. Die entsprechende blaue Schaltfläche 'Übernehmen' befindet sich unten in der Eingabemaske oder alternativ oben in der Mitte der Browserseite. Wollen Sie nach dem Speichern gleich zur Übersicht zurückkehren, klicken Sie auf \includegraphics[height=12pt]{/Icons/ueb_schliessen.png} oben in der Mitte des Bildschirms.
 
 \vspace{\baselineskip}
 
@@ -155,18 +158,19 @@ Eine bestehende Anforderung wird wie folgt bearbeitet: In der Anforderungsübers
 
 \textbf{Bestehende Anforderung kopieren}
 
-- Wenn Status -Anforderung bearbeiten-
-
-
-% bishierherf
+Eine bestehende Anforderung kann unabhängig ihres Status kopiert werden. Dazu wird die zu kopierende Anforderung mit der Checkbox selektiert (\includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}). Klicken Sie danach oben in der Bildmitte auf das Kopiersymbol (\includegraphics[height=12pt]{/Icons/A_Kopieren.jpg}). Nun wird die Eingabemaske der Anforderung geöffnet. Sämtliche Felder sind bereits vorausgefüllt. Der Status der neuen Anforderung wird auf 'Anforderung bearbeiten' gesetzt.
 
 \vspace{\baselineskip}
 
+\textbf{Hinweis:} Eine Mehrfachauswahl für die Kopierfunktion ist nicht möglich.
 
+% bishierher
+
+\vspace{\baselineskip}
 
 \textbf{Mehrere Anforderungen bearbeiten}
 
-Um mehrere Anforderungen zu überarbeiten, können diese mit Häkchen (\includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) ausgewählt werden. Danach ist es möglich mit der Schaltfläche 'Serienbearbeitung' (\includegraphics[height=12pt]{/Icons/A_Serienbearbeitung.jpg}) in der Menüleiste die einzelnen Anforderungen nacheinander zu bearbeiten und jeweils mit dem Button \includegraphics[height=12pt]{/Icons/speichern_weiter.jpg} \col{(2)} zur nächsten Anforderung zu springen ohne diese erneut auswählen zu müssen. Mit dem \includegraphics[height=12pt]{/Icons/Abbrechen_r.jpg}-Symbol \col{(1)} können Sie die Maske ohne die Daten zu speichern wieder verlassen. \\
+Um mehrere Anforderungen zu überarbeiten, können diese mit Häkchen (\includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) ausgewählt werden. Danach ist es möglich mit der Schaltfläche 'Serienbearbeitung' (\includegraphics[height=12pt]{/Icons/A_Serienbearbeitung.jpg}) in der Menüleiste die einzelnen Anforderungen nacheinander zu bearbeiten und jeweils mit dem Button \includegraphics[height=12pt]{/Icons/speichern_weiter.jpg} \col{(2)} zur nächsten Anforderung zu springen ohne diese erneut auswählen zu müssen. Mit dem \includegraphics[height=12pt]{/Icons/Abbrechen_r.jpg}-Symbol \col{(1)} können Sie die Maske ohne die Daten zu speichern wieder verlassen.
 
 \begin{figure}[H]
 \center{\includegraphics[width=0.5\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_mAnfBearbeiten.jpg}}
@@ -177,19 +181,35 @@ Um mehrere Anforderungen zu überarbeiten, können diese mit Häkchen (\includeg
 Nach dem Erstellen und während dem Bearbeiten kann jeder Anforderung ein Quelldokument angehängt werden. Dieses Dokument muss vorher in der Dokumentenablage erfasst worden sein (Siehe Kapitel \ref{bkm:Ref442863508}). 
 
 \subsubsection{Anforderungen gruppieren}
+\label{bkm:Ref2018121101}
 
-Der TPL Validierung hat die Möglichkeit für mehrere Anforderungen, welche z.B. thematisch oder organisatorisch zusammengehören, eine neue übergeordnete Anforderung zu erstellen. Diese Funktion steht nur für Anforderungen zur Verfügung, welche sich aktuell im Status 'Erfassung abgeschlossen' befinden. Sowohl die existierenden (Unter-)Anforderungen wie auch die neu erstellte übergeordnete Anforderung durchlaufen anschliessend den normalen Lebenszyklus gemäss Statuskonfiguration. Bevor die übergeordnete Anforderung in den abschliessenden Status 'Validierung abgeschlossen' verschoben werden kann, wird automatisch geprüft, ob die Validierung aller untergeordneten Anforderungen bereits abgeschlossen ist. Andernfalls erscheint eine Warnung. \\
+Der TPL Validierung hat die Möglichkeit für mehrere Anforderungen, welche z.B. thematisch oder organisatorisch zusammengehören, eine neue übergeordnete Anforderung zu erstellen. Diese Funktion steht nur für Anforderungen zur Verfügung, welche sich aktuell im Status 'Erfassung abgeschlossen' befinden. Sowohl die existierenden (Unter-)Anforderungen wie auch die neu erstellte übergeordnete Anforderung durchlaufen anschliessend den normalen Lebenszyklus gemäss Statuskonfiguration. Bevor die übergeordnete Anforderung in den abschliessenden Status 'Validierung abgeschlossen' verschoben werden kann, wird automatisch geprüft, ob die Validierung aller untergeordneten Anforderungen bereits abgeschlossen ist. Andernfalls erscheint eine Warnung:
+
+\begin{figure}[H]
+\center{\includegraphics[width=0.75\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_Warnung.jpg}}
+\caption{Warnung: untergeordnete Anforderungen}
+% \label{fig:speciation}
+\end{figure}
 
 \textbf{Vorgehen:}
 Mehrere bestehende Anforderungen können in der Anforderungsübersicht ausgewählt werden (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}). Durch Klicken der Schaltfläche 'Gruppieren' \includegraphics[height=12pt]{/Icons/A_Gruppieren.jpg} wird die Eingabemaske zur Erstellung einer neuen Anforderung geöffnet, wobei die zuvor gewählten Anforderungen als untergeordnete Anforderungen ('Kinder') vorausgewählt werden. Ebenfalls werden Mehrfachauswahlfelder bereits ausgefüllt (Summe aller Auswahlen der 'Kinder') und ggf. Einfachauswahlfelder ausgefüllt (nur falls Auswahl bei den 'Kindern' identisch ist).
-Nach erfolgreichem Gruppieren können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung erfolgt dies über die Baumschaltfläche (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}) in der Titelleiste (Pro Markierung ( \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt eine Darstellung).
+Nach erfolgreichem Gruppieren können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung erfolgt dies über die Baumschaltfläche (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}) in der Titelleiste (Pro Markierung (\includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt eine Darstellung).
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/06_Anf-Maengelmanagement/pictures/amm_AnfBaum1.jpg}}
+\caption{Zwei Anforderungsbäume}
+% \label{fig:speciation}
+\end{figure}
 
 \subsubsection{Anforderungen splitten}
 
-Die Anforderungsautoren haben die Möglichkeit, einzelne Anforderungen in mehrere An-forderungen aufzuteilen. Dabei wird bei jedem Splitting-Vorgang eine neue Anforderung erfasst, die der bereits existierenden Anforderung untergeordnet und standardmässig mit demselben Inhalt vorausgefüllt ist. Analog zum beschriebenen Verhalten beim Gruppieren von Anforderungen durchlaufen anschliessend alle existierenden und neuen Anforderungen den normalen Lebenszyklus. Für die übergeordneten Anforderungen wird ebenfalls (unabhängig davon, ob sie durch Gruppierung oder Splitting entstanden sind) vor dem Abschluss geprüft, ob alle untergeordneten Anforderungen abschliessend validiert sind. \\
+Die Anforderungsautoren haben die Möglichkeit, einzelne Anforderungen in mehrere An-forderungen aufzuteilen. Dabei wird bei jedem Splitting-Vorgang eine neue Anforderung erfasst, die der bereits existierenden Anforderung untergeordnet und standardmässig mit demselben Inhalt vorausgefüllt ist. Analog zum beschriebenen Verhalten beim Gruppieren von Anforderungen durchlaufen anschliessend alle existierenden und neuen Anforderungen den normalen Lebenszyklus. Für die übergeordneten Anforderungen wird ebenfalls (unabhängig davon, ob sie durch Gruppierung oder Splitting entstanden sind) vor dem Abschluss geprüft, ob alle untergeordneten Anforderungen abschliessend validiert sind (Siehe oben in Kapitel \ref{bkm:Ref2018121101}). \\
 
 \textbf{Vorgehen:}\\
-\textbf{Hinweis:} Das Splitten ist nur für Anforderungen im Status 'Anforderung bearbeiten' möglich.\\
+\textbf{Hinweis:} Das Splitten ist nur für Anforderungen im Status 'Anforderung bearbeiten' möglich.
+
+\vspace{\baselineskip}
+
 Durch Auswahl einer bestehenden Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) und Klicken der Schaltfläche 'Splitten'  (\includegraphics[height=12pt]{/Icons/A_Splitten.jpg}) wird die Eingabemaske zur Erstellung einer neuen Anforderung geöffnet, wobei die Inhalte der zuvor gewählten Anforderung eingefüllt werden sowie die zuvor gewählte Anforderung als übergeordnete Anforderung ('Elternteil') gesetzt wird. Nach dem Speichern der neuen Unteranforderung besteht die Möglichkeit, weitere 'Kind'-Anforderungen basierend auf demselben 'Elternteil' zu erfassen.
 Nach erfolgreichem Splitten können die hierarchischen Verknüpfungen der Anforderungen in einem Baum dargestellt werden. Nach Auswahl einer Anforderung (mittels Checkbox \includegraphics[height=12pt]{/Icons/checkbox_markiert.jpg}) erfolgt dies über die Baumschaltfläche in der Titelleiste (\includegraphics[height=12pt]{/Icons/A_Anforderungsbaum.jpg}).\\
 
