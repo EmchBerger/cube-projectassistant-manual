@@ -56,8 +56,8 @@ In der Kontenübersicht sind wie eingangs beschrieben, sämtliche Konten-Positio
 % \label{fig:speciation}
 \end{figure}
 
-Die Übersicht des Kontenplans verwendet die Standard-Funktionen des CUBE PAs. Mit dem \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} wird ein neues Konto (Kostenstelle) hinzugefügt. Nebst der Volltextsuche oder der Filterung einzelner Spalten, können Sie weitere Filteroptionen mit dem \includegraphics[height=12pt]{/Icons/Filter.jpg}-Symbol einblenden.\\
-Die gesuchten und gefilterten Einträge lassen sich mit dem \includegraphics[height=12pt]{/Icons/ListeGenerieren.jpg}-Symbol in ein Excel exportieren.
+Die Übersicht des Kontenplans verwendet die Standard-Funktionen des CUBE PA. Mit \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} wird ein neues Konto (Kostenstelle) hinzugefügt. Nebst der Volltextsuche oder der Filterung einzelner Spalten können Sie weitere Filteroptionen mit dem \includegraphics[height=12pt]{/Icons/Filter.jpg}-Symbol einblenden.\\
+Die gesuchten / gefilterten Einträge lassen sich mit dem \includegraphics[height=12pt]{/Icons/ListeGenerieren.jpg}-Symbol in ein Excel exportieren.
 
 \vspace{\baselineskip}
 
@@ -65,15 +65,20 @@ Wollen Sie einen bestehenden Eintrag ändern oder ansehen, klicken Sie auf die b
 
 \vspace{\baselineskip}
 
-\pagebreak
+
+\begin{wrapfigure}[1]{r}{9cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/07_Controlling/pictures/contr_KontoErstellen.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Neues Konto erstellen}
+  \vspace{-10pt}
+\end{wrapfigure}
 \textbf{Ein neues Konto erstellen:} 
 
-\begin{figure}[H]
-\center{\includegraphics[width=.75\linewidth]{../chapters/07_Controlling/pictures/contr_KontoErstellen.jpg}}
-\caption{Neues Konto erstellen}
-% \label{fig:speciation}
-\end{figure}
-
+% \vspace{15cm} 
+\pagebreak
 Geben Sie dem neuen Konto einen Namen (Pflichtfeld). Mittels den Feldern 'Übergeordnete Konti' und 'Untergeordnete Konti' können Sie innerhalb des Kontenplan eine Hierarchie / Abhängigkeit erstellen. So können Sie gewisse Kontis einer Hauptkategorie zuordnen.
 
 \vspace{\baselineskip}
@@ -89,7 +94,7 @@ Weisen Sie einem Konto unbedingt eine Beschaffung zu. Nur auf diesem Weg ist es 
 
 Einem Konto können Sie ähnlich wie beim Dokumentenwesen Schlagworte (Tags) zuweisen. Diese werden zuvor in der Konfiguration definiert und als Kontentag markiert. Diese Definitionen übernimmt in aller Regel ein Administrator oder ein Superuser.
 
-\pagebreak
+% \pagebreak
 \subsection{Rechnungen}
 
 \textbf{Rechnungen in der Übersicht}
@@ -113,18 +118,22 @@ Um Rechnungen optimal erfassen zu können, empfiehlt sich, die nötigen Unteralg
 
 \vspace{\baselineskip}
 
-\pagebreak
+\begin{wrapfigure}[4]{r}{9cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/07_Controlling/pictures/contr_RechnungErfassen.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Eine Rechnung erfassen}
+  \vspace{-10pt}
+\end{wrapfigure}
 \textbf{Eine Rechnung erfassen}
 
 \vspace{\baselineskip}
 
 Wählen Sie das Plussymbol (\includegraphics[height=12pt]{/Icons/Plussymbol.jpg}) in der Rechnungsübersicht, um einen neue Rechnung zu erfassen. Die Eingabemaske erscheint:
-
-\begin{figure}[H]
-\center{\includegraphics[width=.75\linewidth]{../chapters/07_Controlling/pictures/contr_RechnungErfassen.jpg}}
-\caption{Eine Rechnung erfassen}
-% \label{fig:speciation}
-\end{figure}
+ 
+\vspace{6cm}
 
 Geben Sie einen geeigneten Titel und den Rechnungsbetrag ein (Beides sind Pflichtfelder). Weiter können Sie das Rechnungsdatum, Empfangsdatum der Rechnung, sowie das Fälligkeitsdatum hinterlegen. \\
 Im nächsten Schritt wählen Sie das zugehörige Konto aus und wählen Sie den entsprechenden Lieferanten (Pflichtfeld).
