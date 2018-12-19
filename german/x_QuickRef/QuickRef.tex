@@ -779,92 +779,176 @@ zwar auch ausgecheckt werden, eine online-Bearbeitung ist aber nicht möglich.
 %% Workflow
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% bishierher
 \pagebreak
 \centering{{\huge Workflows generieren}}
 
 \vspace{\baselineskip}
 
-
-\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Allgemeines zu Workflows]
+\begin{beamerlikethm}{Workflows - Vorbereitung}
 \begin{itemize}
-  \item[$\Longrightarrow$] Öffnen Sie zur Vorbehaltsübersicht ($\Rightarrow$ Menü $\Rightarrow$ 'Anforderungsmanagement' $\Rightarrow$ 'Vorbehalte')
-  \item[$\Longrightarrow$] Klick auf \includegraphics[height=10pt]{Icons/Listensymbol.jpg} und die entsprechende Vorbehalts-Nr öffnet die Optionen. Bearbeitung (\includegraphics[height=10pt]{Icons/Bearbeiten.jpg}) auswählen
-  \item[$\Longrightarrow$] Klicken Sie in das Feld 'Checkliste' und wählen Sie die gewünschten Checkliste/n aus (Mehrfachauswahl möglich)
-  \item[$\Longrightarrow$] Im Ansichtsmodus (\includegraphics[height=10pt]{Icons/Lupe.jpg})	sehen Sie die verknüpften Checklisten. Klick auf eine Checkliste öffnet die Validierung.
-\vspace{\baselineskip}
-  \item[$\Longrightarrow$] \textbf{Jeweils mit dem \includegraphics[height=10pt]{Icons/Pfeil_l.jpg}-Symbol gelangen Sie zu den Vorbehalten, resp. der Sitzung zurück}
+  \item[$\Longrightarrow$] In verschiedenen Modulen lassen sich Workflows integrieren und an Geschäftsprozesse anpassen.
+  \item[$\Longrightarrow$] Workflows werden mittels Statussytem umgesetzt. Einfaches Beispiel sind Pendenzen, welche vom Status 'Pendent' nach Erledigung in den Status 'Erledigt' geändert werden.
+  \item[$\Longrightarrow$] Workflows sollen gut durchdacht und erst dann eingeführt werden.
+  \item[$\Longrightarrow$] Die Konfiguration von Workflows benötigt Administratorenrechte. Nehmen Sie mit der verantwortlichen Person innerhalb des Projektes oder mit dem CUBE PA Support ({\color{red} cube.support@emchberger.ch}) Kontakt auf. 
 \end{itemize}
-\end{tcolorbox}
+\end{beamerlikethm}
+
+\vspace{\baselineskip}
 
 %%%% Box 1+2 in zwei Spalten
 
 \begin{multicols}{2}
 
-\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Die Menüführung]
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Workflows erstellen]
 \begin{itemize}
-  \item[$\Longrightarrow$] Links sehen Sie sämtliche Module, welche für Sie freigeschaltet sind.
-  \item[$\Longrightarrow$] Mit Klick oben links auf den Namen können Sie sich abmelden, das Passwort zurücksetzen und das Handbuch herunterladen.
+  \item[$\Longrightarrow$] Wählen Sie im Hauptmenü unter 'Konfiguration' den Punkt 'Statussysteme'.
+  \item[$\Longrightarrow$] Klicken Sie oben im Bild auf die entsprechende Kategorie: 'Vorbehalt', 'Objekt', 'Dokumente', 'Konto', 'Rechnungen', 'Beschaffungen', 'Arbeitspaket', 'Anforderungen', 'Checklisten'.
+  \item[$\Longrightarrow$] Fügen Sie mittels \includegraphics[height=12pt]{Icons/StatusHinzufuegen.jpg} einen neuen Status hinzu.
+  \item[$\Longrightarrow$] Speichern Sie jede Änderung mit \includegraphics[height=12pt]{Icons/AenderungenSpeichern.jpg} ab oder wiederrufen Sie Änderungen mit \includegraphics[height=12pt]{Icons/AenderungenZuruecksetzen.jpg}.
+	\item[$\Longrightarrow$] Mit Klick auf \includegraphics[height=10pt]{Icons/Schraubenschluessel.jpg} wird ein Status oder eine Verbindung konfiguriert. Löschen Sie einen Status oder eine Verbindung mit \includegraphics[height=10pt]{Icons/Muelltonne.jpg}.
+	\item[$\Longrightarrow$] Die Änderungen stehen nach dem Speichern in den Modulen gleich zur Verfügung.
 \end{itemize}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Workflows konfigurieren 1]
+\begin{itemize}
+  \item[$\Longrightarrow$] Status werden wie folgt verbunden: Klick auf Punkt unter Statuselement und ziehen der Verbindung zu Punkt oberhalb Statuselement:
+
 \begin{centering}
-\center{\includegraphics[width=.6\linewidth]{Pictures/Menu.jpg}}
+\center{\includegraphics[width=.5\linewidth]{Pictures/StatusVerbinden.jpg}}
 \end{centering}
-\begin{itemize}
-  \item[$\Longrightarrow$] Mit Klick auf \includegraphics[height=12pt]{Icons/Menu_Aus-Ein.jpg} links des Emch+Berger Logos können Sie das Menü ein- und ausschalten. So gewinnen Sie eine grössere Arbeitsfläche.
-	\item[$\Longrightarrow$] Arbeiten Sie mit mehreren Instanzen können Sie mit Klick auf \includegraphics[height=12pt]{Icons/Instanz_wechseln.jpg} rechts der Eingabezeile 'Was möchten Sie tun?' die Instanz wechseln.
+	
+  \item[$\Longrightarrow$] Klick auf \includegraphics[height=10pt]{Icons/Schraubenschluessel.jpg} öffnet das Konfigurationsfenster:
+  \item[$\Longrightarrow$] Fügen Sie einen Namen hinzu | definieren Sie den Status als 'Startstatus' oder 'Zielstatus', resp. keine Markierung = Zwischenstatus.
+  \item[$\Longrightarrow$] Unten im Fenster vergeben Sie die Zugriffsrechte und speichern die Eingaben mit \includegraphics[height=12pt]{Icons/Speichern.png} ab.
+	\item[$\Longrightarrow$] Optional können zusätzliche Einstellungen vorgenommen werden: Klick auf 'Class' ermöglicht Ihnen bspw. die Zuweisung von Farben.
 \end{itemize}
 \end{tcolorbox}
-
-
-
-
-\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Was möchten Sie tun?]
-\begin{itemize}
-  \item[$\Longrightarrow$] Geben Sie in die Zeile 'Was möchten Sie tun?' einen Suchbegriff ein. CUBE PA durchsucht nebst den Datenbankeinträgen, auch Dokumente und listet die Suchergebnisse auf.
-  \item[$\Longrightarrow$] Wollen Sie ein neues Dokument erstellen, tippen Sie ins Feld 'Dok'. Die Option erscheint, ein neues Dokument zu erstellen.  Dasselbe funktioniert auch mit Pendenzen, Entscheiden und Beschaffungen.
-	\item[$\Longrightarrow$] Alternativ können Sie ins Suchfeld 'Neu' schreiben. Wählen Sie den gewünschten Eintrag aus, welcher Sie neu anlegen wollen.
-	\item[$\Longrightarrow$] Fahren Sie über ein Suchresultat, erscheinen die Optionen. Bei einem gefundenen Dokument können Sie sich dieses beispielsweise 'anzeigen' lassen, das Dokument 'herunterladen', oder 'bearbeiten'. 
-\end{itemize}
-\end{tcolorbox}
-
 
 \end{multicols}
 
-
-
-\begin{beamerlikethm}{Die persönliche Projektübersicht}
-\begin{itemize}
- \item[$\Longrightarrow$] In der persönlichen Projektübersicht sehen Sie die für Sie relevanten Informationen.
- \item[$\Longrightarrow$] \textbf{Sitzungen:} Ihnen werden die nächsten Sitzungen mit der entsprechenden Sitzungseinladung angezeigt. Ebenso werden die vergangenen Sitzungen mit Link zum zugehörigen Protokoll aufgelistet.
- \item[$\Longrightarrow$] Rechts finden Sie die \textbf{Pendenzen}, für welche Sie verantwortlich sind. Mit Klick auf \includegraphics[height=10pt]{Icons/Pfeil_rechts.jpg} öffnen Sie die entsprechenden Pendenzen. Mit \includegraphics[height=10pt]{Icons/bearbeiten.jpg} können Sie eine Pendenz gleich bearbeiten.
- \item[$\Longrightarrow$] Bei der \textbf{Dokumentenübersicht} finden Sie die von Ihnen ausgecheckten Dokumenten. Zudem werden alle Dokumente angezeigt, welche sie favorisiert haben. Oft verwendete und gespeicherte Filter werden ebenfalls angezeigt und mit einem Klick wechseln Sie in die Dokumentenablage und erhalten das Filterergebnis.
- \item[$\Longrightarrow$] Bei der Übersicht über \textbf{Beschaffungen} werden die Beschaffungen angezeigt, bei welchen Sie Aufgaben wahrnehmen. So zum Beispiel bei der Vertragsüberwachung: Alle Verträge die von Ihnen begleitet werden, sehen Sie aufgelistet.
-\end{itemize}
-\end{beamerlikethm}
+\vspace{\baselineskip}
 
 %%%% Box 3+4 in zwei Spalten
 
 \begin{multicols}{2}
 
-\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Mobile CUBE PA Version]
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Workflows konfigurieren 2]
 \begin{itemize}
-  \item[$\Longrightarrow$] CUBE PA lässt sich auch mittels App für iPhone und Android Smartphones bedienen.
-  \item[$\Longrightarrow$] Sie können das Programm mittels AppShop gratis herunterladen.
-  \item[$\Longrightarrow$] Melden Sie sich mit ihren bekannten Anmeldedaten an.
-  \item[$\Longrightarrow$] Die App unterstützt die 'persönliche Übersicht', die 'Adressliste', das 'Sitzungswesen' sowie 'die Dokumentenablage.
-	\item[$\Longrightarrow$] So haben Sie die wichtigesten Tools von CUBE PA jederzeit zur Hand und können auf Sitzungen und Dokumente, aber auch Adressen zugreifen.
+  \item[$\Longrightarrow$] Haben Sie das Konfigurationsfenster verlassen, werden die Änderungen in der Übersicht wieder mit \includegraphics[height=12pt]{Icons/AenderungenSpeichern.jpg} gespeichert.
+	\item[$\Longrightarrow$] Die Verbindungen werden ebenso wie die Statuselemente mit dem \includegraphics[height=12pt]{Icons/Schraubenschluessel.jpg} konfiguriert.
+  \item[$\Longrightarrow$] Mittels den Verbindungen lassen sich komplexe Abläufe abbilden und auch Schlaufen erstellen: Von einem Element können mehrere Verbindungen gezogen werden | Ein Element kann mehrere Verbindungen 'empfangen'.
+  \item[$\Longrightarrow$] Für eine bessere Darstellung können Sie die Statuselemente platzieren: Klicken Sie auf den Titel und schieben Sie das Statuselement an den gewünschten Ort.
+  \item[$\Longrightarrow$] Jede Änderung ist mit \includegraphics[height=12pt]{Icons/AenderungenSpeichern.jpg} zu speichern.
+
 \end{itemize}
-\begin{centering}
-\center{\includegraphics[width=1\linewidth]{Pictures/Mobile.jpg}}
-\end{centering}
 \end{tcolorbox}
 
 
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Workflows anwenden]
+\begin{itemize}
+  \item[$\Longrightarrow$] In den verschiedenen Modulen sehen Sie in der Ansichts- / Bearbeitungsmaske wie auch in der Übersicht den Status eines Eintrages.
+  \item[$\Longrightarrow$] Um einen Status zu ändern, klicken Sie auf \includegraphics[height=10pt]{Icons/Status_Aendern.jpg}, ein zusätzliches Fenster wird geöffnet.
+  \item[$\Longrightarrow$] Unter 'Neuer Status' wählen Sie den gewünschten Status aus; verfügbar sind diejenigen Status, welche im Workflow definiert wurden.
+	\item[$\Longrightarrow$] Geben Sie optional einen Grund für den Statuswechsel an (Dieses Feld kann auch als Pflichtfeld definiert werden)
+	\item[$\Longrightarrow$] Bei 'Beilagen' können Sie mit \includegraphics[height=10pt]{Icons/Link.jpg} ein in CUBE PA vorhandenes Dokument verknüfpfen oder mit \includegraphics[height=10pt]{Icons/Pluszeichen.jpg} ein neues Dokument hinzufügen
+	\item[$\Longrightarrow$] Speichern Sie alle Änderungen mit \includegraphics[height=12pt]{Icons/B_Uebernehmen.jpg} ab.
+\end{itemize}
+\end{tcolorbox}
+
+
+\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Anforderungsmanagement
+%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\centering{{\huge Anforderungsmanagement}}
+
+\vspace{\baselineskip}
+
+\begin{beamerlikethm}{Anforderungsmanagement}
+\begin{itemize}
+  \item[$\Longrightarrow$] Das Anforderungsmanagement orientiert sich an Projekt- und Geschäftsprozessen; entsprechend gibt es Abweichungen hinsichtlich Rollen, Status und Auswahlfeldern.
+  \item[$\Longrightarrow$] Für den Prozess werden Rollen / Instanzen definiert, welche beispielsweise Anforderungen erfassen, Nachweisplanungen erstellen und die Validierung durchführen. Zudem gibt es Kontrollinstanzen, welche jeden Schritt überprüfen und die nächste Phase freigeben.
+  \item[$\Longrightarrow$] Das Statussystem kann mittels \includegraphics[height=10pt]{Icons/Status_aendern.jpg} bedient oder visuell über die roten/grünen Buttons gesteuert werden.
+
+\begin{center}
+\center{\includegraphics[width=.4\linewidth]{Pictures/Status_AM.jpg}}
+\end{center}
+% \newline
+\small{Mit Grün wird der nächste Status aktiviert, Rot setzt einen Status zurück, um Nachbesserungen/Ergänzungen vorzunehmen.}
+
+\end{itemize}
+\end{beamerlikethm}
+
+%%%% Box 1+2 in zwei Spalten
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Anforderung erfassen]
+\begin{itemize}
+  \item[$\Longrightarrow$] Klicken Sie im Menü links auf 'Anforderungsmanagement' und den Untermenüpunkt 'Anforderungen'. Die Anforderungsübersicht wird geöffnet.
+  \item[$\Longrightarrow$] Klick auf \includegraphics[height=10pt]{Icons/Pluszeichen.jpg}, öffnet die Anforderungsmaske. Füllen Sie die Felder aus, achten Sie auf die Pflichtfelder. Optional können Dokumente verknüpft werden.
+  \item[$\Longrightarrow$] Der Startstatus wird automatisch gesetzt. Speichern Sie die Eingaben mit \includegraphics[height=12pt]{Icons/B_Uebernehmen.jpg} ab.
+	\item[$\Longrightarrow$] Mit Klick auf \includegraphics[height=12pt]{Icons/Listensymbol_zurueck.jpg} kehren Sie zur Übersicht zurück.
+	\item[$\Longrightarrow$] Mit Klick auf \includegraphics[height=12pt]{Icons/Abbrechen_r.jpg} brechen Sie die Eingaben ab und kehren zur Übersicht zurück.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title={Anforderungen managen}]
+\begin{itemize}
+  \item[$\Longrightarrow$] Nach der Erfassung einer Anforderung beginnt ein Wechselspiel der verschiedenen Rollen (Instanzen) und der Durchlauf des Workflows.
+  \item[$\Longrightarrow$] Rollenträger/Instanzen sehen auf der persönlichen Übersicht die anstehenden Aufgaben:
+
+\begin{centering}
+\center{\includegraphics[width=1\linewidth]{Pictures/Uebersicht_AM.jpg}}
+\end{centering}
+
+  \item[$\Longrightarrow$] Klick auf den Titel öffnet die Anforderung zur weiteren Bearbeitung.
+\end{itemize}
+\end{tcolorbox}
+
+\end{multicols}
+
+%%%% Box 3+4 in zwei Spalten
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Status ändern]
+\begin{itemize}
+	\item[$\Longrightarrow$] Im Bearbeitungs- \includegraphics[height=10pt]{Icons/Bearbeiten.jpg} oder Ansichtsmodus \includegraphics[height=10pt]{Icons/Lupe.jpg} können Sie einen Status ändern. 
+	\item[$\Longrightarrow$] Mit Klick auf \includegraphics[height=10pt]{Icons/Status_aendern.jpg} oder die roten/grünen Buttons \includegraphics[height=12pt]{Icons/r-g_Button.jpg} wird für den Statuswechsel ein Fenster geöffnet.
+	\item[$\Longrightarrow$] Zuoberst sehen Sie den Anforderungstitel, sowie die intern generierte Anforderungs-ID. Der aktuelle Status ist ebenfalls ersichtlich.
+  \item[$\Longrightarrow$] 'Neuer Status': Die möglichen Status sind vorausgefüllt und stehen in Abhängigkeit der getroffen Auswahl mittels der roten/grünen Buttons.
+  \item[$\Longrightarrow$] 'Grund': Geben Sie optional einen Grund für den Statuswechsel an. \textbf{Hinweis:} wird ein Status zurückgesetzt, muss ein Grund angegeben werden (Pflichtfeld).
+  \item[$\Longrightarrow$] 'Beilagen' verknüpfen \includegraphics[height=10pt]{Icons/Link.jpg} oder Dokumente hochladen \includegraphics[height=10pt]{Icons/Pluszeichen.jpg}.
+	\item[$\Longrightarrow$] Speichern Sie die Eingaben mit \includegraphics[height=12pt]{Icons/B_Uebernehmen.jpg} ab. Der Status wurde geändert und die Aufgabe an die nächste Instanz übergeben.
+
+\end{itemize}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40!black,title=Weitere Hinweise und Funktionen]
+\begin{itemize}
+  \item[$\Longrightarrow$] Je nach Status erscheint eine neue Formularmaske, welche weitere Angaben erfordert (beachten Sie die Pflichtfelder).
+  \item[$\Longrightarrow$] Wählen Sie mit der Checkbox \includegraphics[height=10pt]{Icons/checkbox_markiert.jpg} eine Anforderung aus, erhalten Sie weitere Bearbeitungsmöglichkeiten (teils abhängig vom Status):
+  \item[$\Longrightarrow$] \includegraphics[height=10pt]{Icons/A_Kopieren.jpg}: Kopieren Sie eine Anforderung, der bereits erfasste Text wird übernommen.
+	\item[$\Longrightarrow$] \includegraphics[height=10pt]{Icons/A_Splitten.jpg}: Splitten Sie eine Anforderung, die neu erstellte Anforderung wird der ausgewählten Anforderung untergeordnet.
+	\item[$\Longrightarrow$] \includegraphics[height=10pt]{Icons/A_Gruppieren.jpg}: Wählen Sie mehrere Anforderungen aus und gruppieren Sie diese: Eine neue übergeordnete Anforderung wird erstellt.
+	\item[$\Longrightarrow$] \includegraphics[height=10pt]{Icons/A_Anforderungsbaum.jpg}: Wählen Sie beliebige Anforderungen aus und lassen Sie sich die Struktur / über- und untergeordneten Abhängigkeiten grafisch anzeigen.
+	\item[$\Longrightarrow$] \includegraphics[height=10pt]{Icons/Abbrechen_r.jpg}: Brechen Sie jeweils einen Vorgang mit Klick auf dieses Symbol ab.
+\end{itemize}
+\end{tcolorbox}
 
 
 \end{multicols}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%
 \end{document}
