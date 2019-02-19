@@ -11,13 +11,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1916
-NormalPos.bottom=351
+NormalPos.right=991
+NormalPos.bottom=788
 Class=LaTeXView
 Document=QuickRef.tex
 
 [Frame0_View0,0]
-TopLine=20
+TopLine=56
 Cursor=1007
 
 [SessionInfo]
