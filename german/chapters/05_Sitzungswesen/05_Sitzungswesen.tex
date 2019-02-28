@@ -414,7 +414,7 @@ Sie möchten eine \textbf{Pendenz erfassen}, die automatisch in die Pendenzenlis
 \item \textbf{Termin}: Terminieren Sie ihre Pendenz (Pflichtfeld).
 \item \textbf{Projekt / Teilprojekt}: Die Pendenz kann einem Projekt / Teilprojekt zugewiesen werden.
 \item \textbf{Anforderungen und Arbeitspakete}: Diese beiden Felder habe im Sitzungswesen keine Bedeutung, es sei denn, eine Pendenz wird im Modul Anforderungs- und Mängelmanagement einer Anforderung oder einem Arbeitspaket zugewiesen. Diese Verknüpfungen werden hier angezeigt.
-\item \textbf{Verantwortlich* / Verantwortliches Gremium*}: (Pflichtfeld) Eines dieser beiden Felder muss zwingend ausgefüllt und die Pendenz einer/m verantwortlichen Person/Gremium zugewiesen werden.
+\item \textbf{Verantwortlich* / Verantwortliches Gremium*}: (Pflichtfeld) Eines dieser beiden Felder muss zwingend ausgefüllt und die Pendenz einer/m verantwortlichen Person/Gremium zugewiesen werden. \textbf{Hinweis:} Eine Organisation wird in der Konfiguration unter 'Beteiligte' als Gremium definiert.
 \item \textbf{Mitarbeit}: Optional können Personen für die Mitarbeit eingetragen werden.
 \item \textbf{Trakt. Nr*}: Die Pendenz wird mit der gewünschten Traktandennummer verknüft. Die entsprechende Traktandennummer ist bereits voreingestellt und kann geändert werden (Pflichtfeld).
 \end{itemize}
@@ -510,9 +510,11 @@ Sie erfassen das Protokoll als Dokument, z.B. mit Microsoft Word, und lassen es 
 
 Wählen Sie im Menü links den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Sitzungen'. Es erscheint die Liste der im CUBE PA erfassten Sitzungen, d.h. Sitzungen, für die mindestens eine Einladung erstellt wurde. \newline
 
-\vspace{5.5cm} 
+\vspace{5cm} 
 
 Suchen Sie in der Liste die betreffende Sitzung und klicken Sie auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(1)} links:
+
+\pagebreak
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-2_Sitzungsuebersicht.jpg}}
@@ -836,7 +838,7 @@ Füllen Sie die Felder aus.
 \item
 'Anforderungen' und 'Arbeitspaket': Diese beiden Felder werden im Anforderungs- und Mängelmanagement benötigt, resp. werden Pendenzen mit Anforderungen und Arbeitspaketen verknüpft. Mehr dazu im Kapitel \ref{bkm:Ref2018071701} (Anforderungs- und Mängelmanagement)
 \item
-'Verantwortlich*' und 'Verantwortliches Gremium*': Eines der beiden Pflichtfelder muss ausgefüllt werden.
+'Verantwortlich*' und 'Verantwortliches Gremium*': Eines der beiden Pflichtfelder muss ausgefüllt werden. \textbf{Hinweis:} Eine Organisation wird in der Konfiguration unter 'Beteiligte' als Gremium definiert.
 \item
 'Mitarbeiter': Hier können weitere Mitarbeiter hinzugefügt werden.
 \end{itemize}
@@ -940,7 +942,7 @@ In wenigen Schritten haben Sie ein neuer Entscheid erfasst:
 \vspace{\baselineskip}
 
 \begin{wrapfigure}[13]{l}{7cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
-  \vspace{-25pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
   \begin{center}
     \includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures//5-5_EntscheidErfassen.jpg}
   \end{center}
@@ -953,11 +955,9 @@ In wenigen Schritten haben Sie ein neuer Entscheid erfasst:
 - Der Entscheid wird einem Projekt / oder Teilprojekt zugeteilt. Wählen Sie aus der Liste der erfassten Projekten aus (Pflichtfeld).\\
 - Mit 'Erstellen' werden die Daten gespeichert und der Entscheid angelegt. Andernfalls können Sie oben links mit dem Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} das Formular ohne die Daten zu speichern verlassen und gelangen wieder zur Entscheide-Übersicht.\\
 
-\vspace{2cm}
+\vspace{.5cm}
 
 \textbf{Hinweis:} Gespeicherte Entscheide lassen sich nicht mehr bearbeiten. Deshalb überprüfen Sie den Eintrag gut, bevor Sie auf \includegraphics[height=12pt]{/Icons/B_Erstellen.jpg} klicken.
-
-\clearpage
 
 \subsection{Sitzungsprotokolle lesen}
 
@@ -977,3 +977,27 @@ Hat das Sitzungsprotokoll der Status 'Definitiv' (beim Bearbeiten des Protokolls
 \item
 Hat das Sitzungsprotokoll den Status 'Entwurf', klicken Sie auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(2)} links bei der betreffenden Sitzung und es erscheint die Ansicht 'Protokoll bearbeiten', in der Sie die Inhalte des Protokolls sehen können. Das funktioniert aber nur, wenn das Protokoll direkt im CUBE PA erfasst wird. Auf ein hochgeladenes Protokoll haben Sie nur Zugriff, wenn nach dem Hochladen die Schaltfläche 'Archivieren' angeklickt wurde und somit das Protokoll den Status 'Definitiv' aufweist.
 \end{itemize}
+
+\subsection{Pendenzen in der mobilen Ansicht}
+
+Die mobile Version der Pendenzen funktioniert nahezu identisch mit der Desktop-Version. 
+
+\vspace{\baselineskip}
+
+\begin{wrapfigure}[13]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/mob_Pendenzen.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Pendenzen - mobile Ansicht}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+Einige Besonderheiten gibt es jedoch, welche hier erläutert werden:
+
+- Wurden Eingaben im Filter gemacht, wird dies durch ein rotes Filtersymbol angezeigt. Ist der Filter leer, ist das Filtersymbol blau (\includegraphics[height=12pt]{/Icons/Filter.jpg}).
+
+- Der Filter kann mit einem Doppelklick auf die Lupe gelöscht werden. 
+
+- Wird eine Pendenz aufgeklappt können mittels Lupe- und Bearbeitungssymbol der Ansichts- respektive Bearbeitungsmodus geöffnet werden.
