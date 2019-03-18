@@ -128,7 +128,7 @@ ROLE\_A: ROLE\_B: Diese Rollenvergabe bedeutet, dass der Benutzer mit Rolle A au
 ROLE\_X: [ROLE\_Y, ROLE\_Z]: Diese Rollenvergabe bedeutet, dass der Benutzer mit Rolle X ebenso über die Rollen in den Klammern verfügt (Y und Z).
 \end{itemize}
 
-Übersicht über 'Benutzer bearbeiten':
+\subsubsection{Übersicht über 'Benutzer bearbeiten'}
 
 \vspace{\baselineskip}
 \vspace{\baselineskip}
@@ -195,6 +195,32 @@ zugewiesen werden.
 
 Bei verschiedenen Feldern finden Sie ein 'i'-Symbol \includegraphics[height=12pt]{/Icons/Info_Hinweis.jpg}. Mit Klick auf dieses Symbol erhalten Sie Funktionshinweise über das entsprechende Eingabefeld.
 
+\subsubsection{Beschaffungs- und Vertragsüberwachung konfigurieren}
+\label{bkm:Ref20190318001}
+
+In der persönlichen Projektübersicht können benutzerspezifisch Beschaffungs- und Vertragsüberwachungen angezeigt werden. Sobald eine Beschaffung oder ein Vertrag ein bestimmter Status, welcher einem Benutzer zugewiesen wurde, erreicht, wird ihm die Beschaffung, respektive der Vertrag auf der persönlichen Projektübersicht angezeigt.
+
+\vspace{\baselineskip}
+
+Für die Vertragsüberwachung müssen in der Datenbank bei 'Vertragsstatus (extern)' Status eingerichtet werden (die Funktionalität setzt auch ein Status-Workflow für die Beschaffungen voraus). In der 'Benutzerverwaltung' - 'Benutzer' werden die erforderlichen Status zugewiesen:
+
+\begin{figure}[H]
+\center{\includegraphics[width=0.8\linewidth]{../chapters/14_Benutzerverwaltung/pictures/benkonf_Besch-Vertr-Status.jpg}}
+\caption{Beschaffungs- und Vertragsüberwachung einrichten}
+% \label{fig:speciation}
+\end{figure}
+
+Beim Vertrageintrag ist ein 'Überwacher' oder/und 'Stv. Überwacher' zu definieren \col{(1)}:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/benkonf_Vertrag.jpg}}
+\caption{Beschaffungs- und Vertragsüberwachung einrichten}
+% \label{fig:speciation}
+\end{figure}
+
+
+
+\pagebreak
 \subsection{Teams}
 
 Die Teams, welche hier erstellt werden können den Benutzern (siehe Kapitel \ref{bkm:Ref445362390}) zugewiesen werden.
