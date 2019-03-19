@@ -328,9 +328,27 @@ Beim Status wie auch bei den Verbindungen können mit Klick auf den Schraubensch
 
 \vspace{\baselineskip}
 
-Um einen neuen Status hinzuzufügen, klicken Sie auf \includegraphics[height=14pt]{/Icons/StatusHinzufuegen.jpg} \col{(4)}. Alle Änderungen werden mit Klick auf die Schaltfläche \includegraphics[height=14pt]{/Icons/AenderungenSpeichern.jpg} \col{(5)} gespeichert. Falls Sie Änderungen gemacht haben, welche verworfen werden sollen, klicken Sie auf die Schaltfläche \includegraphics[height=12pt]{/Icons/AenderungenZuruecksetzen.jpg} \col{(6)}. Soll eine neue Verbindung hergestellt werden, packen Sie den Punkt unterhalb eines Status \col{(a)} und führen diesen hin zu einem Punkt über einem Status \col{(b)}
+Um einen neuen Status hinzuzufügen, klicken Sie auf \includegraphics[height=14pt]{/Icons/StatusHinzufuegen.jpg} \col{(4)}. Alle Änderungen werden mit Klick auf die Schaltfläche \includegraphics[height=14pt]{/Icons/AenderungenSpeichern.jpg} \col{(5)} gespeichert. Falls Sie Änderungen gemacht haben, welche verworfen werden sollen, klicken Sie auf die Schaltfläche \includegraphics[height=12pt]{/Icons/AenderungenZuruecksetzen.jpg} \col{(6)}. Soll eine neue Verbindung hergestellt werden, packen Sie den Punkt unterhalb eines Status \col{(a)} und führen diesen hin zu einem Punkt über einem Status \col{(b)}.
 
 \vspace{\baselineskip}
+
+\textbf{Farblegende bei den Status-Items:}
+\begin{compactitem}
+	\item {\color{ForestGreen} grün} = Der Status wurde als Initial-Status festgelegt
+	\item schwarz = Der Status ist weder Initial- noch End-Status
+	\item {\color{ProcessBlue} blau} = Der Status wurde als End-Status festgelegt
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:}
+Bei der Dokumentenablage können mehrere, parallele Workflows (mit mehr als einem Initial-Status) erstellt werden. Sobald ein zweiter Initial-Status definiert wird, muss beim Hochladen eines Dokumentes der gewünschte Initial-Status ausgewählt werden (Pflichtfeld). Bei den anderen Modulen (Anforderungen, Controlling, Beschaffungen, etc) wird ein zweiter Initial-Status verhindert:
+
+\begin{figure}[H]
+\center{\includegraphics[width=.75\linewidth]{../chapters/13_Konfigurationen/pictures/konf_Status_Meldung.jpg}}
+\caption{Hinweismeldung: Zweiter Initial-Status}
+% \label{fig:speciation}
+\end{figure}
 
 %\pagebreak
 \textbf{Die Konfigurationsseite:}
@@ -354,3 +372,5 @@ Bei jedem Status, wie auch bei den Verbindungen können Benutzerrechte hinzugef�
 \begin{mdframed}[backgroundcolor=orange!30] 
 \textbf{Wichtiger Hinweis:} Nach allen Konfigurationsanpassungen in den Statusobjekten und den Verbindungen müssen auf der Übersichtsseite die Änderungen nochmals mit \includegraphics[height=14pt]{/Icons/AenderungenSpeichern.jpg} gespeichert werden. Erst dann werden die Einstellungen übernommen.
 \end{mdframed}
+
+
