@@ -59,11 +59,11 @@ Die Befehle basieren auf den eingebundenen Paketen in der Hauptdatei (CUBEPA\_Ha
 \pagebreak
 \subsection{Text Format}
 
-\textbf{Text in Fett:}\\ Beispiel: \textbf{Dieser Satz ist FETT.}\\ Code: \verb+\textbf{Dieser Satz ist fett.}+
+\textbf{Text in Fett:}\\ Beispiel: \textbf{Dieser Satz ist fett.}\\ Code: \verb+\textbf{Dieser Satz ist fett.}+
 
 \vspace{\baselineskip}
 
-\textbf{Text in Kursiv:}\\ Beispiel: \textit{Dieser Satz ist KURSIV.}\\ Code: \verb+\textit{Dieser Satz ist fett.}+
+\textbf{Text in Kursiv:}\\ Beispiel: \textit{Dieser Satz ist kursiv.}\\ Code: \verb+\textit{Dieser Satz ist kursiv.}+
 
 \vspace{\baselineskip}
 
@@ -92,12 +92,17 @@ Folgender Link zeigt eine Übersicht über die verschiedenen Textgrössen: \href
 
 \vspace{\baselineskip}
 
-\textbf{Text in Anführungsstrichen:}
-Schaltflächen, welche ohne Grafik dargestellt werden oder Menüpunkte und ähnliches werden in ' x ' dargestellt. Wichtig ist zu beachten, dass exakt diese Zeichen verwendet werden müssen. Ansonsten intepretiert \LaTeX \enspace unter Umständen andere Funktionen.
+\textbf{Text in Anführungsstrichen:}\\
+Schaltflächen, welche ohne Grafik dargestellt werden oder Menüpunkte und ähnliches werden in \textbf{' x '} dargestellt. Wichtig ist zu beachten, dass exakt diese Zeichen verwendet werden müssen. Ansonsten intepretiert \LaTeX \enspace unter Umständen andere Funktionen.
 
 \vspace{\baselineskip}
 
 \textbf{Farbiger Text:}
+
+Beispiel:\\
+\textcolor{NavyBlue}{Text}
+
+Code:
 
 \begin{verbatim}
 \textcolor{NavyBlue}{Text}
@@ -105,7 +110,7 @@ Schaltflächen, welche ohne Grafik dargestellt werden oder Menüpunkte und ähnl
 
 \vspace{\baselineskip}
 
-\textbf{Farbige Textboxen (können auch Grafiken enthalten):}
+\textbf{Farbige Textboxen (können auch Grafiken enthalten):}\\
 (es wurde dazu zwei Pakete installiert)
 
 Beispiel:
@@ -132,6 +137,8 @@ Text (inkl. Fett, Bilder etc...)
 	\item Zielverweise (Hierhin soll verknüpft werden - z.B. Anfangs Kapitel)- Code kommt zum Beispiel unter \verb+\section+: \verb+\label{bkm:Ref2019041801}+
 	\item Befehlsverweise (Von da nach Zielverweis - meistens Ref. im Text): \verb+\ref{bkm:Ref2019041801}+
 \end{compactitem}
+
+\vspace{\baselineskip}
 
 Nummernbildung: Grundsätzlich kann der Verweis eine beliebige Nummerierung beinhalten. Es gibt im Dokument auch verschiedene Ansätze. Jedoch wird empfohlen folgende Logik zu verwenden: -Jahr-Monat-Tag-Laufnummer, bestehend aus 2 oder 3 Ziffern. So sollte sichergestellt werden, dass keine falschen Bezüge im Dokument hinterlegt werden. Beispiel siehe oben.
 
@@ -160,18 +167,36 @@ Code: \href{www}{\color{blue} Linkname}
 
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+\pagebreak
 \subsection{Grafiken}
 
-\textbf{Icons / Grafiken im Text platzieren:}
+\textbf{Icons / Grafiken im Text platzieren:}\\
+
+Beispiel:
+Dieses Icon \includegraphics[height=12pt]{/Icons/Gruppe.jpg} ist im Text eingebunden.
+
+\vspace{\baselineskip}
 
 Code: \verb+\includegraphics[height=12pt]{/Icons/menu.jpg}+
-Icons erhalten die Schriftgrösse 12.
-Buttons wie 'Erstellen', 'Übernehmen' etc werden mit Schriftgrösse 14 dargestellt.
+
+\begin{compactitem}
+	\item Icons erhalten die Schriftgrösse 12.
+	\item Buttons wie 'Erstellen', 'Übernehmen' etc werden mit Schriftgrösse 14 dargestellt.
+\end{compactitem}
 
 \vspace{\baselineskip}
 
 \textbf{Bilder in halber Breite:}
+
+Beispiel:
+
+\begin{figure}[H]
+\center{\includegraphics[width=0.5\linewidth]{../pictures/Printscreen.jpg}}
+\caption{Printscreen in halber Breite}
+% \label{fig:speciation}
+\end{figure}
+
+Code:
 
 \begin{verbatim}
 \begin{figure}[H]
@@ -183,15 +208,44 @@ Buttons wie 'Erstellen', 'Übernehmen' etc werden mit Schriftgrösse 14 dargeste
 
 \textbf{Bilder in ganzer Breite:}
 
+Beispiel:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../pictures/Printscreen.jpg}}
+\caption{Printscreen in ganzer Breite}
+% \label{fig:speciation}
+\end{figure}
+
+Code:
+
 \begin{verbatim}
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../pictures/23_PWvergessen.jpg}}
+\center{\includegraphics[width=1\linewidth]{../pictures/Printscreen.jpg}}
 \caption{Passwort vergessen}
 % \label{fig:speciation}
 \end{figure}
 \end{verbatim}
 
 \textbf{Text und Bild nebeneinander:}
+
+Beispiel:
+
+
+\begin{wrapfigure}[7]{r}{8cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-50pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[height=40mm]{../pictures/Text-Bild.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Die Adressliste im Menü aufrufen}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+Das Bild wird rechts ausgerichtet. Mit der Option \verb+{r}+ kann definiert werden, ob das Bild rechts oder links positioniert werden soll. Zudem wird der Bildplatz angegeben \verb+{6cm}+. Wie unten erläutert, kann das Bild je nach Bedarf mit \verb+\vspace{-30pt}+ nach oben oder unten geschoben werden.
+
+\vspace{.5cm}
+
+Code:
 
 \begin{verbatim}
 \begin{wrapfigure}[7]{r}{6cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
@@ -209,14 +263,31 @@ Im Anschluss an obigen Code erfolgt der Text.
 
 \vspace{\baselineskip}
 
-\textbf{Erklärungen zur Bildkonfiguration:}\\
-Bild in halber und ganzer Breite: es wird jeweils nur die \verb+\caption{}+ angegeben. bei \verb+[width=]+ wird die Grösse angegeben. 1 entspricht ganzer Breite, .5 der halben. Die Massangaben könnten auch in mm oder cm erfolgen.\\
-Bei 'Text und Bild' nebeneinander werden in den \verb+[]+ Klammern die Anzahl Textzeilen angegeben, welche um das Bild umgebrochen werden sollen. Dies ist oft nach einfügen eines Bildes anzupassen. mit \verb+\vspace{-30pt}+ kann das Bild nach oben oder unten gerückt und so an den Text oder das Seitenlayout angepasst werden.\\
-Weitere Informationen bitte im Internet nachschauen.
+\textbf{Erklärungen zur Bildkonfiguration:}
+
+\begin{compactitem}
+	\item Bild in halber und ganzer Breite: es wird jeweils nur die \verb+\caption{}+ angegeben. bei \verb+[width=]+ wird die Grösse angegeben. 1 entspricht ganzer Breite, .5 der halben. Die Massangaben könnten auch in mm oder cm erfolgen.
+	\item Bei 'Text und Bild' nebeneinander werden in den \verb+[]+ Klammern die Anzahl Textzeilen angegeben, welche um das Bild umgebrochen werden sollen. Dies ist oft nach einfügen eines Bildes anzupassen. mit \verb+\vspace{-30pt}+ kann das Bild nach oben oder unten gerückt und so an den Text oder das Seitenlayout angepasst werden.
+	\item Weitere Informationen bitte im Internet nachschauen.
+\end{compactitem}
 
 \vspace{\baselineskip}
 
 \textbf{Text - Bild - Text (nach einem langen Bild):}
+
+Beispiel:\\
+Hier steht ein Beispieltext. Hier steht ein Beispieltext. Hier steht ein Beispieltext.
+
+\begin{center}
+\hspace{-15pt}   
+\includegraphics[width=.4\linewidth]{../pictures/Printscreen.jpg}
+\end{center}
+
+Hier steht ein Beispieltext. Hier steht ein Beispieltext. Hier steht ein Beispieltext.
+
+\vspace{\baselineskip}
+
+Code:
 
 \begin{verbatim}
 \begin{center}
@@ -227,19 +298,39 @@ Weitere Informationen bitte im Internet nachschauen.
 
 \textbf{Text und Bild nebeneinander (Fluss):}
 
+Beispiel:
+
+\begin{wrapfigure}[2]{r}{8cm}
+\vspace{-45pt}
+\includegraphics[height=40mm]{../pictures/Text-Bild.jpg}
+% \caption{Status ändern}
+\end{wrapfigure}
+
+Hier steht ein Beispieltext. Hier steht ein Beispieltext. Hier steht ein Beispieltext. Hier steht ein Beispieltext.
+
+\vspace{.5cm}
+
+Code:
+
 \begin{verbatim}
-\begin{wrapfigure}[7]{r}{6cm}
+\begin{wrapfigure}[2]{r}{6cm}
 \vspace{-15pt}
-\includegraphics[height=50mm]{714_BeschaffungEingeladene.jpg}
+\includegraphics[height=50mm]{../pictures/Printscreen.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
 \end{verbatim}
 
-Mit \verb+\vspace{}+ wird das Bild gegen oben oder unten geschoben. (Beschriftung wurde deaktiviert).
+Mit \verb+\vspace{-15pt}+ wird das Bild gegen oben oder unten geschoben. (Beschriftung wurde deaktiviert).
 
 \vspace{\baselineskip}
 
-\textbf{Grafik einbinden und horizontal einschieben:}
+\textbf{Grafik einbinden und horizontal einschieben:}\\
+
+Beispiel:
+
+\hspace{15mm} \includegraphics[height=20mm]{../pictures/kleinesBild.jpg}
+
+Code:
 
 \begin{verbatim}
 \hspace{15mm} \includegraphics[height=20mm]{1123_GoogleMapNadel.jpg}
@@ -264,8 +355,8 @@ Mit \verb+\vspace{}+ wird das Bild gegen oben oder unten geschoben. (Beschriftun
 \centering{}
 \end{verbatim}
 
-Alternativ kann auch \verb+\begin+ und \verb+\end+ verwendet werden:
-\verb+\begin{raggedleft}+ und am Ende \verb+\end{raggedleft}+
+Alternativ kann auch \verb+\begin+ und \verb+\end+ verwendet werden:\\
+\verb+\begin{raggedleft}+ und am Ende \verb+\end{raggedleft}+.
 
 \vspace{\baselineskip}
 
@@ -279,7 +370,11 @@ Optional: \verb+\\[1cm]+ mit zusätzlichem Abstand
 
 \vspace{\baselineskip}
 
-\textbf{Text bis an den Rand:}
+\textbf{Text mit weniger Umbruch:}
+
+Der Text innerhalb dieser Funktion wendet eine grosszügigere Formatierung an. Es gibt weniger Worttrennungen am Zeilenende, die Wortabstände können grösser sein.
+
+Code:
 
 \begin{verbatim}
 \begin{sloppypar} ... \end{sloppypar}
@@ -287,15 +382,20 @@ Optional: \verb+\\[1cm]+ mit zusätzlichem Abstand
 
 \vspace{\baselineskip}
 
-\textbf{Abstand zwischen Textblöcken und anderen Elementen:} \verb+\vspace{\baselineskip}+
+\textbf{Abstand zwischen Textblöcken und anderen Elementen:}\\
+\verb+\vspace{\baselineskip}+
 
 \vspace{\baselineskip}
 
-\textbf{Grösserer / benutzerdefinierter Abstand:} \verb+\vspace{15cm}+ | Optional: * nach vspace*
+\textbf{Grösserer / benutzerdefinierter Abstand:} \verb+\vspace{15cm}+ | Optional: * nach vspace*\\
 
-\vspace{\baselineskip}
+Abstand 3cm:
+\vspace{3cm}
+
 
 \textbf{Horizontaler Abstand:} \verb+\quad+
+
+Beispiel: \quad Abstand \quad Abstand
 
 
 
@@ -305,38 +405,82 @@ Optional: \verb+\\[1cm]+ mit zusätzlichem Abstand
 \subsection{Tabellen}
 
 \textbf{Tabellen mit Icons:}
-Links sind die Icons, rechts der Text mit Umbruch. Breite 14cm.
+Links sind die Icons, rechts der Text mit Umbruch. Breite 14cm.\\
 
-\begin{verbatim}
+Beispiel:\\
+
 \begin{tabular}{c | p{14cm} l} %{cl}
-\includegraphics[height=12pt]{/Icons/Icon.jpg} & Verbindung ist unterbrochen. \\
-\includegraphics[height=12pt]{/Icons/Icon.jpg} & Sie haben eine Verbindung. \\
-\includegraphics[height=12pt]{/Icons/Icon.jpg} & Sie sind nicht angemeldet. \\
+\includegraphics[height=12pt]{pictures/icons/Gruppe.jpg} & Verbindung ist unterbrochen. \\
+\includegraphics[height=12pt]{pictures/icons/Gruppe.jpg} & Sie haben eine Verbindung. \\
+\includegraphics[height=12pt]{pictures/icons/Gruppe.jpg} & Sie sind nicht angemeldet. \\
 \end{tabular}
-\end{verbatim}
 
 \vspace{\baselineskip}
 
-Rahmen und Ränder bei Tabellen werden wie folgt gemacht:
+Code:
 
-Mit dem Zeichen ' | ' (Alt Gr + 7)
-Mit \verb+\hline+
+\begin{verbatim}
+\begin{tabular}{c | p{14cm} l} %{cl}
+\includegraphics[height=12pt]{/icons/Gruppe.jpg} & Verbindung ist unterbrochen. \\
+\includegraphics[height=12pt]{/icons/Gruppe.jpg} & Sie haben eine Verbindung. \\
+\includegraphics[height=12pt]{/icons/Gruppe.jpg} & Sie sind nicht angemeldet. \\
+\end{tabular}
+\end{verbatim}
 
-Beispiel:
+\vspace{2cm}
+
+\textbf{Rahmen und Ränder bei Tabellen werden wie folgt gemacht:}
+
+\begin{compactitem}
+	\item Mit dem Zeichen \verb+|+ (Alt Gr + 7)
+	\item Mit \verb+\hline+
+\end{compactitem}
+
+\vspace{\baselineskip}
+
+Beispiel:\\
 \begin{tabular}{|c | p{10cm}|l} %{cl}
 \hline
+Text A & Text B \\
+\hline
+Text C & Test D \\
+\hline
 \end{tabular}
+
+\vspace{\baselineskip}
 
 Code:
 \begin{verbatim}
 \begin{tabular}{|c | p{10cm}|l} %{cl}
 \hline
+Text A & Text B \\
+\hline
+Text C & Test D \\
+\hline
+\end{tabular}
 \end{verbatim}
 
 \vspace{\baselineskip}
 
+
+% bishierher
+
 \textbf{Grafik in Tabellen (zentrieren - horizontal):}\\
 Achtung: Klammern sind wichtig!
+
+Beispiel:
+
+\begin{tabular}{|c | p{10cm}|l} %{cl}
+\hline
+Text A & Text B \\
+\hline
+Text C & \raisebox{-1\totalheight}{\includegraphics[height=20pt]{pictures/icons/Gruppe.jpg}} \\
+\hline
+\end{tabular}
+
+\vspace{\baselineskip}
+
+Code:
 
 \verb+\raisebox{-1\totalheight}{\includegraphics[height=20pt]{/Icons/B_Erstellen.jpg}}+
 
@@ -344,7 +488,7 @@ Achtung: allenfalls ergibt \verb+\raisebox+ (wie im Dokument angewendet) ein Err
 
 \vspace{\baselineskip}
 
-Manueller Zeilenumbruch innerhalb von Tabellen (Spalten): \verb+\newline+
+$\Rightarrow$ Manueller Zeilenumbruch innerhalb von Tabellen (Spalten): \verb+\newline+\\
 
 
 
@@ -362,6 +506,8 @@ Beispiel (Mit Fett-Text):
 \item
 \textbf{Adressliste:} Anzeige der erfassten Adressen.
 \end{itemize}
+
+\vspace{2cm}
 
 Code:
 \begin{verbatim}
@@ -419,23 +565,39 @@ Code:
 
 \vspace{\baselineskip}
 
-\textbf{Nummerierungen:} 
+
+\pagebreak
+\textbf{Nummerierungen:}\\
 Auf den Grafiken werden immer wieder violette Nummerierungen verwendet. Um diese im Text darzustellen und aufzugreifen, wurde ein neuer Befehl kreiert:
 
 \begin{verbatim}
 \newcommand{\col}[1]{\textbf{\textcolor[rgb]{0.4392157,0.1882353,0.627451}{#1}}}
 \end{verbatim}
 
-Im Text selbst wird dieser mittels \verb+\col{(1)}+ erstellt.
+Im Text selbst wird dieser mittels \verb+\col{(1)}+ erstellt: \col{(1)}
 
 \vspace{\baselineskip}
 
 \textbf{'Grösser als' / 'Kleiner als' darstellen:}
 
 Beispiel:\\
-\textgreater \textless
+\textgreater \quad \textless
 
 Code: \verb+\textgreater+ \quad \verb+\textless+
+
+\vspace{\baselineskip}
+
+\textbf{Pfeile:}
+
+Pfeile in \verb+$$+ darstellen.\\
+
+Beispiel: $\Rightarrow$ Text 
+
+Code: \verb+$\Rightarrow$+ Text
+
+\vspace{\baselineskip}
+
+Mehr zu Pfeilen siehe: http://www.latex-pfeile.de
 
 
 
