@@ -150,7 +150,7 @@ Pflichtfelder sind mit einem Stern * markiert.
 
 Als erstes prüfen Sie, ob die Auswahlliste des Feldes 'Eingeladene' \col{(3)} die Firma enthält, an die Sie die Offertanfrage richten wollen. Falls dies nicht der Fall ist, wechseln Sie im Menü links zum Punkt 'Konfiguration' (siehe Kapitel \ref{bkm:Ref434830029}) und erfassen die Firma dort (Für diesen Schritt sind administrative Rechte notwendig. Wenden Sie sich an Ihre CUBE PA-Ansprechperson). Ist die Firma in der Auswahl vorhanden, wählen Sie sie aus. Dann können Sie die restlichen Felder ausfüllen:
 
-\vspace{\baselineskip}
+\pagebreak
 
 \begin{compactitem}
 \item
@@ -183,6 +183,21 @@ Text für die Einladungsmail / den Einladungsbrief: Erfassen Sie hier den gesamt
 Falls Sie den Einladungsbrief auf Papier versenden wollen, füllen Sie auch die Felder 'Ort, Datum des Briefs' (freier Text), 'Absender' (Listenauswahl der Firma, die den Brief verschickt), 'Unterzeichnender 1' (Listenauswahl) und 'Unterzeichnender 2' (Listenauswahl). Der 'Unterzeichnende 1' ist der hierarchisch höher gestellte, falls es zwei Unterzeichner braucht.
 \end{compactitem}
 
+\vspace{\baselineskip}
+
+\begin{wrapfigure}[4]{r}{7cm}  
+  \vspace{-30pt}    
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/08_Beschaffungswesen/pictures/7-1-2_Datum_Auswahl.jpg}
+  \end{center}
+  \vspace{-20pt}
+%  \caption{Das Beschaffungswesen verwenden}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+\textbf{Hinweis:} Achten Sie darauf, dass das Datum 'Frist zur Offerteinreichung' \col{(1)} vor dem 'Datum der Vergabe' \col{(2)} liegt. Andernfalls erhalten Sie eine Fehlermeldung: \textcolor{Red}{Dieser Wert ist nicht gültig.}
+
+\vspace{\baselineskip}
 \vspace{\baselineskip}
 
 Nun klicken Sie auf die Schaltfläche 'Erstellen' \col{(4)}, darunter erscheint nun die Möglichkeit, Beilagen zu
@@ -348,6 +363,19 @@ Falls die Offerte aus mehreren Dokumenten besteht, klicken Sie wieder auf das Li
 % \caption{Status ändern}
 \end{wrapfigure}
 Gehen Sie in die Liste der Beschaffungen über das Menü links, Punkt 'Beschaffungswesen', Unterpunkt 'Beschaffungen'. Suchen Sie die zur Offerte gehörende Beschaffung und setzen Sie den Status auf 'Offertprüfung', in dem Sie rechts von der Zeile auf das Bleistiftsymbol \includegraphics[height=12pt]{/Icons/Bearbeiten.jpg} klicken und im Feld 'Status' diesen Status anwählen. Anschliessend klicken Sie auf die Schaltfläche 'Übernehmen'.
+
+\vspace{\baselineskip}
+
+\textbf{Nachtragsbeschaffungen:} \\
+Soll eine 'Nachtragsbeschaffung' mit einer Beschaffung verknüpft werden, wird dies innerhalb der Nachtragsbeschaffung definiert. Wechseln Sie in die Beschaffung, welche mit einer anderen Beschaffung verknüpft werden soll:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/08_Beschaffungswesen/pictures/besch_Nachtragsbeschaffung.jpg}}
+\caption{Nachtragsbeschaffung verknüpfen}
+% \label{fig:speciation}
+\end{figure}
+
+Unter 'Nachtrag zur Beschaffung' \col{(1)} wählen Sie nun die (Haupt-)Beschaffung aus, mit welcher Sie die geöffnete Beschaffung verknüpfen wollen. Im Controlling-Modul (siehe Kapitel \ref{bkm:Ref20190423001}) wird das Budget einer Beschaffung ebenfalls mit dem Budget der Nachtragsbeschaffungen verknüpft.
 
 \pagebreak
 
