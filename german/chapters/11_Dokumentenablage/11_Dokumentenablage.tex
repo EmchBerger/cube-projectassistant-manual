@@ -1065,7 +1065,7 @@ Dokumente, welche beim Auftrag eines Reprodrucks erstellt worden sind (Liefersch
 \subsubsection{Zugriffsrechte bei Dokumenten verwalten}
 \label{bkm:Ref442869495}
 
-Für jedes Dokument können Sie festlegen wer das Dokument lesen, bearbeiten und/oder löschen darf (Löschen von Dokumenten ist in der aktuellen Version nicht möglich). Sie können die Zugriffsrechte einer/mehreren Gruppe/n oder einer/mehreren Person/en zuordnen:
+Für jedes Dokument können Sie festlegen wer das Dokument lesen, bearbeiten und/oder löschen darf (Dokumente löschen ist in der aktuellen Version nicht möglich). Sie können die Zugriffsrechte einer/mehreren Gruppe/n oder einer/mehreren Person/en zuordnen:
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/11-berecht_Rechte.jpg}}
@@ -1073,27 +1073,34 @@ Für jedes Dokument können Sie festlegen wer das Dokument lesen, bearbeiten und
 % \label{fig:speciation}
 \end{figure}
 
-Für jedes Dokument müssen Sie mindestens eine Zugriffsberechtigung definieren. Werden keine Zugriffsrechte ausgewählt / definiert, erscheint folgende Fehlermeldung:
+\begin{wrapfigure}[5]{r}{8cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-30pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/11-berecht_Fehlermeldung.jpg}
+  \end{center}
+  \vspace{-20pt}
+ % \caption{Standard-Zugriffsrechte}
+  \vspace{-10pt}
+\end{wrapfigure}
 
-\begin{figure}[H]
-\center{\includegraphics[width=.6\linewidth]{../chapters/11_Dokumentenablage/pictures/11-berecht_Fehlermeldung.jpg}}
-\caption{Fehlermeldung bei den Zugriffsrechten}
-% \label{fig:speciation}
-\end{figure}
+Für jedes Dokument müssen Sie mindestens eine Zugriffsberechtigung definieren. Werden keine Zugriffsrechte definiert, erscheint folgende Fehlermeldung:
 
-Klicken Sie auf 'OK' um zu den Eingaben zurückzukehren. 
+\vspace{.5cm}
 
-\vspace{\baselineskip}
+\begin{wrapfigure}[5]{l}{8cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-30pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_Standardrechte_Info.jpg}
+  \end{center}
+  \vspace{-20pt}
+ % \caption{Standard-Zugriffsrechte}
+  \vspace{-10pt}
+\end{wrapfigure}
 
 Mit dem Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} können Sie neue Rechte für das Dokument vergeben. 
-Klicken Sie auf das \includegraphics[height=12pt]{/Icons/Fragezeichen.jpg} \col{(2)} erfahren Sie, welche Personen und Gruppen bei der Auswahl 'Standard-Zugriffsrechte' berechtigt werden.
-Mit Klick auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(3)} kehren Sie zur Dokumentenübersicht zurück.
-
-\begin{figure}[H]
-\center{\includegraphics[width=.6\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_Standardrechte_Info.jpg}}
-\caption{Standard-Zugriffsrechte}
-% \label{fig:speciation}
-\end{figure}
+Klicken Sie auf das \includegraphics[height=12pt]{/Icons/Fragezeichen.jpg} \col{(2)} erfahren Sie, welche Personen und Gruppen bei der Auswahl 'Standard-Zugriffsrechte' berechtigt werden. Mit Klick auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol_zurueck.jpg} \col{(3)} kehren Sie zur Dokumentenübersicht zurück.
+ 
+\vspace{\baselineskip}
 
 Wenn Sie auf das Pluszeichen \includegraphics[height=12pt]{/Icons/Pluszeichen.jpg} \col{(1)} klicken, erscheint folgende Eingabemaske, bei welcher die Berechtigungen vergeben werden können:
 
@@ -1118,11 +1125,37 @@ Gruppen können Gruppen enthalten (Dies wird in der 'Benutzerverwaltung' konfigu
 
 Sie können bei den bestehenden Gruppen / Personen auch Rechte hinzufügen oder entfernen \col{(3)}. Wollen Sie bestehende Zugriffsrechte löschen, klicken Sie dazu auf das Mülltonnensymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} \col{(4)} und bestätigen die Sicherheitsmeldung 'Entfernen ?' mit 'OK'.  \newline
 
-Haben Sie die nötigen Änderungen vorgenommen, schliessen Sie diese mit 'Übernehmen' ab. 
+Wurden die Änderungen vorgenommen, schliessen Sie diese mit 'Übernehmen' ab. 
 
 \vspace{\baselineskip}
 
 \textbf{Hinweis:} Für die erste Person / Gruppe (in der Regel ist das die Person, welche das Dokument in CUBE PA anlegt) werden automatisch sämtliche Zugriffsrechte vergeben. Für die weiteren Gruppen / Personen werden nur noch die Lese-Zugriffsrechte vorgeschlagen. Selbstverständlich kann dies jederzeit angepasst werden.
+
+\vspace{\baselineskip}
+
+\textbf{Erweiterte Berechtigungen}
+
+Wird ein Dokument als Link an eine interne oder externe Person / E-Mailadresse versandt, wird im Hintergrund eine weitere Benutzerberechtigung angelegt. Dies wird bei den Berechtigungen mit der Klammer \includegraphics[height=12pt]{/Icons/Pfeil_rechts.jpg} \col{(1)} angezeigt:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_erweiterteBerechtigungen1.jpg}}
+\caption{erweiterte Zugriffsrechte}
+% \label{fig:speciation}
+\end{figure}
+
+Mit Klick auf die Klammer \includegraphics[height=12pt]{/Icons/Pfeil_rechts.jpg} \col{(1)} werden diese erweiterten Berechtigungen geöffnet:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/11_Dokumentenablage/pictures/dok_erweiterteBerechtigungen2.jpg}}
+\caption{erweiterte Zugriffsrechte anzeigen}
+% \label{fig:speciation}
+\end{figure}
+
+Beim neu angelegten Benutzer lassen sich die Rechte nicht anpassen \col{(2)} (alles ist 'ausgegraut'). Er besitzt lediglich Lese-Rechte.
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Wird die Seite neu geladen, werden die erweiterten Rechte wieder ausgeblendet.
 
 \subsubsection{Dokumente online bearbeiten / Aus- und Einchecken der Dokumente}
 \label{bkm:Ref442780171}\label{bkm:Ref442776572}
@@ -1144,7 +1177,7 @@ Klicken Sie in der Dokumenten-Übersicht den blauen Titel des gewünschten Dokum
 \vspace{\baselineskip}
 
 \begin{wrapfigure}[6]{r}{6cm}
-\vspace{-15pt}
+\vspace{-5pt}
 \includegraphics[height=35mm]{../chapters/11_Dokumentenablage/pictures/11-2-7_WordSpeichern.jpg}
 % \caption{Status ändern}
 \end{wrapfigure}
