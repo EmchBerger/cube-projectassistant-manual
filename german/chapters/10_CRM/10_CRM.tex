@@ -374,10 +374,10 @@ Mit jedem Schritt der Einladung verändert sich der Status der Teilnehmer.
 
 Folgende Statis werden verwendet:
 
-\begin{wrapfigure}[12]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+\begin{wrapfigure}[11]{l}{5.2cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-10pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
   \begin{center}
-    \includegraphics[width=.8\linewidth]{../chapters/10_CRM/pictures/10-2-5_Status.jpg}
+    \includegraphics[width=.9\linewidth]{../chapters/10_CRM/pictures/10-2-5_Status.jpg}
   \end{center}
   \vspace{-20pt}
   % \caption{Neue Veranstaltung anlegen}
@@ -390,7 +390,7 @@ Folgende Statis werden verwendet:
 \textbf{neu:} Wird eine neue Veranstaltung erstellt und Teilnehmer hinzugefügt, erhalten diese den Status 'neu'. Eine Einladung wird nur an Teilnehmer mit Status 'neu' versendet.\\
 \textbf{eingeladen:} Wurde die Einladung versendet, erhalten die Teilnehmer den Status 'eingeladen'.\\
 \textbf{erinnert:} Teilnehmer, welche nicht reagiert haben, können erinnert werden.\\
-\textbf{angemeldet:} Teilnehmer, welche sich über die Einladungswebseite angemeldet haben erhalten den Status 'angemeldet'.\\
+\textbf{angemeldet:} Teilnehmer, welche sich über die Einladungswebseite angemeldet haben, erhalten den Status 'angemeldet'.\\
 \textbf{teilgenommen:} Der Anlass hat stattgefunden und die teilgenommenen Teilnehmer erhalten den Status 'teilgenommen'.\\
 \textbf{nachher kontaktiert:} Zum Einholen eines Feedbacks werden Teilnehmer nach dem Anlass kontaktiert. Um eine Übersicht über die Teilnehmer zu erhalten, welche bereits kontaktiert wurden, wird dieser Status gesetzt.\\
 \textbf{abgemeldet:} Über die Webseite oder auf anderem Weg abgemeldete Teilnehmer erhalten den Status 'abgemeldet'.
@@ -399,6 +399,20 @@ Folgende Statis werden verwendet:
 
 \textit{Status manuell bearbeiten:} Es ist möglich, einen Status eines Teilnehmers auch manuell zu ändern. Hat sich ein Teilnehmer beispielsweise nicht über die Einladungswebseite, sondern per Telefon angemeldet, kann die Administration mit Klick auf das Stiftsymbol \includegraphics[height=12pt]{/Icons/Stift.jpg} ein Status manuell anpassen. Diese Mutation funktioniert im Bearbeitungs- oder Übersichtsmodus der Veranstaltung.
 
+\vspace{\baselineskip}
+
+\textbf{Beachten Sie folgende Gegebenheiten beim Versand von Anmeldungen:} 
+
+\vspace{\baselineskip}
+
+\begin{compactitem}
+	\item Erstmalige Anmeldungen müssen mittels Status 'neu' und dem Button 'Einladung versenden' ausgelöst werden.
+	\item In der Folge erscheint bei der Teilnehmerliste das \includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}-Symbol für persönliche Nachrichten.
+	\item Soll mittels persönlicher Nachricht (\includegraphics[height=12pt]{/Icons/Versandsymbol.jpg}-Symbol) ein An-/Abmeldelink erneut verschickt werden, erfordert dies mindestens den Status 'eingeladen'. (Mit Status 'neu' wird der verschickte Link nicht funktionieren).
+	\item Achten Sie bei der Anmeldung auf den Anmeldeschluss: wird dieser Termin erreicht, funktioniert die Anmeldeseite nicht mehr.
+\end{compactitem}
+
+\pagebreak
 \subsubsection{Anmeldung und Abmeldung durch die Teilnehmer}
 
 Die Teilnehmer erhalten die Einladung per Mail. In der Einladungsmail befindet sich ein Link auf die zuvor erstellte Einladungsseite. Diese Seite entspricht einem Flyer mit allen nötigen Angaben. Über diese Einladungsseite können die Teilnehmer mit einem Klick ihre Anmeldung bestätigen oder sich allenfalls auch abmelden. Nach dem entsprechenden Klick durch den Teilnehmer wird der Status des jeweiligen Teilnehmers im CUBE PA CRM automatisch aktualisiert. 
