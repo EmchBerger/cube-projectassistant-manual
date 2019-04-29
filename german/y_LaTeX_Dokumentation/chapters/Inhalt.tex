@@ -42,21 +42,21 @@ Die Befehle basieren auf den eingebundenen Paketen in der Hauptdatei (CUBEPA\_Ha
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+\pagebreak
 \section{Dokumentation}
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-\section{Grundeinstellungen}
+\subsection{Grundeinstellungen}
 
 \textbf{Grafik-Pfad:}
 \begin{verbatim}
 \graphicspath{{Pictures/}}
 \end{verbatim}
 
-\vspace{\baselineskip}
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\pagebreak
+
 \subsection{Text Format}
 
 \textbf{Text in Fett:}\\ Beispiel: \textbf{Dieser Satz ist fett.}\\ Code: \verb+\textbf{Dieser Satz ist fett.}+
@@ -230,7 +230,6 @@ Code:
 
 Beispiel:
 
-
 \begin{wrapfigure}[7]{r}{8cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-50pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
   \begin{center}
@@ -251,7 +250,7 @@ Code:
 \begin{wrapfigure}[7]{r}{6cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-30pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
   \begin{center}
-    \includegraphics[height=50mm]{31_Menue_Adressliste.jpg}
+    \includegraphics[height=50mm]{../chapters/xy.jpg}
   \end{center}
   \vspace{-20pt}
   \caption{Die Adressliste im Menü aufrufen}
@@ -266,13 +265,25 @@ Im Anschluss an obigen Code erfolgt der Text.
 \textbf{Erklärungen zur Bildkonfiguration:}
 
 \begin{compactitem}
-	\item Bild in halber und ganzer Breite: es wird jeweils nur die \verb+\caption{}+ angegeben. bei \verb+[width=]+ wird die Grösse angegeben. 1 entspricht ganzer Breite, .5 der halben. Die Massangaben könnten auch in mm oder cm erfolgen.
+	\item Bild in halber und ganzer Breite: bei \verb+[width=]+ wird die Grösse angegeben. 1 entspricht ganzer Breite, .5 der halben. \textbf{Beispiel:} \verb+[width=1\linewidth]+\\
+	Die Massangaben können auch in mm oder cm erfolgen: \textbf{Beispiel:} \verb+[height=50mm]+
 	\item Bei 'Text und Bild' nebeneinander werden in den \verb+[]+ Klammern die Anzahl Textzeilen angegeben, welche um das Bild umgebrochen werden sollen. Dies ist oft nach einfügen eines Bildes anzupassen. mit \verb+\vspace{-30pt}+ kann das Bild nach oben oder unten gerückt und so an den Text oder das Seitenlayout angepasst werden.
-	\item Weitere Informationen bitte im Internet nachschauen.
+	\item Weitere Informationen im Internet nachschauen.
 \end{compactitem}
 
 \vspace{\baselineskip}
 
+\textbf{Kurze Variante von 'wrap':}
+
+\begin{verbatim}
+\begin{wrapfigure}[6]{r}{6cm}
+\vspace{-5pt}
+\includegraphics[width=1\linewidth]{../chapters/xy.jpg}
+\caption{Beschriftung}
+\end{wrapfigure}
+\end{verbatim}
+
+\pagebreak
 \textbf{Text - Bild - Text (nach einem langen Bild):}
 
 Beispiel:\\
@@ -402,6 +413,7 @@ Beispiel: \quad Abstand \quad Abstand
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+\pagebreak
 \subsection{Tabellen}
 
 \textbf{Tabellen mit Icons:}
@@ -427,7 +439,7 @@ Code:
 \end{tabular}
 \end{verbatim}
 
-\vspace{2cm}
+\vspace{\baselineskip}
 
 \textbf{Rahmen und Ränder bei Tabellen werden wie folgt gemacht:}
 
@@ -478,8 +490,7 @@ Text C & \raisebox{-1\totalheight}{\includegraphics[height=20pt]{pictures/icons/
 \hline
 \end{tabular}
 
-\vspace{\baselineskip}
-
+\pagebreak
 Code:
 
 \verb+\raisebox{-1\totalheight}{\includegraphics[height=20pt]{/Icons/B_Erstellen.jpg}}+
@@ -489,7 +500,6 @@ Achtung: allenfalls ergibt \verb+\raisebox+ (wie im Dokument angewendet) ein Err
 \vspace{\baselineskip}
 
 $\Rightarrow$ Manueller Zeilenumbruch innerhalb von Tabellen (Spalten): \verb+\newline+\\
-
 
 
 
@@ -507,7 +517,7 @@ Beispiel (Mit Fett-Text):
 \textbf{Adressliste:} Anzeige der erfassten Adressen.
 \end{itemize}
 
-\vspace{2cm}
+\vspace{\baselineskip}
 
 Code:
 \begin{verbatim}
@@ -565,8 +575,6 @@ Code:
 
 \vspace{\baselineskip}
 
-
-\pagebreak
 \textbf{Nummerierungen:}\\
 Auf den Grafiken werden immer wieder violette Nummerierungen verwendet. Um diese im Text darzustellen und aufzugreifen, wurde ein neuer Befehl kreiert:
 
@@ -605,7 +613,8 @@ Mehr zu Pfeilen siehe: http://www.latex-pfeile.de
 
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-\subsection{Hinweise} 
+\pagebreak
+\section{Hinweise} 
 
 \begin{compactitem}
 	\item Werden kundenspezifische Grafiken verwendet ist das mit der Kommentarfunktion \% zu dokumentieren.
@@ -613,4 +622,28 @@ Mehr zu Pfeilen siehe: http://www.latex-pfeile.de
 	\item nach einem verwendeten \LaTeX \enspace bleibt ein Space aus, dieses kann mittels \verb+\enspace+ eingefügt werden.
 
 \end{compactitem}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\section{Übersicht über vorhandene Handbücher, Dokumentationen und Informationen}
+
+
+\begin{itemize}
+	\item \textbf{\LaTeX-Handbuch:} in Deutsch, Französisch* und Englisch*
+	\item \textbf{Quick-Ref:} Kurzanleitungen von verschiedenen Modulen oder Funktionen.
+	\item \textbf{Upgrade-Info:} Es sind Upgrade-Informationen von Version 2.7 zu 2.11 und von Version 2.11 zu 2.12 vorhanden. Diese Informationen wurden generisch und teils kundenspezifisch erstellt.
+\end{itemize}
+
+\vspace{\baselineskip}
+
+* Das französische und englische Handbuch ist nicht mehr auf dem aktuellen Stand
+
+\vspace{\baselineskip}
+
+\textbf{Hinweis:} Beim \LaTeX-Handbuch werden in allen Sprachen die deutschen Printscreens verwendet.
+
 
