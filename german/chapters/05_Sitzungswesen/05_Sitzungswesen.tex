@@ -18,9 +18,9 @@ Entscheide dokumentieren
 Sitzungseinladungen, Sitzungsprotokolle, Pendenzen und Entscheide suchen und lesen/bearbeiten
 \end{itemize}
 
-\vspace{2cm}
+\vspace{.3cm}
 
-\begin{wrapfigure}[2]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+\begin{wrapfigure}[5]{l}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
   \vspace{-35pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
   \begin{center}
     \includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_Menu_Sitzungswesen.jpg}
@@ -32,12 +32,14 @@ Sitzungseinladungen, Sitzungsprotokolle, Pendenzen und Entscheide suchen und les
 
 Wählen Sie im Menü links den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Sitzungen'.
 
-\vspace{9cm}
+\vspace{\baselineskip}
 
 \textbf{Hinweis:} Für die Anwendung 'Checklisten mit dem Sitzungswesen verknüpfen' beachten Sie bitte das Kapitel \ref{bkm:Ref2018102501}.
 
-\pagebreak
-\textbf{Die Sitzungsübersicht kurz erklärt:}
+\vspace{5cm}
+
+\subsection{Das Sitzungswesen im Überblick}
+\subsubsection{Die Sitzungsübersicht kurz erklärt:}
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5_SitzungenUebersicht.jpg}}
@@ -70,31 +72,49 @@ Wenn Sie auf einen Sitzungstitel (blau) klicken, öffnen sich unterhalb weitere 
 	
 Die Status-Spalte \col{(15)} zeigt an, ob ein Protokoll archiviert wurde und somit 'Definitiv' ist. Trägt eine Sitzung diesen Status sind obige Optionen nicht mehr möglich. Mittels dem Blattsymbol \includegraphics[height=12pt]{/Icons/Blattsymbol.jpg} kann das definitive Protokoll als PDF geöffnet oder gespeichert werden.
 	
-\vspace{\baselineskip}
+\subsubsection{Sitzungen kopieren:} 
 \label{bkm:Ref2017112701}
 
-\textbf{Sitzungen kopieren:} Sie können eine Sitzung kopieren. Dazu klicken Sie auf das Kopiersymbol \includegraphics[height=12pt]{/Icons/kopieren.jpg} \col{(14)}. Folgendes Fenster wird geöffnet: 
+Sie können eine Sitzung kopieren. Dazu klicken Sie auf das Kopiersymbol \includegraphics[height=12pt]{/Icons/kopieren.jpg} \col{(14)}. Folgendes Fenster wird geöffnet: 
 
-\begin{figure}[H]
-\center{\includegraphics[width=.5\linewidth]{../chapters/05_Sitzungswesen/pictures/5_SitzungKopieren.jpg}}
-\caption{Sitzung kopieren}
-% \label{fig:speciation}
-\end{figure}
+\pagebreak
+
+\begin{wrapfigure}[9]{l}{7cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-20pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5_SitzungKopieren.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Sitzung kopieren}
+  \vspace{-10pt}
+\end{wrapfigure}
 
 Geben Sie ein neues Datum und eine neue Uhrzeit für die kopierte Sitzung ein (Beginn und Ende) \col{(1)}. Wählen Sie ob die kopierte Sitzung gleich freigegeben werden soll \col{(2)}. Unter \col{(3)} ist es möglich, das angehängte Protokoll der neuen Sitzung anzuhängen. Schliessen Sie den Kopiervorgang mit Klick auf 'Sitzung kopieren' \col{(4)} ab oder löschen  Sie den Kopiervorgang mit Klick auf 'Cancel' \col{(5)}.
 
-% \vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\subsubsection{Eine Sitzung 'löschen'}
+Eine Sitzung kann nicht gelöscht werden. Wurde jedoch irrtümlicherweise eine Sitzung erstellt oder eine alte Vorlage kopiert, kann mit folgendem Vorgehen die Sitzung 'ausgeblendet' und die Nummerierung der korrekten Sitzungsreihe weiter verwendet werden (das Einrichten erfordert administrative Rechte und es wird empfohlen, dass Änderungen der Sitzungsart durch eine zentrale Stelle / einen Superuser durchgeführt werden):
+
+\begin{compactitem}
+	\item Ein neue Sitzungsart mit '**gelöschte Sitzungen**' erstellen.
+	\item zu 'löschende' Sitzungen werden im Bearbeitungsmodus der entsprechenden Sitzung an die obige Sitzungsart gehängt.
+	\item die Sitzung erhält eine neue Nummerierung und damit wird die alte Sitzungsnummer für die Weiterverwendung frei.
+	\item Weitere Details sind unter Kapitel \ref{bkm:Ref20190508001} zu finden.
+\end{compactitem}
+
+\vspace{\baselineskip}
 
 \subsection{Zu einer neuen Sitzung einladen}
 \label{bkm:Ref434828480}
 
-Klicken Sie auf das Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} oben links.
+Klicken Sie auf das Plus-Symbol \includegraphics[height=12pt]{/Icons/Plussymbol.jpg} \col{(1)} oben links:
 
 \vspace{\baselineskip}
 
 \begin{figure}[H]
 \center{\includegraphics[width=0.4\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_Neue_Sitzung.jpg}}
-\caption{Eine neue Sitzung eintragen}
+\caption{Neue Sitzung erstellen}
 % \label{fig:speciation}
 \end{figure}
 
@@ -169,7 +189,7 @@ Im Feld 'Traktanden' können Sie wiederum eine vorgefertigte Traktandenliste aus
 Im Feld 'Vorbereitung' können Sie mit freiem Text Vorbereitungen \col{(8)} erfassen. Unter Vorbereitungen sind Tätigkeiten zu verstehen, die im Hinblick auf die Sitzung ausgeführt werden sollen, z.B. eine Präsentation erstellen.
 \end{itemize}
 
-\textbf{Beilagen hochladen oder verknüpfen:}
+\subsubsection{Beilagen hochladen oder verknüpfen:}
 Sie haben die Möglichkeit, bei einem Protokoll beliebige Dokumente hochzuladen. Zudem ist es möglich, Dokumente, welche Sie in der Dokumentenablage hinterlegt haben, mit dem Protokoll zu verknüpfen.  
 
 \vspace{\baselineskip}
@@ -226,7 +246,7 @@ Wird der Haken nicht gesetzt, wird Zeitpunkt und Ort der Sitzung für die Benutz
 \end{itemize}
 
 \begin{figure}[H]
-\center{\includegraphics[width=0.5\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_SitzungenBearbeiten.jpg}}
+\center{\includegraphics[width=0.4\linewidth]{../chapters/05_Sitzungswesen/pictures/5-1_SitzungenBearbeiten.jpg}}
 \caption{Sitzung bearbeiten}
 % \label{fig:speciation}
 \end{figure}
@@ -269,18 +289,16 @@ Wählen Sie im Menü den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Sitzunge
 % \label{fig:speciation}
 \end{figure}
 
-\textbf{Filterfunktion }\col{(1)}
+\subsubsection{Filterfunktion verwenden}
 
-Setzen Sie die Filterfunktion ein, um die gewünschte Sitzung zu finden. Geben Sie in die oben umrandeten Felder ein was Sie wissen oder wonach Sie suchen wollen. Anschliessend klicken Sie auf die Lupe \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} oder drücken die 'Enter'-Taste.
-
-\vspace{\baselineskip}
+Setzen Sie die Filterfunktion \col{(1)}ein, um die gewünschte Sitzung zu finden. Geben Sie in die oben umrandeten Felder ein was Sie wissen oder wonach Sie suchen wollen. Anschliessend klicken Sie auf die Lupe \includegraphics[height=12pt]{/Icons/Lupe_kl.jpg} oder drücken die 'Enter'-Taste.\\
 
 Alle Einträge, welche mit den Such-Begriffen übereinstimmen, werden angezeigt. Im Feld Sitzungsziel können Sie beliebige Schlagwörter eingeben, welche im Feld Sitzungsziel vorkommen (Sie brauchen keine Platzhalter * vor ein Wort zu stellen).
 
 \vspace{\baselineskip}
 
 \pagebreak
-\textbf{Legende für die Bearbeitung von Sitzungseinträgen:}
+\subsubsection{Legende für die Bearbeitung von Sitzungseinträgen:}
 
 \vspace{\baselineskip}
 
@@ -371,11 +389,7 @@ Durch Klicken auf die horizontalen Pfeile \includegraphics[height=12pt]{/Icons/P
 
 Um den Protokolltext zu einem Traktandum zu erfassen, klicken Sie auf das Aufklappsymbol \includegraphics[height=12pt]{/Icons/Aufklappen.jpg} \col{(5)} (ein kleines Dreieck in einem Quadrat) neben dem Feld mit der Bezeichnung des Traktandums. Nun erscheint das Feld, in dem Sie mit freiem Text das zu diesem Traktandum gesagte protokollieren können \col{(6)}.
 
-\vspace{\baselineskip}
-
-\textbf{Ein Entscheid oder eine Pendenz hinzufügen:}
-
-\vspace{\baselineskip}
+\subsubsection{Ein Entscheid oder eine Pendenz hinzufügen:}
 
 Die vier Symbole unter dem Textfeld eröffnen weitere Möglichkeiten:
 
@@ -428,7 +442,7 @@ Speichern Sie die Eingaben mit Klick auf 'Erstellen' \col{(1)} oder verlassen Si
 
 \vspace{\baselineskip}
 
-\textbf{Traktanden in Entscheide oder Pendenzen umwandeln:}
+\subsubsection{Traktanden in Entscheide oder Pendenzen umwandeln:}
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-1_EntscheidSymbole2.jpg}}
@@ -447,19 +461,13 @@ Sie realisieren, dass der soeben erfasste Text zum Traktandum eigentlich einen E
 Sie realisieren, dass der soeben erfasste Text zum Traktandum eigentlich eine Pendenz darstellt? Klicken Sie auf das letzte Symbol rechts \includegraphics[height=12pt]{/Icons/Pfeil_Pfeil_aus_Box.jpg} \col{(d)}, und der Text erscheint in einem Fenster, in dem Sie die Angaben zur Pendenz vervollständigen und diese speichern können. \textbf{Achtung}, der Text wird in das Pendenzfenster verschoben, nicht kopiert!
 \end{itemize}
 
-% \vspace{\baselineskip}
-
 \textbf{Tipp}: es ist keineswegs zwingend, den Protokolltext während der Sitzung so wie oben beschrieben perfekt strukturiert zu erfassen. Copy-Paste funktioniert wie in Microsoft Word: Markieren Sie den zu kopierenden Text und benutzen Sie entweder die rechte Maustaste (Kontextmenü) oder die Tastaturkürzel 'Ctrl+C' (Kopieren), 'Ctrl+X' (Ausschneiden) und 'Ctrl+V' (Einfügen). Sie können beispielsweise sämtlichen Text unter dem ersten Traktandum erfassen und im Nachgang zur Sitzung auf die verschiedenen Traktanden verteilen, und auch das Erfassen von Entscheiden und Pendenzen ist im Rahmen der Protokollierung nachträglich möglich.
 
 \vspace{\baselineskip}
 
 \textbf{Hinweis:} Wird im Sitzungsprotokoll (unter Traktanden) ein Entscheid oder eine Pendenz erneut bearbeitet, ist es nun möglich, mittels dem Mülleimersymbol \includegraphics[height=12pt]{/Icons/Muelltonne.jpg} einen Entscheid oder eine Pendenz zu löschen.
 
-\vspace{\baselineskip}
-
-\textbf{Protokolltext formatieren:}
-
-% \vspace{\baselineskip}
+\subsubsection{Protokolltext formatieren:}
 
 Sobald Sie mit der Maus in ein Protokoll-Textfeld klicken, erscheint darüber ein Band mit Schaltflächen \col{(1)} zur Formatierung. Diese funktionieren wie die analogen Schaltflächen in Microsoft Word:
 
@@ -515,11 +523,9 @@ Sie erfassen das Protokoll als Dokument, z.B. mit Microsoft Word, und lassen es 
 
 Wählen Sie im Menü links den Punkt 'Sitzungswesen' und dann den Unterpunkt 'Sitzungen'. Es erscheint die Liste der im CUBE PA erfassten Sitzungen, d.h. Sitzungen, für die mindestens eine Einladung erstellt wurde. \newline
 
-\vspace{5cm} 
+\pagebreak
 
 Suchen Sie in der Liste die betreffende Sitzung und klicken Sie auf das Listensymbol \includegraphics[height=12pt]{/Icons/Listensymbol.jpg} \col{(1)} links:
-
-\pagebreak
 
 \begin{figure}[H]
 \center{\includegraphics[width=1\linewidth]{../chapters/05_Sitzungswesen/pictures/5-2-2_Sitzungsuebersicht.jpg}}
@@ -621,9 +627,6 @@ Um das Protokoll zu prüfen und zu korrigieren, wählt man im Menü den Punkt 'S
 \caption{Sitzungen-Übersicht}
 % \label{fig:speciation}
 \end{figure}
-
-\vspace{\baselineskip}
-
 
 \subsubsection{Individueller und globaler Überarbeitungsmodus}
 
@@ -751,7 +754,7 @@ Weiter wird dem Protokoll die Pendenzenliste angehängt. Sie enthält sämtliche
 % \label{fig:speciation}
 \end{figure}
 
-\textbf{Hinweis:} Die Kopfzeile (Logo) wie auch die Fusszeile lassen sich individuell konfigurieren.
+\textbf{Hinweis:} Die Kopfzeile (Logo) wie auch die Fusszeile lassen sich mit administrativen Rechten individuell konfigurieren (siehe Kapitel \ref{bkm:Ref20190508001})
 
 \clearpage
 \subsection{Pendenzen in der Übersicht}
