@@ -264,41 +264,78 @@ Beim Vertrageintrag ist ein 'Überwacher' oder/und 'Stv. Überwacher' zu definie
 \pagebreak
 \subsection{Teams}
 
+\begin{wrapfigure}[3]{r}{6.5cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-55pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-2_TeamsUebersicht_m.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Team Übersicht}
+  \vspace{-10pt}
+\end{wrapfigure}
+
 Einem Team werden beliebig viele Benutzer zugewiesen. Die erstellten Teams können in der 'Benutzerverwaltung' 'Gruppen' einer Gruppe hinzugefügt werden.
 
-\begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-2_TeamsUebersicht.jpg}}
-\caption{Übersicht der erstellten Teams}
-% \label{fig:speciation}
-\end{figure}
+\vspace{1.5cm}
 
-\begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-2_TeamsBearbeiten.jpg}}
-\caption{Bearbeitungsmodus der Teams}
-% \label{fig:speciation}
-\end{figure}
+\begin{wrapfigure}[6]{l}{7cm}   % [x] Wie manche Zeile soll sich um die Grafik "brechen"
+  \vspace{-70pt}      % Grundwert war 20; mit 30 schön oben beim Text ausgerichtet
+  \begin{center}
+    \includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-2_TeamsBearbeiten_m.jpg}
+  \end{center}
+  \vspace{-20pt}
+  \caption{Team erstellen}
+  \vspace{-10pt}
+\end{wrapfigure}
 
-\clearpage
+\textbf{Hinweis:} Teams sind Gruppen ohne Berechtigungsrelevanz und dienen als alternative Gruppierung von Personen. Wo möglich sollen Strukturen und Berechtigungskonstrukte mit Gruppen und Beteiligten erfolgen und nicht mittels Teams.
+
+\vspace{1cm}
+
 \subsection{Gruppen}
 
 Hier werden Gruppen erstellt. In den Einstellungen der Gruppen können Benutzer, Teams und auch Beteiligte hinzugefügt werden. Zudem können einer Gruppe bestimmte Zugriffsrechte (Lesezugriff, Schreibzugriff, Löschzugriff) zugeordnet werden.
 
 \begin{figure}[H]
+  \vspace{-5pt}
 \center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-3_GruppenUebersicht.jpg}}
-\caption{Liste Gruppe}
+% \caption{Liste Gruppe}
 % \label{fig:speciation}
 \end{figure}
 
 \begin{figure}[H]
+  \vspace{-20pt}
 \center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-3_GruppenBearbeiten.jpg}}
-\caption{Bearbeitungsmodus der Gruppen}
+\caption{Übersicht Gruppen / Bearbeitungsmodus der Gruppen}
 % \label{fig:speciation}
 \end{figure}
 
-Gruppen können nebst einzelnen Benutzern auch Gruppen enthalten (Übergeordnete Gruppe). In der Dokumentenablage können bei den Gruppen-Berechtigungen explizit Untergruppen berechtigt oder ausgeschlossen werden \col{(1)}:
+\subsection{Anwendungshinweise für Gruppen- und Berechtigungsstrukturen}
+
+\textbf{Gruppen:} Im Idealfall werden Personen einer Organisation (Beteiligte) zugeordnet und diese wiederum wird einer (Berechtigungs-)Gruppe zugeordnet. Dies hat den Vorteil, dass bei personellen Veränderungen innerhalb einer Firma nur diese Zugehörigkeit gepflegt werden muss und die Zugriffsrechte anschliessend stimmen.
+
+\vspace{\baselineskip}
+
+Gruppen können nebst einzelnen Benutzern, Teams und Beteiligten auch Gruppen enthalten, respektive mit 'übergeordneten Gruppen' verknüpft werden. Damit lassen sich hierarchische Gruppenstrukturen erstellen. Solche Verschachtelungen mit Gruppen sind jedoch womöglich zu vermeiden und nur in grossen Projekten anzuwenden, in welchen beispielsweise mit Baulosen und diesbezüglich einer komplexen Berechtigungsstruktur gearbeitet wird.
+
+\vspace{\baselineskip}
+
+\textbf{Verschachtelungen von Gruppen:} Werden für eine Gruppe Untergruppen erstellt, können diese Untergruppen in der Dokumentenablage durch setzten des Häkchens 'Untergeordnete Gruppen berechtigen' zusätzlich berechtigt werden:
 
 \begin{figure}[H]
-\center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/14-3_Gruppenberechtigung.jpg}}
-\caption{Bearbeitungsmodus der Gruppen}
-% \label{fig:speciation}
+\center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/Untergruppen_berechtigen.jpg}}
+\caption{Untergruppen in der Dokumentenablage berechtigen}
 \end{figure}
+
+\textbf{Beteiligte / Gremien:} Eine Sonderform von Gruppierungen ist das Gremium. Ein Gremium ist eine Organisation / Beteiligte mit der Zuordnung 'Ist Gremium'. Werden Pendenzen losgelöst von Sitzungen verwendet, werden dadurch auch keine Zugriffsregelungen mittels Sitzungen erstellt. Somit sind Pendenzen nur für die Ersteller selbst, sowie die verantwortlichen Personen sichtbar. Mit einem Gremium können Gruppen gebildet werden und diesen Gruppen werden anschliessend Pendenzen zugeteilt.
+
+\pagebreak
+
+Unter 'Konfiguration' 'Beteiligte' erstellen Sie einen neuen Eintrag und aktivieren 'Ist Gremium'. Anschliessend wird in der 'Benutzerverwaltung' unter 'Benutzer' den erforderlichen Personen / Benutzern bei 'Gremien' das entsprechende Gremium hinzugefügt (Mehrfachauswahl möglich). Bei den Pendenzen wird nun das 'Verantwortliche Gremium' hinzugefügt:
+
+\begin{figure}[H]
+\center{\includegraphics[width=1\linewidth]{../chapters/14_Benutzerverwaltung/pictures/Gremien.jpg}}
+\caption{Gremien verwenden}
+\end{figure}
+
+\textbf{Teams:} Teams sind Gruppen ohne Berechtigungsrelevanz und dienen als alternative Gruppierung von Personen. Wo möglich sollen Strukturen und Berechtigungskonstrukte mit Gruppen und Beteiligten erfolgen und nicht mittels Teams.
